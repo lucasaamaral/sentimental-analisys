@@ -20,6 +20,7 @@ import pandas as pd
 import torch
 from transformers import AutoTokenizer
 
+from sentiment_workflow.config.labels import LABEL2ID
 from sentiment_workflow.config.paths import (
     BASE_MODEL_NAME as MODEL_NAME,
     FINETUNED_MODEL_DIR as OUTPUT_MODEL,
@@ -40,7 +41,10 @@ from sentiment_workflow.data.data_splits import (
     load_labelled_dataframe,
 )
 from sentiment_workflow.ml.calibration import learn_calibration_biases
-from sentiment_workflow.ml.evaluation import evaluate_trainer_on_dataframe, print_baselines
+from sentiment_workflow.ml.evaluation import (
+    evaluate_trainer_on_dataframe,
+    print_baselines,
+)
 from sentiment_workflow.ml.inference import (
     attach_base_model_predictions,
     describe_device,
@@ -136,7 +140,7 @@ def prepare_base_model_baselines() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     print(f"\nLoading base model for baseline metrics: {MODEL_NAME}")
     base_tokenizer, base_model, base_device = load_sequence_classifier(MODEL_NAME)
     print(f"Base model device: {describe_device(base_device)}")
-    
+
     full_dataframe = load_labelled_dataframe(SAMPLE_PATH)
     full_dataframe = attach_base_model_predictions(
         full_dataframe,
@@ -144,7 +148,7 @@ def prepare_base_model_baselines() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         base_model,
         base_device,
     )
-    
+
     model_selection_df, holdout_df = create_fixed_holdout_split(full_dataframe)
     holdout_df = attach_base_model_predictions(
         holdout_df,
@@ -152,11 +156,11 @@ def prepare_base_model_baselines() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         base_model,
         base_device,
     )
-    
+
     del base_tokenizer, base_model
     if base_device.type == "cuda":
         torch.cuda.empty_cache()
-    
+
     baseline_summary = print_baselines(full_dataframe, holdout_df)
     return full_dataframe, holdout_df, baseline_summary
 
@@ -207,10 +211,14 @@ def train_ensemble(
     )
 
     print("\n--- Blending primary + secondary logits ---")
-    blended_cal, blended_holdout = blend_ensemble_predictions(primary_preds, secondary_preds)
-    
-    _, cal_labels = _get_trainer_predictions(None, calibration_df, tokenizer)
-    
+    blended_cal, blended_holdout = blend_ensemble_predictions(
+        primary_preds, secondary_preds
+    )
+
+    cal_labels = np.array(
+        [LABEL2ID[label] for label in calibration_df["human_label"].tolist()]
+    )
+
     return blended_cal, blended_holdout, cal_labels
 
 
