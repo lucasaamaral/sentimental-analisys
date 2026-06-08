@@ -20,8 +20,8 @@ import pandas as pd
 import torch
 from transformers import AutoTokenizer
 
-from sentiment_workflow.config.labels import LABEL2ID
-from sentiment_workflow.config.paths import (
+from classification_workflow.config.labels import LABEL2ID
+from classification_workflow.config.paths import (
     BASE_MODEL_NAME as MODEL_NAME,
     FINETUNED_MODEL_DIR as OUTPUT_MODEL,
     LABELED_SAMPLES_PATH as SAMPLE_PATH,
@@ -30,7 +30,7 @@ from sentiment_workflow.config.paths import (
     TRAIN_SPLIT_PATH,
     TRAINING_METADATA_PATH,
 )
-from sentiment_workflow.data.data_splits import (
+from classification_workflow.data.data_splits import (
     CALIBRATION_SEED,
     CALIBRATION_SIZE,
     HOLDOUT_SEED,
@@ -40,17 +40,17 @@ from sentiment_workflow.data.data_splits import (
     create_fixed_holdout_split,
     load_labelled_dataframe,
 )
-from sentiment_workflow.ml.calibration import learn_calibration_biases
-from sentiment_workflow.ml.evaluation import (
+from classification_workflow.ml.calibration import learn_calibration_biases
+from classification_workflow.ml.evaluation import (
     evaluate_trainer_on_dataframe,
     print_baselines,
 )
-from sentiment_workflow.ml.inference import (
+from classification_workflow.ml.inference import (
     attach_base_model_predictions,
     describe_device,
     load_sequence_classifier,
 )
-from sentiment_workflow.ml.trainer import (
+from classification_workflow.ml.trainer import (
     ENSEMBLE_BLEND_WEIGHT,
     ENSEMBLE_SECONDARY_SEED,
     WINNING_CONFIG,

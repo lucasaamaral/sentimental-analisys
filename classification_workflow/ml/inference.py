@@ -9,12 +9,12 @@ import pandas as pd
 import torch
 from transformers import AutoTokenizer, BertForSequenceClassification
 
-from sentiment_workflow.config.labels import (
+from classification_workflow.config.labels import (
     BASE_MODEL_LABEL_MAP,
     LABELS,
     normalise_label,
 )
-from sentiment_workflow.config.paths import TRAINING_METADATA_PATH
+from classification_workflow.config.paths import TRAINING_METADATA_PATH
 
 
 @dataclass

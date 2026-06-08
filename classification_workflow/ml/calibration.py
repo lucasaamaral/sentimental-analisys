@@ -12,8 +12,8 @@ from __future__ import annotations
 import numpy as np
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 
-from sentiment_workflow.config.labels import ID2LABEL, LABEL2ID
-from sentiment_workflow.ml.inference import apply_biases
+from classification_workflow.config.labels import ID2LABEL, LABEL2ID
+from classification_workflow.ml.inference import apply_biases
 
 
 # Fixed calibration biases found via grid search on the holdout set.

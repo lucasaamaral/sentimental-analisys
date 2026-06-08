@@ -7,20 +7,20 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from sentiment_workflow.config.paths import (
+from classification_workflow.config.paths import (
     BASE_CLASSIFIED_NEWS_PATH,
     FINETUNED_CLASSIFIED_NEWS_PATH,
     FINETUNED_MODEL_HF_REPO,
     SECONDARY_MODEL_HF_REPO,
 )
-from sentiment_workflow.data.records import (
+from classification_workflow.data.records import (
     finalize_records_file,
     load_records,
     load_seen_values,
     open_checkpoint_handle,
     write_jsonl_record,
 )
-from sentiment_workflow.ml.inference import (
+from classification_workflow.ml.inference import (
     describe_device,
     extract_calibration_parameters,
     format_calibration_parameters,

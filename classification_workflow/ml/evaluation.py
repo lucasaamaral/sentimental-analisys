@@ -9,11 +9,11 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 
-from sentiment_workflow.config.labels import ID2LABEL, LABEL2ID
-from sentiment_workflow.data.csv_utils import write_normalized_csv
-from sentiment_workflow.ml.calibration import label_value_dict_to_array
-from sentiment_workflow.ml.inference import apply_calibration, softmax_numpy
-from sentiment_workflow.ml.trainer import (
+from classification_workflow.config.labels import ID2LABEL, LABEL2ID
+from classification_workflow.data.csv_utils import write_normalized_csv
+from classification_workflow.ml.calibration import label_value_dict_to_array
+from classification_workflow.ml.inference import apply_calibration, softmax_numpy
+from classification_workflow.ml.trainer import (
     MAX_LEN,
     NewsDataset,
     _get_trainer_predictions,

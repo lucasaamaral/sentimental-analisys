@@ -19,8 +19,8 @@ from transformers import (
     TrainingArguments,
 )
 
-from sentiment_workflow.config.labels import ID2LABEL, LABEL2ID
-from sentiment_workflow.config.paths import BASE_MODEL_NAME as MODEL_NAME
+from classification_workflow.config.labels import ID2LABEL, LABEL2ID
+from classification_workflow.config.paths import BASE_MODEL_NAME as MODEL_NAME
 
 
 MAX_LEN = 256

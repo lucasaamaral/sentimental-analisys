@@ -12,14 +12,14 @@ from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from sentiment_workflow.config.labels import LABEL2ID
-from sentiment_workflow.config.paths import (
+from classification_workflow.config.labels import LABEL2ID
+from classification_workflow.config.paths import (
     CALIBRATION_SPLIT_PATH,
     TEST_SPLIT_PATH,
     TRAIN_MODEL_SPLIT_PATH,
     TRAIN_SPLIT_PATH,
 )
-from sentiment_workflow.data.csv_utils import write_normalized_csv
+from classification_workflow.data.csv_utils import write_normalized_csv
 
 
 # =========================================================================
