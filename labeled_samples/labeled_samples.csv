@@ -120,511 +120,506 @@ id,sentiment_text,human_label
 119,"Titulo: Analistas cortam projeções para Ibovespa, mas ainda preveem alta até o fim do ano com índice ""barato"" | Resumo: Alguns analistas projetam recuperação do Ibovespa após eleição levando em conta que índice está barato, enquanto outros projetam recuperação mais demorada",NEUTRAL
 120,"Titulo: Apesar da Vale, Ibovespa fecha estável e dólar sobe à espera de pacote fiscal",NEUTRAL
 121,Titulo: Bolsa opera com leve alta e Vale e Petrobras no foco; dólar sobe,NEUTRAL
-122,Titulo: Bolsa opera com leve alta e Vale e Petrobras no foco; dólar sobe,NEUTRAL
-123,"Titulo: Ibovespa ensaia melhora com reforma tributária, mas exterior e bancos pesam",NEUTRAL
-124,"Titulo: Dólar recua, mas engata 4ª semana consecutiva de ganhos; B3 fecha estável | Resumo: Moeda norte americana acumulou ganho de 1,71 por cento na semana; o Ibovespa subiu 0,76 por cento",NEUTRAL
-125,Titulo: Ibovespa tem sessão volátil com cena externa e papéis sensíveis aos juros,NEUTRAL
-126,"Titulo: Vale e siderúrgicas sobem até 21% na semana com ""Onda Azul"" nos EUA, enquanto e-commerce cai; Méliuz salta 22% na sessão | Resumo: Confira os destaques da B3 na semana e na sessão desta sexta-feira (8)",NEUTRAL
-127,"Titulo: Ação da CVC sobe com sinais de retomada, IRB dispara 12%, Vale cai e bancos avançam em dia de recuperação",NEUTRAL
-128,"Titulo: Ibovespa opera entre leves perdas e ganhos com Orçamento, CPI da Covid e exterior; dólar vai a R$ 5,66 | Resumo: Indefinições sobre Orçamento e determinação pelo STF de instalação de CPI da Covid são acompanhadas de perto pelos investidores",NEUTRAL
-129,"Titulo: Ibovespa exibe leve alta, limitada por exterior e cautela",NEUTRAL
-130,"Titulo: Ibovespa oscila sem viés firme com dados dos EUA e notícias corporativas | Resumo: Às 11h33, o Ibovespa subia 0,06%, a 74.595 pontos. O volume financeiro somava 1,9 bilhão de reais",NEUTRAL
-131,"Titulo: Ibovespa põe exterior de lado e zera perdas, de olho na cena política",NEUTRAL
-132,"Titulo: Ibovespa fica perto da estabilidade com pacote de Guedes | Resumo: Às 10:09, o Ibovespa caía 0,09%, a 108.681,40 pontos",NEUTRAL
-133,Titulo: Carteira gráfica da XP bate novamente o desempenho do Ibovespa e faz uma alteração,NEUTRAL
-134,Titulo: Dólar hoje opera estável e permanece no piso de R$ 6,NEUTRAL
-135,"Titulo: Ações da Cogna (COGN3) caem 13% em fevereiro; veja quais foram as maiores quedas do Ibovespa no mês | Resumo: Por outro lado, o Ibovespa, ainda que aos trancos e barrancos, acumulou uma alta de 0,99% no último mês",NEUTRAL
-136,"Titulo: Após ata do Copom, juros futuros têm viés de alta e dólar recua",NEUTRAL
-137,Titulo: Ibovespa Futuro opera perto da estabilidade entre alternativas para PEC da Transição e preocupação com a China,NEUTRAL
-138,"Titulo: Dólar hoje fecha a R$ 5,30 após oscilar abaixo dos R$5,28 com corte de juros nos EUA | Resumo: Investidores aguardam agora por decisão de juros no Brasil",NEUTRAL
-139,"Titulo: À espera da ""super quarta"", Ibovespa reduz ritmo e varia pouco | Resumo: Ibovespa terminou o pregão em queda de 0,10%, aos 106.528,09 pontos",NEUTRAL
-140,Titulo: Lira diz que Petrobras parou de investir para distribuir dividendos a acionistas e fala em privatização,NEUTRAL
-141,Titulo: B3 aumenta o investimento em esportes e entra no SP Open,NEUTRAL
-142,Titulo: CEOs do Elite InfoMoney respondem por 83% da receita das empresas listadas na B3,NEUTRAL
-143,Titulo: Venda de títulos por meio do Tesouro Direto será suspensa na terça por conta de greve de servidores,NEUTRAL
-144,Titulo: Elea capta R$ 790 milhões com debêntures verdes,NEUTRAL
-145,Titulo: Ibovespa Futuro sinaliza leve correção após melhor fechamento desde 2012; dólar e DIs caem,NEUTRAL
-146,Titulo: Dólar e Ibovespa têm leve alta à espera de dados dos EUA,NEUTRAL
-147,"Titulo: Demissões na Disney, IPCA , balanço do Bradesco, reação ao BB Seguridade e o que move o mercado | Resumo: Bolsas avançam no exterior na esteira de últimos resultados do quarto trimestre; lucro e receita da Disney superaram as estimativas do mercado",NEUTRAL
-148,"Titulo: Spread bancário resiste a cair, apesar da queda dos juros básicos | Resumo: Divulgado todos os meses pelo Banco Central, indicador acumulou alta de 0,6 ponto percentual no último trimestre de 2016, mesmo com a Selic em queda",NEUTRAL
-149,"Titulo: Cenário para inflação segue tranquilo, apesar da alta",NEUTRAL
-150,Titulo: Juro na mínima sustenta crédito imobiliário mesmo com pandemia,NEUTRAL
-151,"Titulo: Bolsonaro quer dólar abaixo de R$4, mas diz que problema não é só interno | Resumo: ""O mundo está todo conectado. Qualquer problema lá fora tem reflexo no mundo todo, não é só aqui, não"", disse",NEUTRAL
-152,Titulo: Vale é a empresa mais valiosa da América Latina e deixa Mercado Livre para trás | Resumo: Valor de mercado da mineradora brasileira está atualmente em US$ 102 bilhões,NEUTRAL
-153,"Titulo: Dólar fecha com estabilidade, a R$ 5,80, com tarifas dos EUA e inflação",NEUTRAL
-154,"Titulo: Inflação oficial fica em 0,11% em agosto, diz IBGE | Resumo: Segundo dados divulgados hoje (6) pelo Instituto Brasileiro de Geografia e Estatística (IBGE), o IPCA acumula taxas de inflação de 2,54% no ano e de 3,43% em 12 meses.",NEUTRAL
-155,"Titulo: Vendas do Tesouro Direto somam R$ 1,4 bilhão em maio",NEUTRAL
-156,Titulo: Fim do Drex? Entenda decisão do Banco Central,NEUTRAL
-157,Titulo: Veja quais as queixas mais comuns de investidores em órgão da bolsa,NEUTRAL
-158,"Titulo: Câmbio aproximou inflação da meta do Banco Central | Resumo: Se o câmbio não tivesse variado desde 31 de dezembro de 2024, permanecendo em R$ 6,18 por dólar em 2025, a inflação dos itens livres no IPCA seria 0,44 ponto percentual superior, diz André Cordeiro, do Inter",NEUTRAL
-159,Titulo: PIPELINE: Raízen vale R$ 74 bi no maior IPO do ano e o primeiro de ‘E2G’,NEUTRAL
-160,Titulo: Petrobras deixa ranking das 20 maiores pagadoras de dividendos no mundo,NEUTRAL
-161,Titulo: PETR4: ministro de Lula nega intervenção sobre dividendos da Petrobras e elogia CEO | Resumo: Rui Costa referendou trabalho de Jean Paul Prates e indicou que Lula não pretende fazer qualquer troca neste momento,NEUTRAL
-162,Titulo: BNDES lança plataforma para conectar investidores e projetos de desestatização | Resumo: O “Hub de Projetos” vai facilitar a conexão entre os investidores de capital de longo prazo nacionais e internacionais e dar acesso direto a informações sobre os projetos conduzidos pelo banco,NEUTRAL
-163,Titulo: De alta 10% à queda de 6%: 13 empresas reagem a balanços; só 3 das 59 ações do Ibovespa caem,NEUTRAL
-164,Titulo: Bovespa ronda a estabilidade pressionada por Petrobras,NEUTRAL
-165,"Titulo: Payroll, reação ao Copom e queda da Apple: 3 assuntos que movem o mercado nesta sexta | Resumo: Bolsas internacionais caminham sem uma direção definida, com investidores à espera de dados do mercado de trabalho dos EUA",NEUTRAL
-166,"Titulo: Não estava confortável em largar guidance, diz Galípolo sobre última reunião do Copom | Resumo: Para Galípolo, reduzir a magnitude do corte na taxa básica implicaria justificar que tinha acontecido uma mudança substancial no cenário",NEUTRAL
-167,"Titulo: Bolsonaro pode nomear militar para a Petrobras; balanço da Vale anima, Ambev decepciona e mais notícias",NEUTRAL
-168,"Titulo: Haddad diz que conversará com Campos Neto sobre fala em relação a ritmo de corte de juros | Resumo: Em reunião na quarta-feira, Campos Neto teria dito que a probabilidade de desacelerar o ritmo de corte da Selic de 50 para 25 pontos-base é maior do que aumentá-la",NEUTRAL
-169,"Titulo: Petrobras e mais 3 oportunidades de compra na Bolsa, com potencial de ganhos de até 36%",NEUTRAL
-170,"Titulo: Dólar salta para R$ 3,95 com maior chance de PT no 2º turno; Ibovespa fecha em alta | Resumo: Moeda teve forte valorização com tensão política, enquanto o Ibovespa ficou instável em dia de vencimento de opções sobre ações",NEUTRAL
-171,"Titulo: Juros futuros avançam com atividade local resiliente, mas perdem força com Powell",NEUTRAL
-172,"Titulo: Ibovespa avança, mas mercado mantém cautela com pré-candidatura de Flávio Bolsonaro",NEUTRAL
-173,"Titulo: Vale (VALE3) garante alta da Bolsa, Braskem (BRKM5) dispara com desdobramentos em Maceió e Magalu (MGLU3) cai | Resumo: Acompanhe o que movimenta a bolsa, ações, dólar, juros e commodities nos negócios do pregão desta quinta-feira (21).",NEUTRAL
-174,"Titulo: Governo eleva estimativas para crescimento e inflação em 2021 | Resumo: O boletim anterior, de março, previa uma alta de 3,20% do PIB e de 4,42% do IPCA para 2021.",NEUTRAL
-175,"Titulo: Lula diz que taxa de juros de 10,5% é irreal para inflação de 4%: 'mas não sou presidente do BC' | Resumo: Presidente afirmou ainda que 'isso vai melhorar quando puder indicar' o novo chefe da instituição, que substituirá Roberto Campos Neto",NEUTRAL
-176,"Titulo: Selic não vai reagir a dados de alta frequência, diz Campos Neto | Resumo: Em participação no MacroDay 2021, do BTG Pactual, Campos Neto afirmou que o BC está acompanhando os componentes do processo inflacionário, mas que nem sempre ocorrerão ""alterações no plano de voo""",NEUTRAL
-177,"Titulo: Selic: BC tranquiliza mercado sobre perspectivas de longo prazo, mas inflação e fiscal preocupam | Resumo: Em live do InfoMoney, economistas dizem que tom do comunicado do BC foi mais dovish, e destacam que Selic só deve subir na segunda metade de 2021",NEUTRAL
-178,"Titulo: Aplicar em FIIs até 12 meses antes de queda da Selic eleva retorno em até 8,8% ao ano, diz estudo da XP | Resumo: Investidores que se anteciparam acumularam retornos médios entre CDI mais 6% e 8,8% ao ano nos 12 meses seguintes ao primeiro corte",NEUTRAL
-179,Titulo: As ações do Ibovespa que mais subiram e as que mais caíram em abril,NEUTRAL
-180,"Titulo: B3 (B3SA3) distribuirá R$ 597,7 mi em dividendos e JCP, CVM aprova OPA da BR Properties (BRPR3) e Wiz (WIZC3) convoca AGE para reduzir payout",NEUTRAL
-181,"Titulo: De olhos nas fintechs, B3 se torna mantenedora da Associação Brasileira de Crédito Digital",NEUTRAL
-182,"Titulo: Follow-on da BRF, Copom, resultados nos EUA e o que move o mercado | Resumo: BRF pretende levantar mais de R$ 7 bilhões com oferta; dia terá divulgação de resultados no Brasil, com a Romi, e nos EUA, com Alphabet, GM e Exxon",NEUTRAL
-183,"Titulo: Mercadante evita falar de Petrobras (PETR4) em evento no BNDES | Resumo: O presidente do BNDES foi especulado como CEO da Petrobras, no lugar de Prates",NEUTRAL
-184,"Titulo: Campos: Home equity pode quase dobrar carteira de crédito imobiliário | Resumo: Abertura recente dos spreads no crédito não sugere risco sistêmico, indica Absolute",NEUTRAL
-185,"Titulo: Copom mantém Selic em 13,75% pela quinta reunião consecutiva | Resumo: SELIC HOJE: Banco Central manteve taxa de juros em 13,75%. Selic está nesse patamar desde agosto de 2022",NEUTRAL
-186,"Titulo: Após um ano, teto de juros do cartão tem pouco impacto sobre taxas",NEUTRAL
-187,Titulo: BNDES anuncia crédito de R$ 500 mi a fornecedores de materiais e equipamentos para SUS | Resumo: O programa estará vigente até junho de 2028 e tem como objetivo fomentar a indústria nacional que produz materiais de saúde,NEUTRAL
-188,Titulo: Capitalização do BNDES foi boa estratégia de investimento?,NEUTRAL
-189,"Titulo: Dólar se aproxima de R$ 4,80",NEUTRAL
-190,Titulo: Mercado ajusta inflação para cima e Selic para baixo em 2016,NEUTRAL
-191,"Titulo: Depois de levantar R$ 22 bi com Petrobras, BNDES prepara venda de JBS",NEUTRAL
-192,"Titulo: Inflação dependerá do andamento das reformas, aponta Copom | Resumo: Banco Central também antecipou que a inflação acumulada em 12 meses deve atingir um pico em torno de abril ou maio",NEUTRAL
-193,Titulo: CVM autoriza gestora brasileira a lançar primeiro ETF de Ethereum do país | Resumo: QETH11 será o primeiro ETF brasileiro a investir 100% do seu patrimôniona segunda maior criptomoeda do mundo; listagem na B3 ainda não tem data definida,NEUTRAL
-194,Titulo: Petrobras pagou mais dividendos do que a bolsa inteira: veja lista | Resumo: Itaú e Vale também estão no topo da lista das empresas que mais desembolsaram dividendos neste ano,NEUTRAL
-195,"Titulo: Itaú, B3, Banco do Brasil e mais 46 empresas divulgam resultados na próxima semana; confira | Resumo: Semana ainda traz os resultados de BRF, Telefônica, TIM e Azul para os investidores monitorarem de perto",NEUTRAL
-196,"Titulo: Selic a 6,25%: confira 20 ações que pagam dividendos acima da taxa básica de juros | Resumo: Levantamento da XP mostra empresas do setor elétrico, financeiro e de commodities entre as preferidas para pagarem proventos acima da Selic",NEUTRAL
-197,"Titulo: Petrobras (PETR4) encerra programa com recompra de 244,3 mil debêntures da 5ª, 6ª e 7ª emissão | Resumo: Estatal encerrou, no dia 15 de julho de 2023, seu 1º Plano de Recompra de Debêntures",NEUTRAL
-198,Titulo: Crédito para micro e pequena empresa,NEUTRAL
-199,"Titulo: B3 informa início de oferta de R$ 2,55 bilhões em debêntures",NEUTRAL
-200,Titulo: Analistas esperam Selic estável,NEUTRAL
-201,Titulo: Siderúrgicas sobem 6% e Vale vira para alta; Santander e mais 5 ações reagem a balanços,POSITIVE
-202,Titulo: Ibovespa ignora pessimismo nos EUA e vira para alta guiado por Vale e siderúrgicas | Resumo: Ações da mineradora sobem com nova política de dividendos e alta do minério de ferro,POSITIVE
-203,Titulo: Cenário eleitoral e fraqueza do dólar no exterior dão apoio ao real | Resumo: Real teve terceira melhor performance do dia entre as 33 principais divisas e Ibovespa emendou seu quarto pregão de altas,POSITIVE
-204,"Titulo: Ibovespa vira para alta com Petrobras e bancos; DIs despencam 12 pontos-base após ata do Copom | Resumo: De acordo com o diretor de operações da Mirae Asset, Pablo Spyer, o mercado está precificando 25% de chance de corte de 125 pontos-base na Selic na próxima reunião do Copom, marcada para 31 de maio",POSITIVE
-205,"Titulo: Ibovespa engata rali no final e fecha na máxima do dia com melhora nos EUA; dólar cai para R$ 3,78 | Resumo: Índice teve dia volátil, mas ganhou força na reta final com a Petrobras avançando em dia de recuperação do petróleo",POSITIVE
-206,"Titulo: Após bater R$ 5, dólar muda de rumo e firma queda com melhora externa | Resumo: Mudança ocorre em linha com a melhora do clima no exterior e, segundo analistas, foi impulsionada também por um forte fluxo de capital",POSITIVE
-207,"Titulo: Reação aos balanços da Vale e Petrobras, PIB na Europa, inflação nos EUA e o que mais move o mercado | Resumo: ADRs da Petrobras disparam no pré-mercado dos Estados Unidos, após resultado do segundo trimestre superar estimativas do mercado",POSITIVE
-208,"Titulo: Bolsa tem leve alta e dólar ronda R$ 3,70; IPCA merece atenção",POSITIVE
-209,Titulo: Ibovespa futuro sobe e dólar cai após emprego nos EUA decepcionar,POSITIVE
-210,"Titulo: Juros fecham em queda com maior otimismo sobre inflação | Resumo: O movimento teve como pano de fundo a melhora das expectativas sobre à inflação de curto prazo, após a Petrobras anunciar a redução nos preços da gasolina",POSITIVE
-211,Titulo: Queda da Selic incrementou fundos mistos e de ações,POSITIVE
-212,Titulo: Ibovespa dispara e dólar despenca: ativos domésticos têm melhora generalizada,POSITIVE
-213,Titulo: Ibovespa sobe e dólar opera em baixa com influência de cena externa,POSITIVE
-214,"Titulo: Ibovespa Futuro zera perdas e dólar e DIs viram para queda após inflação nos EUA ficar abaixo do esperado | Resumo: Índice futuro ganha força com dados americanos, apesar de Wall Street seguir com leves perdas",POSITIVE
-215,"Titulo: Ibovespa fecha na máxima do dia e volta a ficar acima de 72 mil pontos; dólar cai para R$ 3,13 | Resumo: Índice abriu em queda, mas ganhou força durante a tarde e conseguiu voltar a ficar acima de 72 mil pontos em dia de volume fraco",POSITIVE
-216,Titulo: Ibovespa Futuro sobe e juros recuam após IPCA ficar abaixo do esperado,POSITIVE
-217,"Titulo: Com Previdência no foco, Bolsa avança; dólar opera abaixo de R$ 3,65",POSITIVE
-218,Titulo: Ibovespa deixa pressão do câmbio de lado e sobe com commodities,POSITIVE
-219,Titulo: Ibovespa sobe 2% e dólar afunda com primeiro voto a favor da condenação de Lula,POSITIVE
-220,Titulo: Ibovespa renova topo e dólar perde força antes da Super Quarta; veja próximos pontos | Resumo: Expectativa por cortes de juros pressiona o dólar e fortalece o Ibovespa,POSITIVE
-221,"Titulo: Ibovespa Futuro ignora exterior e commodities, e abre em alta; DIs e dólar caem",POSITIVE
-222,Titulo: Ibovespa encerra em leve alta com apoio de NY e recuo dos juros futuros | Resumo: Declarações mais “dovish” de dirigentes do Federal Reserve (Fed) elevaram as apostas de cortes de juros nos Estados Unidos em dezembro,POSITIVE
-223,"Titulo: Bolsa reduz perdas da primeira semana do ano após governo ajustar discurso | Resumo: Ibovespa sobe em três pregões consecutivos após cair 5% nos dois primeiros da semana; dólar cai a R$ 5,23",POSITIVE
-224,Titulo: Ibovespa retoma os 110 mil pontos com prévia da inflação abaixo da esperada | Resumo: Dados do IPCA-15 vieram abaixo do projetado por economistas; índices dos EUA também avançam,POSITIVE
-225,"Titulo: Dólar à vista encerra estável, mas acumula 4 semanas seguidas de desvalorização",NEGATIVE
-226,"Titulo: Giro diminui em véspera de feriado, mas Ibovespa tem novo recorde",POSITIVE
-227,"Titulo: Há uma oportunidade de ouro na Bolsa: a última vez que isso ocorreu o Ibovespa subiu 290%, diz analista | Resumo: Para o analista Fernando Góes, se os gráficos semanal e mensal estiverem certos, o índice pode facilmente caminhar rumo aos 120.000 pontos, mas não tenha pressa, uma realização pode surgir no curto prazo",POSITIVE
-228,Titulo: Vale e siderúrgicas saltam até 5% seguindo ADRs e Petrobras avança 2%; Triunfo dispara após plano homologado,POSITIVE
-229,"Titulo: Com rali do petróleo e ""trégua"" na Lava Jato, Ibovespa atinge máxima do dia; dólar recua",POSITIVE
-230,"Titulo: Dólar fecha em queda com fluxo externo e Copom | Resumo: O tom do comunicado do Copom, confirmando uma nova alta de 1 ponto percentual em maio, favoreceu os fluxos de capital vindos do exterior, que também teve um dia positivo com a alta de commodities",POSITIVE
-231,"Titulo: Bradespar dispara 5% com distribuição de R$ 5,3 bi em ações da Vale | Resumo: Holding convocou assembleia para reduzir seu capital com a entrega das ações da mineradora a acionistas",POSITIVE
-232,"Titulo: Cyrela, MRV, IRB: as 10 maiores altas e baixas do Ibovespa em setembro | Resumo: Índice fecha setembro no positivo com impulso no último pregão antes de eleições",POSITIVE
-233,"Titulo: ADRs brasileiros operam em alta após corte de 0,75 ponto da Selic",POSITIVE
-234,"Titulo: Ação do Banco do Brasil sobe mais de 2% após resultado da oferta, Eletrobras avança 5% com fala de ministro sobre privatização",POSITIVE
-235,"Titulo: Brasil melhora em ranking de inflação e sai do 4° para o 8° lugar | Resumo: Confirmação de segunda deflação seguida do IPCA motivou recuperação; Turquia lidera ranking, seguida por Argentina e Rússia",POSITIVE
-236,Titulo: Ativos locais reduzem perdas com ajustes técnicos; Petrobras impulsiona bolsa,POSITIVE
-237,Titulo: Juros futuros fecham último pregão de 2018 no menor patamar do ano,POSITIVE
-238,"Titulo: Petrobras poderá experimentar nova alta, diz gestor de investimentos",POSITIVE
-239,"Titulo: Após nova alta da Selic, Lula diz que Brasil vai crescer mais de 3% em 2025",POSITIVE
-240,Titulo: Juros futuros firmam queda após leilão e com mercado de olho no Copom | Resumo: Dinâmica após leilão pode indicar que havia alguma pressão de alta sobre as taxas em antecipação à oferta,POSITIVE
-241,"Titulo: BC prevê que inflação em 2017 será a terceira menor do Plano Real | Resumo: O BC informou que a expectativa para o Índice de Preços ao Consumidor Amplo (IPCA) para 2017 no cenário de referência caiu de 4,4% para 4%",POSITIVE
-242,"Titulo: Volume de emissões em setembro foi elevado, com qualidade muito boa, diz Tesouro | Resumo: Como exemplo dessa qualidade “muito boa”, o coordenador-geral de Operações da Dívida Pública do Tesouro Nacional, Luís Felipe Vital, destacou o fato de que 44% das emissões foram de títulos pré-fixados",POSITIVE
-243,"Titulo: Copom se reúne nesta quarta e deve cortar os juros para 11,75% ao ano | Resumo: Diretores do Banco Central devem reduzir a taxa básica de juros em 0,5 ponto percentual, segundo estimativas dos economistas",POSITIVE
-244,"Titulo: Ambiente que se desenha é bom para ativos de risco, tanto na renda fixa quanto na variável, diz Itaú",POSITIVE
-245,Titulo: Banco Central conduz Selic a um novo recorde de baixa,POSITIVE
-246,"Titulo: IPCA avança 6,29% em 2016 e fica abaixo do teto da meta de inflação",POSITIVE
-247,"Titulo: Com liquidez limitada, juros futuros fecham em ligeira queda",POSITIVE
-248,"Titulo: IPCA-15 fica em 0,09% em outubro, menor taxa para o mês desde 1998",POSITIVE
-249,"Titulo: BC deve reduzir Selic em 0,5 ponto porcentual na quarta-feira, diz Barclays | Resumo: O banco britânico espera redução da taxa Selic a 11,75% no fim de 2023 e a 9,5% no término do ciclo de cortes, que deve ocorrer em meados de 2024",POSITIVE
-250,Titulo: Juros futuros fecham em queda com Copom e cenário externo no foco | Resumo: Cenário de preocupação com a saúde dos bancos regionais nos Estados Unidos contribuiu adicionalmente para o movimento de queda nesta quinta (4),POSITIVE
-251,"Titulo: IPCA-15: prévia da inflação cai 0,14% em agosto, primeira deflação em dois anos",POSITIVE
-252,Titulo: Juros futuros caem após IPCA-15 mais baixo do do esperado,POSITIVE
-253,"Titulo: Dólar cai a R$ 4,85, menor patamar desde início de agosto",POSITIVE
-254,Titulo: Juros têm forte baixa em dia de alívio local,POSITIVE
-255,"Titulo: Focus tem 1ª alta de Selic de 2024 desde outubro, para 9,13%, mas IPCA cai para 3,71% | Resumo: Mediana das projeções para o crescimento da economia brasileira em 2024 subiu pela 9ª semana consecutiva, agora indo de 1,90% para 1,95%",POSITIVE
-256,"Titulo: Dólar fecha a R$ 4,10 e Bolsa avança com força pelo 2º dia",POSITIVE
-257,Titulo: Dólar fecha no menor patamar desde o dia 18 de junho,POSITIVE
-258,Titulo: Estímulo ao crédito privado no setor de infraestrutura,POSITIVE
-259,Titulo: Ibovespa Futuro sobe antes de dado de emprego dos EUA; juros avançam com IPCA,POSITIVE
-260,"Titulo: Ibovespa inicia semana em alta com otimismo externo | Resumo: Alta só não é maior por conta de incertezas em relação à política monetária local, às vésperas da decisão de juros do Copom",POSITIVE
-261,Titulo: Ibovespa sobe e volta ao nível pré-crise política; dólar varia pouco,POSITIVE
-262,Titulo: Ibovespa Futuro sobe com indicadores e recuperação de perdas recentes; dólar avança | Resumo: Ambiente internacional não favorece uma correção das perdas registradas pelas ações brasileiras no início da semana,POSITIVE
-263,"Titulo: Ibovespa fecha na máxima do dia com exterior e adiamento no TSE; dólar fica abaixo de R$ 3,10 | Resumo: Índice seguiu a melhora de humor no exterior após discurso de Trump e com disparada da Vale, enquanto petróleo sobe com rumores sobre estoques nos EUA",POSITIVE
-264,"Titulo: Ibovespa Futuro segue commodities e abre em alta; dólar cai a R$ 3,10 com swaps do BC",POSITIVE
-265,"Titulo: Trade hoje: Ibovespa segue em tendência de alta no curto prazo, mas esbarra na região dos 120,5 mil pontos, pela análise técnica | Resumo: Trade hoje: Ibovespa segue em tendência de alta no curto prazo, mas esbarra na região dos 120,5 mil pontos, segundo análise técnica",POSITIVE
-266,"Titulo: Ibovespa Futuro sobe após Copom elevar a Selic a 2,75%; dólar cai a R$ 5,48",POSITIVE
-267,Titulo: Ibovespa tem valorização; dólar cai ante real com cena externa,POSITIVE
-268,"Titulo: Ibovespa avança 1,16% e vai a 113 mil pontos, com ações de bancos e mercado interno; dólar cai 1,10%, a R$ 5,14 | Resumo: Banco se recuperam de quedas causadas por caso Americanas e companhias ligadas ao mercado interno se beneficiam de IPCA-15",POSITIVE
-269,Titulo: Ibovespa sobe em último pregão do ano com ajuda do exterior; Dólar cai 2%,POSITIVE
-270,"Titulo: Ibovespa dispara 2,8% e supera os 98 mil pontos com exterior e reforma da Previdência; dólar cai | Resumo: Índice passou o dia no positivo e ganhou forças junto com Wall Street enquanto investidores aguardam andamento da reforma no Congresso",POSITIVE
-271,"Titulo: Ibovespa volta a encostar nos 107 mil pontos com confirmação de novo secretário; dólar cai e é negociado abaixo dos R$ 5,70",POSITIVE
-272,"Titulo: Rali Bolsonaro: Ibovespa dispara 3,5% e fecha na máxima histórica otimista com novo governo | Resumo: Índice chegou a abrir em queda, mas disparou com euforia dos investidores sobre as falas e novidades do primeiro dia do governo de Jair Bolsonaro",POSITIVE
-273,Titulo: Ibovespa fecha em alta com ajuda de Vale e de olho em corte de juros nos EUA; dólar cai | Resumo: As apostas para uma redução mais agressiva dos juros americanos saltaram de 15% para 45%,POSITIVE
-274,Titulo: Ibovespa sobe puxado por Petrobras e bancos; dólar cai por onda de otimismo com Bolsonaro,POSITIVE
-275,"Titulo: Ibovespa acelera alta com exterior e falas de Lira e Pacheco sobre precatórios; dólar cai a R$ 5,28",POSITIVE
-276,"Titulo: Ibovespa passa a subir com apoio de bancos, apesar de queda de ações ligadas a commodities",POSITIVE
-277,Titulo: Ibovespa futuro volta a acompanhar exterior e sobe mais de 1%; juros avançam após IPCA-15,POSITIVE
-278,"Titulo: Ibovespa sobe 0,78% puxado por ações de commodities | Resumo: Alta de commodities, queda do dólar e expectativa de corte de juros no Brasil estiveram entre os argumentos dos investidores para as compras",POSITIVE
-279,Titulo: Ibovespa dispara e bate recorde com perspectiva de fim do ciclo de alta da Selic,POSITIVE
-280,"Titulo: Ibovespa futuro sobe em linha com exterior, à espera do Fomc; dólar e juros recuam",POSITIVE
-281,"Titulo: Mercado comemora eleições ""sem surpresas"" na França, e Ibovespa opera em alta; dólar e DIs caem",POSITIVE
-282,Titulo: Ibovespa hoje: bolsa salta quase 2% com fim do ciclo de alta de juros,POSITIVE
-283,Titulo: Ibovespa sobe e dólar cai com alívio nas relações entre EUA e China; juros estendem quedas depois de deflação no Brasil,POSITIVE
-284,Titulo: Ibovespa sobe seguindo Wall Street sem perder de vista o fiscal; dólar cai 2% com Fed,POSITIVE
-285,"Titulo: Ibovespa sobe 0,6% e encosta nos 87 mil pontos com mercado cravando corte da Selic | Resumo: Índice se descolou do mercado externo após relatório Focus aumentar as apostas de corte da Selic na próxima semana",POSITIVE
-286,Titulo: Ibovespa Futuro tem leve alta antes de falas de membros do Fed; dólar e DIs caem,POSITIVE
-287,Titulo: Ibovespa sobe e dólar apaga alta após declarações de Haddad e Campos Neto em Washington,POSITIVE
-288,Titulo: Ibovespa vai às máximas com recuo mais intenso dos juros futuros e impulso de Petrobras,POSITIVE
-289,Titulo: Ibovespa Futuro sobe em meio a aproximação entre Bolsonaro e Maia; dólar cai,POSITIVE
-290,"Titulo: Ibovespa fecha em alta e dólar cai com expectativas sobre Previdência | Resumo: Ibovespa subiu 1,14%, a 95.947,62 pontos, e dólar à vista caiu 0,27%, a R$ 4,0242 na venda",POSITIVE
-291,Titulo: Ibovespa fecha em leve alta e dólar cai,POSITIVE
-292,"Titulo: Exportação de minério sustenta alta da Vale na Bolsa | Resumo: Alta no preço do minério de ferro tem ajudado a sustentar as ações da empresa, apesar de uma queda nos volumes previstos pela mineradora",POSITIVE
-293,Titulo: Petrobras e Vale empurram Ibovespa acima de 100 mil pontos; dólar cai,POSITIVE
-294,"Titulo: Ibovespa opera de lado no último pregão de 2023, mas deve terminar o ano com alta firme",POSITIVE
-295,Titulo: Ibovespa sobe com influência do cenário externo; dólar recua,POSITIVE
-296,"Titulo: Ibovespa fecha em alta com inflação nos EUA e Orçamento Federal de 2024 | Resumo: Na última sessão antes do Natal, investidores repercutiram dados dos EUA e orçamento do Brasil para 2024",POSITIVE
-297,"Titulo: Ibovespa fecha em alta de mais de 3% com suspensão da tarifas recíprocas; dólar despenca | Resumo: Agentes do mercado reagem a alívio na guerra tarifária; dólar, que havia superado os 6%, vai a menos de R$ 5,90",POSITIVE
-298,"Titulo: Ibovespa volta subir, apesar da queda das ações da Petrobras",POSITIVE
-299,Titulo: Ibovespa Futuro sobe com expectativa por sinalização de tolerância à inflação do Fomc; dólar cai,POSITIVE
-300,"Titulo: Ibovespa Futuro (INDFUT) acompanha exterior e opera em alta, à espera de dados de inflação da China, Brasil e EUA | Resumo: IPCA de agosto no Brasil, juros na Europa e inflação nos EUA são destaque na semana",POSITIVE
-301,Titulo: Petrobras e bancos saltam até 3%; Eletrobras dispara 8% com mercado animado com privatização; small cap sobe 50% em 3 pregões,POSITIVE
-302,"Titulo: Ibovespa vira para alta em pregão extremamente volátil enquanto EUA amenizam queda; dólar sobe a R$ 5,30 | Resumo: Virada incrível da Bolsa nas últimas horas de pregão promete levar índice a fechar semana com tom mais positivo",POSITIVE
-303,Titulo: Ibovespa sobe com inflação nos EUA gerando alívio no mercado; dólar sobe mesmo com atuação do BC | Resumo: Inflação ao consumidor norte-americano ficou em linha com esperado e gera alívio sobre o ritmo de preços um dia antes da reunião do Fed,POSITIVE
-304,"Titulo: Com bolsas em NY em alta e dólar estável, Ibovespa tenta consolidar valorização | Resumo: Ibovespa em alta, dólar pressionado e Nasdaq renova máximas: veja análise",POSITIVE
-305,"Titulo: Ibovespa sobe com alívio na inflação, mas cautela com comércio global permanece",POSITIVE
-306,"Titulo: Rali longe do fim: Ibovespa sobe 2,5% na semana e dólar tem 9ª queda semanal seguida | Resumo: Mercado tem novo dia de realização, mas consegue praticamente zerar as perdas no fim do pregão, registrando a sétima semana de ganhos nas últimas oito",POSITIVE
-307,"Titulo: Ibovespa salta 2,6%, dólar cai 1%: como as falas de Powell animaram mercado nesta 6ª? | Resumo: Powell trouxe indicações de que uma queda de juros pelo Fed está mais próxima e anima investidores",POSITIVE
-308,"Titulo: Ibovespa sobe mais de 1% e dólar cai para R$ 3,70 com balanços e recuperação em Wall Street | Resumo: Índice perdeu força na reta final do pregão após chegar a subir mais de 2%, mas conseguiu fechar acima dos 84 mil pontos",POSITIVE
-309,"Titulo: Ibovespa nas máximas além de 142 mil, dólar a R$ 5,41: como payroll animou mercado | Resumo: Dia foi de forte ânimo após dados fracos do mercado de trabalho nos EUA",POSITIVE
-310,"Titulo: Bolsa sobe com exterior, mas dólar segue sob pressão | Resumo: Ibovespa fecha nos 93.531 pontos; dólar atinge R$ 5,2365",POSITIVE
-311,"Titulo: Ibovespa sobe 1% e tem quarta alta consecutiva em dia ""sem"" EUA; dólar cai abaixo de R$ 3,90 | Resumo: Índice chegou a subir mais de 2%, mas perdeu força após o fechamento de Wall Street, que encerrou os negócios mais cedo por conta do feriado desta quarta",POSITIVE
-312,"Titulo: Ibovespa sobe 1,89% e dólar cai 0,73% após arcabouço fiscal: anúncio é o gatilho que o mercado esperava? | Resumo: De uma forma geral, analistas avaliaram o anúncio como positivo, mostrando preocupação do governo com fiscal, mas ainda há pontos a serem esclarecidos",POSITIVE
-313,"Titulo: Juros futuros operam nas mínimas após dados dos EUA e com otimismo para ativos locais | Resumo: Segundo participantes do mercado, a dinâmica é justificada pela queda do dólar frente ao real e pela demanda estrangeira por ativos locais",POSITIVE
-314,"Titulo: Apesar de tensão política, Ibovespa futuro sobe e dólar cai seguindo alívio no exterior",POSITIVE
-315,"Titulo: Ações da Petrobras (PETR4, PETR3) têm alta forte em dia favorável a ativos de risco e com revisão de preço-alvo | Resumo: Queda mais forte do dólar globalmente e dados mais fracos da economia americana ajudam a impulsionar a demanda por ativos de países emergentes",POSITIVE
-316,"Titulo: Ibovespa reduz ganhos com fraqueza de bancos, mas segue em alta graças a Wall Street; dólar cai a R$ 5,29 | Resumo: Mercado registra ganhos com as atenções voltadas ao noticiário internacional",POSITIVE
-317,Titulo: Ibovespa Futuro segue em alta com foco em taxa de juros e inflação nos EUA | Resumo: Alívio na taxa de juros do Tesouro americano e a alta do preço do petróleo Brent são alguns dos temas de maior destaque no último pregão de setembro,POSITIVE
-318,Titulo: Ativos locais registram alta em dia de IPCA-15,POSITIVE
-319,"Titulo: Juros futuros fecham em alta com riscos fiscais e atividade econômica no foco | Resumo: Durante a tarde desta quinta, os juros longos foram às máximas do dia, num movimento atrelado ao avanço firme dos rendimentos dos títulos do Tesouro americano",NEGATIVE
-320,"Titulo: IPCA-15 sobe em 0,35% em agosto, ante queda de 0,18% em julho, revela IBGE | Resumo: A inflação de 0,35% registrada em agosto foi o resultado mais elevado para o índice desde fevereiro, quando a taxa foi de 0,54%, informou o IBGE. No mesmo mês do ano passado, a alta do IPCA-15 havia ficado em 0,45%.",NEGATIVE
-321,"Titulo: Após 3 quedas seguidas, dólar fecha em alta | Resumo: Moeda americana terminou a segunda-feira cotada em R$3,73 - alta de 0,53% ante o real",NEGATIVE
-322,"Titulo: Dólar vai às mínimas em quase 7 meses e fecha a R$ 5,107",POSITIVE
-323,"Titulo: Leite sobe 22% em julho, maior influência na alta do IPCA-15, e acumula inflação de 57% no ano | Resumo: Produto representou 0,25 ponto percentual do resultado do índice prévia da inflação, que subiu 0,13% no mês",NEGATIVE
-324,"Titulo: Dólar atinge maior nível em uma semana, mas respeita nível de R$ 3,72",NEGATIVE
-325,Titulo: Juros futuros fecham em leve alta puxados pelo avanço do dólar,NEGATIVE
-326,Titulo: Juros futuros avançam com alta do dólar e cautela na cena política,NEGATIVE
-327,"Titulo: Juros futuros avançam com Treasuries e cautela antes do IPCA-15 | Resumo: A proximidade de divulgação do IPCA-15 imprime um viés de cautela aos negócios e contribui para o avanço das taxas locais, que também respondem à dinâmica externa",NEGATIVE
-328,"Titulo: Projeções para inflação em 2022 e 2023 têm altas fortes, mostra Focus | Resumo: O levantamento semanal apontou que as expectativas para a alta do IPCA subiram para 5,38% em 2022 e 3,50% em 2023, respectivamente de 5,15% e 3,40% na semana anterior",NEGATIVE
-329,"Titulo: IPCA fecha 2019 com alta de 4,31%, acima do centro da meta de inflação | Resumo: Apenas em dezembro, índice de preços avançou 1,15%, a taxa mais alta para o mês desde 2002",NEGATIVE
-330,Titulo: Dólar fecha estável apesar de exterior favorável a emergentes,NEUTRAL
-331,"Titulo: Dólar renova máximas e vai a R$ 5,37 em dia de exterior negativo",NEGATIVE
-332,"Titulo: Dólar fecha perto de R$ 4,24, mesmo após intervenções do BC | Resumo: A atuação da autoridade monetária até conteve um salto maior do dólar contra o real, mas o efeito foi bastante limitado",NEGATIVE
-333,"Titulo: Dólar tem leve alta em dia de dado de inflação nos EUA mais fraco | Resumo: Pela cautela dos investidores, divisa americana segue ligeiramente mais forte ante o real, em uma dinâmica distinta da observada em mercados pares",NEGATIVE
-334,Titulo: Dólar renova mínimas em quase um ano e juros de curto prazo disparam,NEUTRAL
-335,"Titulo: Dólar em breve baterá R$6, dizem analistas após moeda cravar novo recorde | Resumo: Fechando em R$ 5,87, a moeda subiu mais de 13 centavos entre uma sessão e outra. Na máxima do pregão, o câmbio atingiu novo pico intradiário",NEGATIVE
-336,Titulo: Juros futuros fecham em alta com exterior e estimativa sobre inflação,NEGATIVE
-337,"Titulo: Juros futuros têm novo dia de alta com dólar a R$ 4,40",NEGATIVE
-338,"Titulo: Juros futuros fecham em alta, mas abaixo do patamar pré-atentado",NEGATIVE
-339,"Titulo: Dólar sobe e testa os R$ 3,30 com risco político no horizonte",NEGATIVE
-340,"Titulo: Dólar dos R$ 4,60 aos R$ 5: o que explica a forte alta da divisa americana nas últimas sessões | Resumo: A alta do dólar acumulada entre sexta e segunda foi de 5,59%, a mais forte na mesma base de comparação desde 18 de maio de 2017",NEGATIVE
-341,Titulo: Juros futuros têm leve alta com dólar e exterior,NEGATIVE
-342,Titulo: Dólar e euro têm mínimas em mais de um ano frente ao real,POSITIVE
-343,"Titulo: Juros futuros fecham em alta firme, guiados por exterior e riscos fiscais",NEGATIVE
-344,"Titulo: Dólar sobe com BC, mas ainda abaixo de R$3,65 | Resumo: O dólar fechou em alta frente ao real, mas ainda abaixo de 3,65 reais, sustentado pela atuação do Banco Central",NEUTRAL
-345,Titulo: Juros futuros fecham em alta com IPCA-15 acima do consenso e discurso de Powell,NEGATIVE
-346,"Titulo: Dólar sobe a R$ 3,78, mas operadores veem algum alívio no mercado",NEUTRAL
-347,Titulo: Juros futuros avançam com aumento do prêmio de risco e movimentos técnicos,NEGATIVE
-348,Titulo: Juros futuros fecham em alta firme com expectativas de inflação e Treasuries no foco,NEGATIVE
-349,"Titulo: IPCA sobe 0,38% em abril, acima do esperado pelo mercado, mas a menor taxa para o mês desde 2021",NEUTRAL
-350,"Titulo: Bitcoin atinge alta histórica no Brasil impulsionado por alta do dólar | Resumo: Com moeda norte-americana negociada a R$ 5,60, bitcoin ultrapassa barreira dos R$ 70 mil em exchanges brasileiras pela primeira vez na história",POSITIVE
-351,"Titulo: Dólar avança frente ao real, mas se distancia de máxima do dia",NEUTRAL
-352,"Titulo: Juros futuros têm leve alta, após irem às máximas com fala de Powell",NEGATIVE
-353,Titulo: Juros futuros fecham em alta com foco em riscos políticos e fiscais,NEGATIVE
-354,"Titulo: IPCA avança 0,44% na inflação em agosto, em linha com o esperado | Resumo: Para o acumulado em 12 meses, a expectativa da mediana dos analistas era de em torno de 8,66% de inflação",NEUTRAL
-355,"Titulo: IPCA-15 sobe 0,34% em dezembro e fecha 2024 acumulado em 4,71% | Resumo: Alimentação e bebidas foi a principal influência para a alta do IPCA-15 em dezembro",NEUTRAL
-356,"Titulo: Dólar sobe 0,78% com investidores de olho em arcabouço, mas fecha abaixo de R$ 5 pela quinta sessão seguida | Resumo: Com a divulgação do documento, no meio da tarde, o dólar chegou a bater o valor máximo do dia, chegando a subir mais de 1%, mas desacelerou",NEUTRAL
-357,"Titulo: Juros futuros fecham semana em leve alta, apesar de recuo no dia",NEUTRAL
-358,"Titulo: IPCA sobe 0,18% em novembro com alta de passagens aéreas, mas fica abaixo do esperado | Resumo: Analistas consultados pela Reuters tinham projeção média de alta de 0,20% na comparação mensal e avanço de 4,49% na visão ano a ano",POSITIVE
-359,"Titulo: Ibovespa retoma os 100 mil pontos | Resumo: Ibovespa retoma 100 mil pontos com alta de bancos, mas dólar sobe devido à cautela com exterior",POSITIVE
-360,"Titulo: Ibovespa futuro acompanha exterior e inicia semana em alta; dólar recua novamente | Resumo: Apesar do movimento positivo, os investidores seguem cautelosos com a alta da inflação pelo menos e expectativa de alta de juros",POSITIVE
-361,"Titulo: Ibovespa perde força no fim, mas fecha em alta com Vale e Petrobras; dólar sobe | Resumo: Mercado teve dia de alta impulsionado pela alta das commodities após aceno positivo da China. Apesar disso, índice encerrou o dia com ganhos de menos de 1%",POSITIVE
-362,"Titulo: Rentabilidade sobe, mas inflação corrói ganhos em 2021 | Resumo: Nove das 11 categorias de fundos avaliadas no ranking apresentaram retornos positivos até outubro, mas nenhuma bateu a inflação",NEGATIVE
-363,"Titulo: Dia de quedas; dólar sobe 1,61% | Resumo: Dia de quedas Afetada fortemente pelo cenário internacional, a bolsa teve um dia vermelho. Entre as ações do Ibovespa somente sete tiveram alta nesta terça-feira véspera de feriado. A maior alta do dia é a da fabricante de aviões Embraer, impulsionada pelo balanço do terceiro trimestre e pela alta do dólar. A moeda americana subiu […]",NEGATIVE
-364,"Titulo: Ibovespa Futuro abre em alta de olho nos EUA e no G20; dólar cai e DIs avançam | Resumo: O Ibovespa Futuro é um bom termômetro de como será o pregão, mas nem sempre prevê adequadamente movimentos na Bolsa a partir do sino de abertura.",POSITIVE
-365,"Titulo: Ibovespa segue exterior de olho no Brexit e segura euforia após duas fortes altas; dólar cai | Resumo: Índice opera entre perdas e ganhos atento ao cenário externo, enquanto a moeda norte-americana recua após dado de inflação nos EUA",POSITIVE
-366,"Titulo: Ibovespa oscila sem rumo firme, mas caminha para ganhos no mês",POSITIVE
-367,"Titulo: Dólar e juros saem das máximas, mas seguem em alta",NEGATIVE
-368,"Titulo: ""Valuation de R$ 55 bi"" faz Braskem saltar quase 7%; Suzano cai 5% com dólar em queda e mais destaques | Resumo: Confira os destaques da B3 na sessão desta quarta-feira (10)",NEUTRAL
-369,"Titulo: Busca por risco faz bolsa testar máxima do ano; dólar cai para R$ 3,27",POSITIVE
-370,"Titulo: Dólar à vista tem 5ª sessão seguida de queda e fecha cotado a R$ 5,48 | Resumo: A direção oposta a ser seguida pelo Banco Central e pelo Federal Reserve (Fed), ampliando o diferencial de juros entre Brasil e Estados Unidos, tem sido a explicação para a valorização consistente do real nas últimas sessões",POSITIVE
-371,"Titulo: Ibovespa futuro acompanha exterior e avanço de commodities e registra alta; dólar cai | Resumo: Wall Street Journal destacou que o Fed está a caminho de elevar as taxas de juros em 75 pontos-base em sua reunião, sem aceleração no ritmo de alta",POSITIVE
-372,"Titulo: Euforia na bolsa: Usiminas salta 9%, Eletrobras avança 7%, BB sobe 3% e Petrobras avança apesar de negativa sobre privatização",POSITIVE
-373,"Titulo: Com deflação, IPCA tem alívio pontual, mas seca já pressiona",NEUTRAL
-374,Titulo: Boom de máximas históricas: 20 ações do Ibovespa que bateram recordes em junho de 2025,POSITIVE
-375,"Titulo: Economistas Top 5 projetam alta de 2,59% para IPCA em 2020, mostra Focus",NEGATIVE
-376,"Titulo: Mercado melhora projeções de 2017, mas eleva previsão de IPCA em 2016",NEUTRAL
-377,"Titulo: Ibovespa emenda quarto pregão de alta, mas Vale limita ganhos do índice",NEUTRAL
-378,"Titulo: Ibovespa recupera 120 mil pontos, juros aprofundam baixa e dólar recua após falas de presidente da Febraban sobre reunião com Haddad | Resumo: Isaac Sidney disse que os participantes reafirmaram apoio institucional ao ministro e que saíram convencidos de que Haddad “está determinado em buscar reequilíbrio das contas públicas”",POSITIVE
-379,"Titulo: Ibovespa Futuro acompanha NY e opera com leve baixa, em dia de dados do mercado de trabalho nos EUA e Brasil | Resumo: Geração de empregos formais no Brasil e PIB dos EUA são alguns dos temas de maior destaque nesta quarta-feira",NEGATIVE
-380,Titulo: Mercado vê Selic estável até o fim do ano mesmo com incertezas,NEUTRAL
-381,"Titulo: Bancos garantem melhora do crédito, mas queda menor da Selic pode frear crescimento",NEUTRAL
-382,"Titulo: Bolsa amplia ganhos, na máxima em 5 anos; dólar vai a R$ 3,05 com repatriação e swap | Resumo: Investidores ""desafiam"" correção na Bovespa após índice atingir máxima em cinco anos",POSITIVE
-383,"Titulo: Ibovespa Futuro segue cautela externa, com investidores atentos a Trump e Yellen; dólar e DIs caem | Resumo: Após sessões de tensão em meio às dúvidas quanto à capacidade do governo Donald Trump aprovar reformas no Congresso, a sessão é de maior ânimo para os principais mercados mundiais",POSITIVE
-384,"Titulo: Ibovespa sobe, mas risco político mantém cautela dos investidores",POSITIVE
-385,"Titulo: Bolsa sobe com Petrobras e dólar supera R$ 3,34 antes de meta fiscal",POSITIVE
-386,Titulo: Juros futuros se ajustam em alta ao IBC-Br e dólar reage em queda,NEUTRAL
-387,"Titulo: Petrobras: BBI vê alta de 57% em dólar para PETR4 com mudança de governo | Resumo: Em cenário de mudança política, BBI ainda prevê um dividend yield de 12% por pelo menos cinco anos",POSITIVE
-388,"Titulo: Via (VIIA3) e Magazine Luiza (MGLU3): Apesar da queda dos juros, por que as varejistas não animam os investidores? | Resumo: Dificuldades operacionais, questões tributárias e até mesmo incertezas quanto ao nível de queda da Selic travam valor das varejistas",NEGATIVE
-389,"Titulo: Boletim Focus: mercado vê inflação maior em 2023, 2024 e 2025 e Selic mais alta neste ano | Resumo: Instituições financeiras consultadas semanalmente pelo BC também passaram a estimar PIB levemente superior neste ano, mas inferior em 2025",NEGATIVE
-390,Titulo: A ação que chama atenção por sua resiliência mesmo com a derrocada do mercado | Resumo: QGEP Participações segue em tendência de alta no curto prazo mesmo com a queda do Ibovespa,NEUTRAL
-391,"Titulo: 'Estamos bastante cautelosos com a melhora da inflação', diz presidente do BC | Resumo: Roberto Campos Neto ressaltou, porém, que embora o último dado de inflação tenha vindo acima do esperado, as partes de núcleos e de serviços melhoraram",NEUTRAL
-392,"Titulo: Juros futuros se ajustam em alta, com agentes à espera do IPCA",NEGATIVE
-393,"Titulo: Eletrobras é destaque positivo, mas Ibovespa cai; dólar sobe",NEGATIVE
-394,"Titulo: Ibovespa tem alívio no fim, mas não evita queda de 2,5% na semana; dólar salta 3,8% e vai a R$ 3,74 | Resumo: Apesar de dia de alívio dos Treasuries, o dólar seguiu sua trajetória de alta e mercado já fica de olho para aumento de intervenção do Banco Central",NEGATIVE
-395,"Titulo: Eletrobras é destaque positivo, mas Ibovespa cai; dólar sobe",NEGATIVE
-396,"Titulo: Eletrobras é destaque positivo, mas Ibovespa cai; dólar sobe",NEGATIVE
-397,"Titulo: Ibovespa sobe 0,61% na sessão, mas cai 1,6% na 1ª semana de 2024 com atenção aos juros nos EUA | Resumo: Semana foi marcada pela divulgação de dados do mercado de trabalho nos EUA e ata do Fomc",NEGATIVE
-398,Titulo: Ibovespa fecha nas mínimas com maior aversão a risco local e forte subida dos juros futuros,NEGATIVE
-399,"Titulo: Ibovespa cai de olho em Previdência, mas sustenta 72 mil pontos",NEGATIVE
-400,"Titulo: Ibovespa tem semana positiva, mas recua na sessão acompanhando NY",NEGATIVE
-401,"Titulo: Ibovespa sobe, mas não evita queda de 0,6% na semana pressionado por Petrobras e Bradesco | Resumo: Correção nas ações de instituições financeiras após a forte queda de ontem salvou o desempenho da Bolsa nesta sexta",NEGATIVE
-402,"Titulo: Ibovespa ensaia recuperação após notícias de Fed e 5G, mas fecha em queda de 0,45%; dólar sobe a R$ 5,14",NEGATIVE
-403,"Titulo: Ibovespa fecha em alta de 0,26% após renovar máxima no dia; ganho na semana foi de 2,5% | Resumo: Dólar fecha estável, a R$ 5,32, mas cai 0,62% na semana",NEGATIVE
-404,"Titulo: Ibovespa sobe mais de 1% com disparada da Petrobras, mas não evita queda de 2% na semana | Resumo: Commodity faz perto de 12% de alta em meio a notícias cada vez mais fortes de acordo para corte de produção pela Opep",NEGATIVE
-405,"Titulo: Ibovespa tem 5ª alta seguida e acumula ganhos de 2,6%; governo fará corte de orçamento amanhã | Resumo: Índice se firmou no positivo durante a tarde, mas seguiu pressionado com o cenário político e anúncio do governo marcado para esta quarta-feira",POSITIVE
-406,"Titulo: De olho na política, Ibovespa fica estável e JBS dispara 22% | Resumo: Após a forte queda na semana passada, quando o Ibovespa perdeu mais de 8%, o ajuste vinha sendo guiado pela perspectiva otimista de avanço das reformas",NEUTRAL
-407,"Titulo: Bovespa sobe com disparada de Petrobras, mas cai na semana",NEGATIVE
-408,"Titulo: Ibovespa volta a subir, mas não sustenta os 76 mil pontos",NEUTRAL
-409,"Titulo: Ibovespa sobe, mas não recupera os 104 mil pontos de olho na temporada de resultados",NEUTRAL
-410,Titulo: Ibovespa fecha no maior patamar em 6 anos: quais são as próximas resistências até o topo histórico?,POSITIVE
-411,"Titulo: Dólar sobe, puxa juro real, mas inflação de 2019 segue ancorada",NEGATIVE
-412,Titulo: Dólar e juros futuros ganham força e vão às máximas com alta nas expectativas de inflação dos EUA,NEGATIVE
-413,"Titulo: Dólar inicia semana em alta, mas respeita limite de R$ 3,30",NEUTRAL
-414,"Titulo: Juros futuros avançam impulsionados pelos Treasuries, mas se afastam das máximas",NEUTRAL
-415,"Titulo: Após disparada, dólar se acomoda em R$ 3,85 em clima de cautela",NEUTRAL
-416,"Titulo: Selic estável, mas recorde de baixa,marca 2ºciclo mais forte de alívio",POSITIVE
-417,Titulo: Juros futuros fecham setembro perto das mínimas do ano,POSITIVE
-418,"Titulo: Petrobras: o alerta acionado sobre investimentos, apesar da visão positiva para PETR4 | Resumo: A Petrobras surpreendeu o mercado no final do mês passado ao reportar investimentos de US$ 16,6 bilhões em 2024, cerca de US$ 2,1 bilhões acima da previsão da empresa para o ano",NEUTRAL
-419,"Titulo: Em forte alta, dólar ronda R$ 3,50 na abertura do mercado | Resumo: Moeda sobe mesmo com o feriado desta sexta-feira nos EUA e previsão de venda de US$ 6,490 bi pelo Banco Central no mercado futuro",NEGATIVE
-420,"Titulo: Mesmo com queda da Selic, bancos conseguem aumentar rentabilidade | Resumo: Os bancos tiveram o dobro de rentabilidade da obtida por empresas não financeiras, aponta pesquisa para MELHORES E MAIORES",POSITIVE
-421,"Titulo: B3 promete payout elevado em 2026, mas guidance de custos acende alerta; ação sobe | Resumo: Companhia prevê desembolsos totai de R$ 3,17 bilhões a R$ 3,61 bilhões em 2026",POSITIVE
-422,Titulo: Analistas preveem rali de alta para Ibovespa e queda do dólar,POSITIVE
-423,"Titulo: Dólar a R$ 3,00? É possível, mas ""parece muito bom para ser verdade"", diz analista | Resumo: Analista da Wagner Investimentos alerta para cenário de queda do dólar: ""mercado parece muito otimista. Há riscos externos e internos""",NEGATIVE
-424,Titulo: Juros futuros de curto prazo fecham nas mínimas históricas,POSITIVE
-425,"Titulo: Seguindo exterior e operação da PF, Ibovespa Futuro abre semana em queda, enquanto dólar sobe | Resumo: O Ibovespa Futuro é um bom termômetro de como será o pregão, mas nem sempre prevê adequadamente movimentos na Bolsa a partir do sino de abertura.",NEGATIVE
-426,"Titulo: Bolsa sobe e dólar passa de R$ 3,77; alta de commodities dá fôlego",POSITIVE
-427,"Titulo: XP mantém visão positiva para Bolsa mesmo após queda de 8,8% em dólares em agosto: ""pausa, mas não muda tendência"" | Resumo: Início de ciclo de flexibilização monetária, expectativa de fluxo de volta e valuation descontado são pilares para manter visão para Ibovespa",POSITIVE
-428,"Titulo: Dólar hoje sobe a R$ 6,06 com cautela antes da posse de Trump, mas cai 0,6% na semana | Resumo: Trump toma posse como presidente dos EUA na próxima segunda-feira",NEGATIVE
-429,Titulo: Juros renovam mínimas com apelo por maior afrouxamento monetário global,POSITIVE
-430,"Titulo: Banco Mundial eleva projeção de crescimento do PIB do Brasil para 2,8%, mas chama atenção para trajetória da dívida | Resumo: Estimativa é menor, contudo, do que as projeções mais recentes do mercado pelo Boletim Focus, do Banco Central (BC) e do Ministério da Fazenda",POSITIVE
-431,"Titulo: Boletim Focus: expectativa de inflação volta a cair para 2022, mas sobe para 2023 e 2025 | Resumo: Projeção para o PIB subiu em 2023, mas caiu em 2024 devido a alta de juros; mercado também passou a estimar uma Selic mais alta no fim de 2024",NEUTRAL
-432,"Titulo: Dólar tem dia de alívio após estresse, mas se mantém acima de R$ 5,20",NEGATIVE
-433,"Titulo: Bovespa tem leve alta e dólar é cotado abaixo de R$ 3,60",POSITIVE
-434,"Titulo: Dólar à vista fecha sessão em leve queda, mas avança quase 2,7% na semana",NEGATIVE
-435,"Titulo: Mercado eleva projeção para inflação este ano pela 7ª vez | Resumo: Na semana passada, o BC reconheceu um descolamento grande entre a inflação ao produtor (IPA), mais alta, e ao consumidor (IPCA)",NEGATIVE
-436,"Titulo: Trump muda de tom e anima o mercado, mas não salva Ibovespa da segunda queda seguida",NEGATIVE
-437,"Titulo: Ibovespa opera perto da estabilidade e dólar está abaixo de R$ 3,22 | Resumo: Eleição está na mão de Flávio Bolsonaro, mas ele pode jogar fora, diz Ciro Nogueira",POSITIVE
-438,Titulo: Juros futuros fecham próximos da estabilidade em dia de liquidez baixa,NEUTRAL
-439,"Titulo: Estoque de crédito sobe 0,3% em maio, para R$ 5,387 trilhões, mostra BC",POSITIVE
-440,"Titulo: Pix atinge mais um recorde de transações diárias, segundo Banco Central | Resumo: IPCA-15: Habitação sobe mais em abril com reajustes de concessionárias de serviços",POSITIVE
-441,"Titulo: Dólar comercial ronda patamar de R$ 3,17",NEUTRAL
-442,Titulo: Ibovespa se descola de exterior e zera ganhos apesar de alta das commodities; dólar cai | Resumo: Mercado opera com forte volatilidade apesar da alta do petróleo puxar as bolsas internacionais,NEUTRAL
-443,"Titulo: Ibovespa sobe 0,73% após 3 quedas, mas fecha longe das máximas com fiscal e exterior; dólar vai a R$ 5,38 | Resumo: Índice perdeu força após chegar a subir 1,56% na máxima do dia, mas conseguiu encerrar uma sequência de três quedas",NEUTRAL
-444,"Titulo: Ibovespa Futuro abre em alta, mas perde força após dados de inflação nos EUA | Resumo: Dados do CPI vieram ligeiramente acima do projetado por analistas",NEUTRAL
-445,"Titulo: Ibovespa sobe e chega a 78 mil pontos, mas tem dificuldade de ir além",NEUTRAL
-446,"Titulo: Ibovespa se recupera após tombo, mas não elimina incertezas",NEUTRAL
-447,"Titulo: De Cogna a Raízen: as maiores altas e baixas do Ibovespa em 2025 | Resumo: Bolsa fecha em alta o ano com algumas ações se destacando entre os maiores ganhos, enquanto outras encerraram entre as principais quedas",NEUTRAL
-448,"Titulo: Ibovespa futuro opera estável após forte queda da véspera, com atenção para dados de inflação dos EUA; dólar cai | Resumo: Dólar também opera estável com atenção para os números de inflação ao produtor nos EUA; por aqui, varejo decepcionou",NEUTRAL
-449,Titulo: Ibovespa opera em leve alta na volta do feriado e dólar reduz ganhos após intervenção do BC | Resumo: Mercado passa a operar sem direção apesar dos fortes ganhos dos ADRs no dia anterior,NEUTRAL
-450,"Titulo: Ibovespa opera estável com ‘tarifaço’ de Trump, apesar de forte queda de Vale e Petrobras | Resumo: Ações ligadas à economia doméstica sobem, impulsionadas pela queda dos juros futuros devido à tarifa mínima de 10% aplicada ao Brasil, mais suave que as taxas impostas a outros países",NEUTRAL
-451,"Titulo: Ibovespa tem dia de recuperação, mas risco externo ainda ronda mercado",NEUTRAL
-452,"Titulo: Ibovespa volta a 120 mil pontos, mas ameniza; Petrobras e CSN sobem, Sabesp cai",NEUTRAL
-453,"Titulo: Ibovespa hoje termina em alta, mas última semana cheia do ano fica negativa",NEUTRAL
-454,Titulo: Ibovespa sobe apesar de realização de ganhos em ações ligadas a commodities; dólar zera perdas | Resumo: Mercado registra ganhos ainda na esteira do rali das commodities,NEUTRAL
-455,Titulo: Ibovespa tem leve alta puxado por Petrobras; dólar recua seguindo o cenário internacional | Resumo: Índice caminha para segundo dia de alta puxado novamente por ganhos das estatais e com avanço das bolsas no exterior,POSITIVE
-456,"Titulo: Ibovespa fecha em leve alta, mas fica longe da máxima do dia com cautela no fim do pregão; dólar sobe a R$ 5,07",NEUTRAL
-457,Titulo: Juros futuros fecham perto da estabilidade sob efeito de temas locais,NEUTRAL
-458,"Titulo: Dólar opera estável ante real, apesar de fortalecimento global da moeda americana",NEUTRAL
-459,"Titulo: IPCA desacelera alta para 0,43% em abril, mas é o maior para o mês desde 2023 | Resumo: Nos 12 meses até abril, o indicador registrou elevação de 5,53%",NEUTRAL
-460,Titulo: Ações de Natura sobem mais de 5% impulsionadas pelo dólar,POSITIVE
-461,"Titulo: IPCA-15: Alta de preços de alimentos suaviza em abril | Resumo: Ainda assim, o grupo foi o que teve o maior peso na alta de 0,21% do IPCA-15 no mês",NEUTRAL
-462,"Titulo: Dólar fecha em alta, mas longe da máxima do dia, a R$ 5,54",NEUTRAL
-463,"Titulo: IPCA fecha 2024 em 4,83%, acima do teto da meta, após inflação de 0,52% em dezembro",NEUTRAL
-464,"Titulo: Ibovespa Futuro busca recuperação, mas ameniza alta após PIB dos EUA; dólar chega a superar os R$ 4 | Resumo: Apesar da alta do índice futuro nesta sessão, isso não significa que o Ibovespa à vista registre uma alta em igual intensidade",NEUTRAL
-465,"Titulo: Alta da inflação eleva expectativa por Copom, mas economistas não projetam grandes mudanças na mensagem do BC | Resumo: Após maior alta do IPCA-15 desde 1995, economistas revisaram projeção de inflação para cima, mas apontam que comunicação do BC não deve mudar",NEUTRAL
-466,"Titulo: Juros futuros acompanham alta do dólar, após reação a IPCA-15 | Resumo: O IPCA-15 trouxe reação pontual de baixa logo no início da sessão, mas depois o exterior passou a ditar o rumo dos negócios",NEUTRAL
-467,"Titulo: BC vê melhora na inflação, mas deixa Selic em 15%",NEUTRAL
-468,"Titulo: IBGE reconhece que ""inflação está num patamar alto"", mas evita classificar como ""fora de controle"" | Resumo: Gerente do índice destaca que o IPCA supera a meta estipulada pelo Banco Central, de 3,75% em 2021, e lembra que apenas em ""2016 a gente teve inflação em dois dígitos""",NEUTRAL
-469,Titulo: Queda dos juros permite economia de R$ 80 bi,NEUTRAL
-470,Titulo: Queda de juros eleva demanda por fundos de crédito privado,NEUTRAL
-471,"Titulo: Petrobras tem dia agitado, mas ações fecham estáveis, enquanto PetroRio sobe 4%; Lavvi salta 8% com anúncio de dividendos",NEUTRAL
-472,"Titulo: Casas Bahia: gestão prevê vendas fortes em 2025, mas alerta para impacto da Selic",POSITIVE
-473,Titulo: Queda nos juros favorece papéis de construtoras,POSITIVE
-474,"Titulo: Alta do IGP-10 é o menor em três meses, mas inflação baixa não deve durar, diz FGV",NEUTRAL
-475,"Titulo: Apostando que Brasil seguirá com reformas, banco eleva projeção do Ibovespa para 78.000 pontos este ano | Resumo: Revisando para cima sua projeção para bolsa, Bradesco BBI vê chance de 80% de que o Brasil siga com a agenda fiscal após a eleição de 2018",POSITIVE
-476,Titulo: Ibovespa tem leve alta e dólar cai com mercado à espera de Trump e digerindo fala de Meirelles | Resumo: Mercado segue na expectativa por Trump e reformas no Brasil,NEUTRAL
-477,Titulo: Copom surpreendeu ao sugerir nova alta de juros e alongar horizonte para inflação,NEUTRAL
-478,"Titulo: Rumores de fala de Campos Neto sobre ritmo de corte da Selic impulsionam juros futuros, apesar de IPCA | Resumo: Campos Neto teria dito a investidores que a chance de desacelerar o ritmo de queda da Selic para 25 pontos-base é maior do que a de acelerar para 75 bps",NEUTRAL
-479,Titulo: Ibovespa futuro tem leve alta e dólar cai de olho em desdobramentos de acordo EUA-China e cessão onerosa,POSITIVE
-480,"Titulo: Mercado imobiliário vai bem, mas classe média perde espaço e juros preocupam | Resumo: No Brasil, a proporção de lançamentos voltados para a classe média caiu de 65% para 45% do total de unidades lançadas entre o segundo trimestre de 2023 e o mesmo período deste ano",NEUTRAL
-481,"Titulo: IPCA de setembro tem alta de 0,26%; inflação acumulada de 12 meses avança para 5,19% | Resumo: O mercado esperava alta mensal de 0,34%. Com resultado, inflação nos nove primeiros meses do ano tem alta de 3,50%",NEUTRAL
-482,"Titulo: Alckmin: queda da Selic deve elevar crescimento da economia, após PIB fraco no 3º tri | Resumo: O baixo crescimento do PIB foi causado pela alta dos juros, mas o governo prevê um cenário melhor em 2026, apontou Alckmin",POSITIVE
-483,"Titulo: Ibovespa além de 126 mil pontos: mercado celebra dado de inflação no Brasil e nos EUA | Resumo: Ações mais sensíveis ao ciclo econômico são destaque de alta, dados os sinais de arrefecimento da inflação brasileira e de algum alívio na dos EUA",POSITIVE
-484,Titulo: Juros futuros avançam com Treasury e à espera de dados de inflação no Brasil e nos EUA,NEGATIVE
-485,"Titulo: Bolsas de NY avançam, mas dólar recua globalmente após ligação entre Trump e Xi",NEUTRAL
-486,Titulo: Dólar dispara de olho em Bolsonaro e Petrobras apesar da atuação do BC,NEGATIVE
-487,"Titulo: BB Seguridade (BBSE3): tendência de alta em risco? Confira até onde ação pode ir | Resumo: Em outubro, a ação recua 4,11%, mas no ano tem valorização de 9,05%",NEUTRAL
-488,"Titulo: Leilões de rodovias sofrem revisão com alta de juros e câmbio | Resumo: Em 2025, estão previstos leilões com potencial de investimento de R$ 72 bi; cenário é desafiador, mas analistas veem avanço de projetos",NEUTRAL
-489,"Titulo: Ibovespa resiste à pressão do exterior e fecha em leve alta; juros DI voltam a subir com temor de inflação | Resumo: Bolsa voltou a descolar de Nova York, onde os índices fecharam em forte baixa com expectativa de alta de juros",NEUTRAL
-490,"Titulo: BC eleva taxa Selic para 11,75% e sinaliza nova alta | Resumo: O ritmo no aumento da taxa foi mais brando do que o adotado nas últimas três reuniões, quando a autoridade monetária promoveu elevações de 1,5 ponto percentual nos juros",NEGATIVE
-491,"Titulo: IPCA reflui, mas fecha julho acima do previsto",NEUTRAL
-492,"Titulo: Ibovespa reduz perdas com parcelamento de precatórios, mas segue em baixa de mais de 3%; juros DI desaceleram alta | Resumo: Bolsonaro também afirmou que 750 mil caminhoneiros receberão ajuda para compensar alta do diesel",NEGATIVE
-493,"Titulo: Por que o Itaú cortou projeção para o PIB e inflação, mas também para o dólar em 2019 | Resumo: Para os analistas, economista brasileira deve crescer 2% este ano, contra uma projeção anterior de 2,5%",NEGATIVE
-494,"Titulo: ‘Temos visto melhora consistente da inflação’, diz Campos Neto | Resumo: Para Campos Neto, 2023 foi um ano ‘que teve algumas surpresas positivas’",POSITIVE
-495,"Titulo: Número de investidores ativos na bolsa tem alta anual de 95% em outubro | Resumo: Volume médio diário negociado no segmento de ações, porém, caiu 2,3% em relação a outubro do ano passado",POSITIVE
-496,Titulo: Dólar hoje 14/08: moeda fecha em alta após divulgação do IPCA | Resumo: A moeda americana fecha em alta após divulgação dos dados do IPCA e IBC-Br,NEGATIVE
-497,"Titulo: Juros futuros se ajustam em alta ao IPCA-15 e dólar opera na casa de R$ 4,16",NEGATIVE
-498,Titulo: Juros futuros vão às máximas do dia após Caged superar expectativas,NEGATIVE
-499,"Titulo: Haddad não é mais um ""vilão"" para o mercado? Os motivos para a alta da bolsa e queda do dólar | Resumo: Mercado entrou em uma onda de euforia, levando o Ibovespa para os 80 mil pontos e o dólar para abaixo dos R$ 4,00",POSITIVE
-500,"Titulo: Boletim Focus: mercado eleva perspectiva de inflação para 2022 e 2023 | Resumo: O levantamento semanal apontou que a estimativa para a alta do IPCA subiu a 5,09% em 2022 e 3,40% em 2023",NEGATIVE
-501,Titulo: Juros futuros avançam com IPCA acima do consenso e temores de recessão global | Resumo: Petróleo e juros futuros avançam com guerra no Irã no foco; dólar apaga alta ante o real,NEGATIVE
-502,"Titulo: Dólar fecha acima de R$ 5 e Ibovespa sobe mais de 1% com IPCA-15 abaixo do esperado; juros futuros caem | Resumo: O alívio na inflação reforça as expectativas de que um corte na Selic, atualmente em 13,75% ao ano, pode estar mais próximo; investidores repercutem entrevista de Campos Neto",POSITIVE
-503,"Titulo: Ibovespa futuro acompanha Wall Street e cai mais de 1%, com preocupações sobre inflação; dólar sobe | Resumo: Os juros futuros operam com alta expressiva; vencimentos mais longos sobem mais de 20 pontos-base",NEGATIVE
-504,"Titulo: Alta de juros e medo de recessão derrubam Ibovespa, que cai 2,86%; dólar sobe 4%, maior alta desde março de 2020",NEGATIVE
-505,"Titulo: Ibovespa futuro opera em queda de quase 1%, com pressão de juros americanos; Dólar sobe 0,64% | Resumo: Pressão altista no juros americano derruba ativos de risco mundo afora e aumenta perspectiva de recessão mundial",NEGATIVE
-506,"Titulo: Dólar volta aos R$ 5,40, juros futuros ampliam alta e Ibovespa vai às mínimas após coletiva de Powell",NEGATIVE
-507,"Titulo: As falas do BC sobre inflação que impulsionaram dólar e juros, enquanto varejistas e construtoras tiveram forte baixa na Bolsa | Resumo: Mercado brasileiro reage ás declarações de Campos Neto e Bruno Serra sobre alta adicional da Selic no próximo Copom e inflação persistente no país",NEGATIVE
-508,"Titulo: Ibovespa fecha em alta de mais de 2% às vésperas de Copom e Fed; dólar e juros tiveram forte queda | Resumo: Expectativa de inflação mais baixa foi reforçada por queda no preço do diesel, favorecendo ativos de risco",POSITIVE
-509,"Titulo: Dólar e juros futuros têm forte queda e Ibovespa avança com China e ajuste nos prêmios de risco | Resumo: Nos juros, o mercado corrige parte do forte salto das últimas sessões enquanto avalia as sinalizações da ata da última reunião do Copom, que veio em linha com o tom mais duro apresentado no comunicado da semana passada",POSITIVE
-510,"Titulo: Dólar sobe com fala de Guedes e atinge novo recorde intradiário; Ibovespa Futuro tem leve queda | Resumo: ""Quando você tem um fiscal mais forte e um juro mais baixo, o câmbio de equilíbrio também é mais alto"", afirmou Guedes",NEGATIVE
-511,Titulo: Dólar e juros têm alívio em meio a incertezas,POSITIVE
-512,"Titulo: Ibovespa futuro abre em alta, inverte sinal e passa a cair; juros futuros recuam com IPCA abaixo do esperado | Resumo: Futuros em Nova York operam entre perdas e ganhos à espera de dados de inflação",POSITIVE
-513,"Titulo: Ibovespa Futuro acelera alta com inflação nos EUA; IPCA fica abaixo do esperado em abril | Resumo: Inflação oficial fica em 0,22%, enquanto mercado esperava 0,28%; investidores aguardam também dados nos EUA",POSITIVE
-514,"Titulo: Ibovespa fecha em alta de mais de 2% com apostas de fim de alta de juros após Copom; Dólar cai 1,10% | Resumo: Sinalização de fim de ciclo de alta fez investidores ficarem mais otimistas com ações de companhias ligadas ao mercado interno",POSITIVE
-515,"Titulo: Dólar à vista fecha em queda com maior apetite por risco antes do Copom | Resumo: Os juros elevados no Brasil continuaram sendo a razão pela qual o real se beneficia frente ao dólar em momentos de maior apetite por risco, conforme explicam gestores",POSITIVE
-516,"Titulo: Campos: Solução para juros do crédito rotativo passa por critérios técnicos e políticos | Resumo: O presidente do BC destacou que atualmente, 40% do consumo é por meio do cartão de crédito",NEUTRAL
-517,"Titulo: Na revisão do Novo Mercado, B3 quer incluir metas ESG",NEUTRAL
-518,Titulo: CVM propõe novas regras para mercado de negociação de ativos,NEUTRAL
-519,Titulo: BC e CVM abrem discussão sobre investimento estrangeiro nos mercados financeiro e de capitais,NEUTRAL
-520,"Titulo: Boletim Focus passa a ter projeções para componentes do IPCA, diz BC",NEUTRAL
-521,Titulo: CVM abre consulta pública sobre influenciadores digitais que atuam no mercado de capitais,NEUTRAL
-522,Titulo: Analistas avaliam uso de diretrizes futuras para Selic,NEUTRAL
-523,"Titulo: Retomada da discussão sobre juros do cartão depende da boa vontade do governo e do BC, diz CEO do Santander | Resumo: Mario Leão diz esperar que a agenda mais ampla sobre cartão de crédito avance",NEUTRAL
-524,"Titulo: Já seria possível iniciar a recalibragem da taxa de juros, diz Haddad",NEUTRAL
-525,"Titulo: CVM inicia consulta pública para revisar distinção entre fato relevante e comunicado ao mercado | Resumo: A consulta, que se estende até o dia 27 de junho, faz parte da agenda regulatória da autarquia",NEUTRAL
-526,"Titulo: Juros futuros têm leve alta em dia de espera pelas decisões do Fed e do Copom | Resumo: Enquanto isso, nova rodada de piora nas projeções de inflação no Focus não impede mercado de antecipar corte da Selic",NEUTRAL
-527,"Titulo: Copom inicia reunião em Brasília com novo presidente do BC | Resumo: Na quarta-feira, comitê tem mais uma rodada de discussões antes de decidir o novo patamar da taxa básica de juros",NEUTRAL
-528,"Titulo: Volume de dividendos vai depender do mercado de minério de ferro, diz presidente da Vale",NEUTRAL
-529,"Titulo: Ibovespa fecha em queda de mais de 1% após o resultado positivo do PIB; dólar subiu 0,93% | Resumo: Na quinta-feira, 29, o índice fechou com queda 0,26%, após ter aberto o dia em alta",NEGATIVE
-530,"Titulo: Mercado de capitais, TLP e o papel do BNDES | Resumo: O BNDES não precisa voltar a desembolsar 3% do PIB, mas pode e precisa fazer mais do que vem ocorrendo",NEUTRAL
-531,"Titulo: Agenda do Banco Central: Em semana agitada, ata do Copom e coletiva com Campos Neto são destaques | Resumo: Na segunda-feira (27), às 9h30, a autoridade monetária divulgará o resultado do setor externo de agosto",NEUTRAL
-532,"Titulo: BC não fará mudança que influencie capacidade de compra, diz Campos ao falar sobre parcelado sem juros",NEUTRAL
-533,"Titulo: CVM trabalha em regras para levar pequenas e médias empresas ao mercado de capitais | Resumo: Segundo João Pedro Nascimento, presidente da autarquia, o tripé é composto pelo acesso, eficiência e proteção",NEUTRAL
-534,Titulo: Corrida por dividendos: vale entrar na bolsa só pelos proventos?,NEUTRAL
-535,Titulo: Presidente da CVM defende regulação cripto e sugere soluções de mercado com blockchain,NEUTRAL
-536,"Titulo: EWZ cai mais de 1% em Nova York; ADRs da Vale e Petrobras também recuam | Resumo: Os recibos de ações (ADRs) da Vale operavam em baixa acima de 3%, enquanto os da Petrobras operavam em queda de mais de 1%",NEGATIVE
-537,"Titulo: Juros futuros aceleram alta e puxam piora do Ibovespa após leilão de dólares | Resumo: Taxas renovaram suas máximas intradiárias, movimento que puxou uma piora do Ibovespa após o leilão de dólares do Banco Central",NEGATIVE
-538,"Titulo: Mercado revisa PIB de 2016 de -3,01% para -3,21% e piora expectativa de inflação | Resumo: Relatório Focus do Banco Central divulgado nesta quarta mostrou revisão negativa tanto para o crescimento econômico como para a inflação",NEGATIVE
-539,"Titulo: Petrobras perde R$ 54 bilhões em valor de mercado em semana de vitória de Lula | Resumo: Ações da estatal caíram mais de 10% na semana, com incertezas sobre a nova política de dividendos e precificação de combustíveis",NEGATIVE
-540,"Titulo: Juros futuros sobem após Haddad evitar resposta sobre meta fiscal de 2024 | Resumo: As declarações de Lula na sexta-feira, nas quais questionou a necessidade de cumprir a meta fiscal, ainda pesavam para os mercados",NEGATIVE
-541,"Titulo: Ibovespa cai 1,63%, perde os 60 mil pontos e dólar fica estável com Yellen e ""decepção mexicana"" | Resumo: Discurso mais 'hawkish' de chairwoman do Federal Reserve, Janet Yellen, e a frustração com o resultado das eleições mexicanas pesaram sobre os mercados",NEGATIVE
-542,"Titulo: Ibovespa cai 1,2% e fecha abaixo de 61.000 pontos, puxado por queda de 4% da Vale | Resumo: Apesar da alta lá fora, o sentimento negativo aumentou após abertura da safra de resultados com desempenho ruim",NEGATIVE
-543,Titulo: Vale (VALE3) representa 85% da queda do Ibovespa | Resumo: Decepção com crescimento chinês e desafios da empresa levam papéis da mineradora a acumular queda de mais de 4% no dia,NEGATIVE
-544,"Titulo: Ibovespa fecha em queda de 1,78% e dólar vai para R$ 4,17 após soltura de Lula | Resumo: Na semana, o índice acumulou baixa de 0,72%, interrompendo uma sequência de três semanas no positivo",NEGATIVE
-545,"Titulo: Ibovespa cai 2% e perde os 100 mil pontos após Bolsonaro afirmar que proposta para Renda Brasil está suspensa; dólar sobe a R$ 5,62 | Resumo: Bolsa ameaçou ensaiar uma recuperação de manhã, mas à tarde desabou com as declarações do presidente",NEGATIVE
-546,Titulo: Minério de ferro despenca e ADRs da Vale perdem 3% na bolsa dos EUA | Resumo: Os contratos futuros do minério de ferro caíram quase 5% no mercado chinês nesta segunda-feira,NEGATIVE
-547,"Titulo: Ibovespa cai mais de 1% diante de incertezas sobre coronavírus | Resumo: Na mesma direção das principais bolsas do mundo, o Ibovespa fechou em baixa de 1,15%, em dia marcado pelo nervosismo provocado pelo surto de coronavírus",NEGATIVE
-548,"Titulo: Ibovespa cai 0,32%, com investidores de olho no rebaixamento da nota de crédito americana e no Copom | Resumo: Rebaixamento de nota de crédito dos EUA e reunião do Copom fazem mercado ficar mais cauteloso antes do dia mais aguardado da semana",NEGATIVE
-549,"Titulo: Bovespa cai com indisposição dos investidores para risco | Resumo: A queda nas cotações é generalizada na Bovespa nesta quinta-feira. De Nova York, a inflação ao produtor de outubro veio acima do esperado",NEGATIVE
-550,"Titulo: Ibovespa cai 0,74% no pregão e tem baixa de 2,25% na semana, sem trégua sobre incertezas no exterior | Resumo: Discurso de Jerome Powell, pressão dos Treasuries americanos e incertezas sobre o conflito no Oriente Médio pesaram sobre o mercado",NEGATIVE
-551,"Titulo: Ibovespa (IBOV) avança 25% no ano e supera 150 mil pontos; o rali continua? | Resumo: O Ibovespa (IBOV) segue em trajetória fortemente positiva, refletindo a alta das commodities, a queda do dólar e o apetite por ativos de risco",POSITIVE
-552,"Titulo: Ibovespa sobe 2%, acima dos 130 mil pontos, em sessão com ganhos robustos de bancos",POSITIVE
-553,"Titulo: Ibovespa avança 15,03% em 2018, com varejistas em destaque",POSITIVE
-554,"Titulo: Ibovespa sobe pelo 3º pregão seguido e fecha semana no azul; dólar volta aos R$ 5,05 | Resumo: O Ibovespa fechou a sessão desta sexta-feira (13) em alta, acumulando ganhos pelo terceiro pregão seguido",POSITIVE
-555,Titulo: Ibovespa fecha em alta com exterior após acordo de Biden e dados dos EUA; dólar cai para mínima em mais de um ano | Resumo: Mercado registrou desempenho positivo com acordo de teto de dívida nos EUA e sinais de desaceleração da inflação americana,POSITIVE
-556,"Titulo: Ibovespa salta 17,9% em dois dias, maior ganho desde outubro de 2008; dólar cai a R$ 5,03",POSITIVE
-557,"Titulo: Ibovespa salta 2% com exterior e fecha acima de 75 mil pontos; dólar vai a R$ 3,88",POSITIVE
-558,"Titulo: Em nível recorde, Ibovespa avança 27,3% em dólar e lidera ganhos no ano",POSITIVE
-559,"Titulo: Ibovespa sobe mais de 1% e fecha em alta pelo 4º dia seguido; dólar cai abaixo de R$ 4,90 | Resumo: Bolsa também foi impulsionada pelo desempenho positivo das companhias ligadas ao ciclo econômico doméstico",POSITIVE
-560,"Titulo: Ibovespa sobe ao maior nível em oito meses | Resumo: No acumulado da semana, os ganhos foram de 2,09%, levando o Ibovespa à terceira semana consecutiva de alta",POSITIVE
-561,"Titulo: Ibovespa sobe 3,5% em setembro, ajudado por exterior e commodities",POSITIVE
-562,"Titulo: Ibovespa sobe 5% em janeiro, no melhor mês desde agosto",POSITIVE
-563,"Titulo: Ibovespa sobe no último pregão do ano; tem ganho de 26,8% em 2017 | Resumo: De acordo com dados preliminares, o Ibovespa fechou com ganho de 0,41 por cento no último pregão de 2017, ao nível de 76.402 pontos",POSITIVE
-564,"Titulo: Ibovespa avança 1,14%, com exterior e empresas de commodities; dólar cai abaixo de R$ 5,20",POSITIVE
-565,"Titulo: Itaúsa (ITSA4) sobe 6% no lucro e acelera na B3; ainda tem espaço para mais? | Resumo: A Itaúsa (ITSA4) registrou lucro líquido recorrente de R$ 4,12 bilhões no 4T23, alta de 8,9% ante igual período de 2022",POSITIVE
-566,"Titulo: Ibovespa sobe 2,6% na semana e fecha acima de 96 mil pontos; dólar tem máxima em 15 dias",POSITIVE
-567,"Titulo: Ibovespa sobe na semana, com ambiente favorável a ativos de risco",POSITIVE
-568,"Titulo: Com ganhos moderados, Ibovespa renova maior pontuação de fechamento em 7 meses; dólar sobe 0,62%",POSITIVE
-569,"Titulo: Ibovespa sobe em linha com movimento no exterior | Resumo: Às 11h43, o Ibovespa subia 1,42% a 72.787 pontos. O giro financeiro era de 2,4 bilhões de reais",POSITIVE
-570,"Titulo: Ibovespa sobe 3,3% na semana e renova máxima em mais de 10 meses; dólar vai a R$ 3,25",POSITIVE
-571,"Titulo: Dólar fecha em alta, a R$ 5,59, com mercado avaliando corte de juros pelo Fed Resumo: Dados mistos do mercado de trabalho americano fizeram o dólar ganhar força no exterior e no Brasil. Na semana, porém, moeda acumula 0,8% de desvalorização",NEUTRAL
-572,"Titulo: Mercado volta a elevar projeção da inflação em 2024, diz Boletim Focus Resumo: A mediana das previsões dos analistas financeiros para o crescimento da economia brasileira em 2023 e 2024 permaneceu estável",NEUTRAL
-573,Titulo: Bovespa opera perto da estabilidade; Vale sobe e Santander tem queda,NEUTRAL
-574,"Titulo: Crédito deve ficar estável em abril, diz Febraban",NEUTRAL
-575,Titulo: Mercado e economistas ajustam expectativa para Selic abaixo de 7%,NEUTRAL
-576,Titulo: Ibovespa Futuro desafia correção e tem leve alta com continuidade do otimismo por vacina Resumo: Pré-market registra leves ganhos ainda repercutindo boas notícias sobre vacina da véspera,POSITIVE
-577,Titulo: Ibovespa Futuro fica estável com acordo por cessão onerosa ofuscando indefinição no exterior,NEUTRAL
-578,Titulo: Taxas dos DIs fecham quase estáveis com mercado posicionado antes de Copom e tarifas,NEUTRAL
-579,Titulo: Ibovespa Futuro acelera ganhos após dados de inflação nos EUA abaixo do esperado Resumo: Bolsas operam em alta à espera da inflação ao consumidor nos Estados Unidos,POSITIVE
-580,"Titulo: Ibovespa fecha em alta de 0,6%, apesar de derrocada de Petrobras Resumo: O Ibovespa subiu 0,63 por cento, a 77.239 pontos, após subir 1,84 na máxima da sessão e cair 1,6 por cento na mínima",NEUTRAL
-581,"Titulo: Vale e Bradespar corrigem e seguram Ibovespa, que tem leve alta",NEUTRAL
-582,Titulo: Ação da Cielo salta 5%; Bradespar sobe 3% com vitória na Justiça e Petrobras avança 2% à espera da Opep,POSITIVE
-583,Titulo: Dólar e juros futuros operam perto da estabilidade de olho na greve,NEUTRAL
-584,Titulo: Juros futuros ficam perto da estabilidade em dia de anúncio do Copom,NEUTRAL
-585,"Titulo: Dólar comercial ronda o nível de R$ 3,26",NEUTRAL
-586,"Titulo: Ibovespa fecha perto da estabilidade em sessão negativa para Vale e positiva para bancos Resumo: Papéis da Vale exerceram pressão negativa, enquanto os de bancos ajudaram o índice a se segurar no positivo; Petrobras também esteve no foco",NEUTRAL
-587,"Titulo: Haddad: Primário zero depende da evolução da economia e da trajetória da Selic Resumo: Ministro da Fazenda citou projeção da equipe econômica de alta de 2,2% do PIB, disse que dados preliminares do Caged confirmam trajetória de aumento do emprego e massa salarial e se mostrou otimista em relação à política monetária",POSITIVE
-588,"Titulo: Ibovespa sobe com ajuste, mas cautela com política permanece",NEUTRAL
-589,Titulo: Juros futuros fecham estáveis de olho no exterior e aguardando IPCA,NEUTRAL
-590,"Titulo: Mercado reduz projeção do IPCA de 2025, para 4,40%, e de 2026, para 4,16%, aponta Focus Resumo: Para o crescimento do PIB em 2025, a mediana das estimativas dos economistas foi ajustada de 2,16% para 2,25%, e em 2026, de 1,78% para 1,80%",POSITIVE
-591,Titulo: Dólar sobe ante o real à espera de dados de emprego nos EUA,NEUTRAL
-592,"Titulo: Ibovespa acelera ritmo e passa a subir 2%, rondando o patamar de 110 mil pontos Resumo: O dia hoje é de vencimento das opções sobre o índice, o que pode causar uma acelerada nas últimas horas do pregão para influenciar no cálculo do preço de referência do Ibovespa",POSITIVE
-593,"Titulo: Powell, Vale, China, meta fiscal e mais assuntos que vão movimentar o mercado hoje Resumo: PIB da China cresceu 5,3% no 1T24, bem acima dos 4,6% previstos por economistas",NEUTRAL
-594,"Titulo: Juros futuros têm leve alta, acompanhando dólar e exterior",NEUTRAL
-595,Titulo: Ibovespa fecha estável com cautela antes de votação da Previdência na Comissão Especial,NEUTRAL
-596,"Titulo: Copom eleva projeções de inflação e vê IPCA em 3% em 2024 em cenário de Selic estável Resumo: O Copom também voltou a dar ênfase ao horizonte de seis trimestres à frente, referente ao terceiro trimestre de 2024, onde a projeção de inflação acumulada em 12 meses ficou em 3,8% no cenário de referência",NEGATIVE
-597,"Titulo: B3: Cenário externo traz alívio, e juros fecham entre estabilidade e queda",NEUTRAL
-598,"Titulo: Ibovespa tem alta firme antes de decisões de juros do Fed e do Copom Resumo: Além das exportadoras de commodities, empresas sensíveis ao cenário doméstico avançam com expectativa de corte da Selic e manutenção das taxas de juros nos EUA",POSITIVE
-599,Titulo: Ibovespa Futuro oscila entre perdas e ganhos com ânimo sobre anúncio da Pfizer limitado com preocupação sobre coronavírus,NEUTRAL
-600,"Titulo: Dólar fecha estável a R$ 6,09 após disparar até R$ 6,20: o que explica movimento? Resumo: Divisa passou grande parte da tarde no negativo após atingir maior patamar histórico e Banco Central realizar dois leilões durante a sessão",NEUTRAL
-601,"Titulo: Trade hoje: Ibovespa segue próximo à suporte e com baixo volume, aponta análise técnica Resumo: Ibovespa começa ano com baixo volume e opera próximo de região de suporte dos 130,7 mil pontos, aponta análise técnica",NEUTRAL
-602,Titulo: O corte de juros esfriou? O novo cenário para Selic resumido em 6 análises Resumo: Veja o que diversos economistas e analistas falaram sobre a possibilidade de corte de juros e o discurso do novo presidente do BC hoje,NEUTRAL
-603,"Titulo: Ibovespa ronda a estabilidade após dados do ‘payroll’ acima do esperado Resumo: Dados fortes de emprego nos EUA afastam temores de recessão, o que beneficia ativos de risco",NEUTRAL
-604,"Titulo: Com mercado à espera de nova alta da Selic, Copom inicia nesta terça-feira reunião para definir juros básicos Resumo: Expectativa é de que taxa Selic suba de 5,25% para 6,25% ao ano",NEGATIVE
-605,"Titulo: Ibovespa Futuro tem nova alta, apesar de preocupações renovadas sobre economia global",NEUTRAL
-606,Titulo: Juros futuros despencam pelo segundo dia após Lula defender equilíbrio fiscal,POSITIVE
-607,"Titulo: Ibovespa afunda 3% com choque de commodities e PIB dos EUA; Petrobras e Vale caem mais de 5% Resumo: Petrobras desaba com preços do petróleo, em meio às incertezas sobre a reunião da Opep, marcada para amanhã; economia norte-americana cresce mais que o esperado e amplia pressão sobre juros pelo Fed",NEGATIVE
-608,Titulo: 2 ações desabam 8% após balanços; Vale e siderúrgicas afundam 6% Resumo: Confira os destaques de ações da Bovespa desta quarta-feira (24),NEGATIVE
-609,"Titulo: Dólar cai a R$3,70 com vantagem de Bolsonaro e busca por risco no exterior Resumo: Às 10:14, o dólar recuava 0,97 por cento, a 3,6981 reais na venda, depois de ter alcançado na mínima 3,6947 reais",POSITIVE
-610,"Titulo: Ibovespa se afasta de mínimas, mas fecha com baixa de 3%",NEGATIVE
-611,"Titulo: Após oito altas, Petrobras despenca 6%; bancos caem até 5% e só 3 ações sobem no Ibovespa",NEGATIVE
-612,Titulo: Ibovespa desaba mais de 2% com operação da PF criando clima de aversão no mercado,NEGATIVE
-613,"Titulo: Ação da JBS despenca e Bovespa opera em baixa; dólar supera R$ 3,12",NEGATIVE
-614,Titulo: Caos tarifário dispara modo pânico; S&P 500 tem pior semana desde a covid e Ibovespa recua 3%,NEGATIVE
-615,"Titulo: Ações da Coinbase batem mínima histórica e exchange já vale menos que a Dogecoin Resumo: A exchange caiu mais 17% nos últimos 30 dias, elevando sua queda no acumulado do ano para mais de 85%",NEGATIVE
-616,"Titulo: Dólar cai em direção a R$3,10 com exterior e impeachment Resumo: Às 11:26, o dólar recuava 0,25 por cento, a 3,1334 reais na venda. A moeda norte-americana chegou a 3,1132 reais na mínima da sessão",NEUTRAL
-617,"Titulo: Petrobras (PETR4), PRIO (PRIO3) e mais: petróleo desaba 5,6% e derruba ações do setor na Bolsa Resumo: Preço da commodity cai em meio a temores renovados de queda da demanda e após dados de estoques de petróleo nos EUA",NEGATIVE
-618,"Titulo: Descolado do exterior, Ibovespa fecha em alta de 0,81%; dólar e juros também sobem",POSITIVE
-619,"Titulo: Ibovespa sobe 3,7% impulsionado por EUA e China",POSITIVE
-620,"Titulo: Ibovespa fecha em alta de 1,19%, mas variação no mês ainda é negativa",POSITIVE
-621,"Titulo: Com estrangeiro, Ibovespa renova recorde",POSITIVE
-622,Titulo: Ibovespa renova recorde com avanço da Previdência,POSITIVE
-623,Titulo: Ibovespa engata alta e se aproxima da máxima histórica acima dos 105 mil pontos,POSITIVE
-624,"Titulo: Ibovespa tem quinta alta seguida e avança 6,65% na semana",POSITIVE
-625,Titulo: Ibovespa bate recorde pelo terceiro pregão consecutivo impulsionado por ações da Vale,POSITIVE
-626,"Titulo: Bovespa fecha em alta de 1,45% e Vale é destaque positivo Resumo: O cenário externo mais favorável à tomada de risco, em meio à alta de algumas commodities, ajudou o Ibovespa a manter o tom positivo da véspera",POSITIVE
-627,"Titulo: PETR4: Ações da Petrobras operam em tendência de alta e renovam máxima histórica Resumo: As ações da Petrobras (PETR4) seguem tendência de alta em janeiro, segundo análise técnica, buscando máxima histórica",POSITIVE
-628,"Titulo: Ibovespa sobe 1,5% e renova recorde acima dos 96 mil pontos Resumo: Bolsa paulista encerrou a 96.558,42 pontos após discurso do ministro da Economia em relação à reforma da Previdência",POSITIVE
-629,"Titulo: Ibovespa oscila perto da estabilidade, mas sustenta os 150 mil pontos após renovar recorde",NEUTRAL
+122,"Titulo: Ibovespa ensaia melhora com reforma tributária, mas exterior e bancos pesam",NEUTRAL
+123,"Titulo: Dólar recua, mas engata 4ª semana consecutiva de ganhos; B3 fecha estável | Resumo: Moeda norte americana acumulou ganho de 1,71 por cento na semana; o Ibovespa subiu 0,76 por cento",NEUTRAL
+124,Titulo: Ibovespa tem sessão volátil com cena externa e papéis sensíveis aos juros,NEUTRAL
+125,"Titulo: Vale e siderúrgicas sobem até 21% na semana com ""Onda Azul"" nos EUA, enquanto e-commerce cai; Méliuz salta 22% na sessão | Resumo: Confira os destaques da B3 na semana e na sessão desta sexta-feira (8)",NEUTRAL
+126,"Titulo: Ação da CVC sobe com sinais de retomada, IRB dispara 12%, Vale cai e bancos avançam em dia de recuperação",NEUTRAL
+127,"Titulo: Ibovespa opera entre leves perdas e ganhos com Orçamento, CPI da Covid e exterior; dólar vai a R$ 5,66 | Resumo: Indefinições sobre Orçamento e determinação pelo STF de instalação de CPI da Covid são acompanhadas de perto pelos investidores",NEUTRAL
+128,"Titulo: Ibovespa exibe leve alta, limitada por exterior e cautela",NEUTRAL
+129,"Titulo: Ibovespa oscila sem viés firme com dados dos EUA e notícias corporativas | Resumo: Às 11h33, o Ibovespa subia 0,06%, a 74.595 pontos. O volume financeiro somava 1,9 bilhão de reais",NEUTRAL
+130,"Titulo: Ibovespa põe exterior de lado e zera perdas, de olho na cena política",NEUTRAL
+131,"Titulo: Ibovespa fica perto da estabilidade com pacote de Guedes | Resumo: Às 10:09, o Ibovespa caía 0,09%, a 108.681,40 pontos",NEUTRAL
+132,Titulo: Carteira gráfica da XP bate novamente o desempenho do Ibovespa e faz uma alteração,NEUTRAL
+133,Titulo: Dólar hoje opera estável e permanece no piso de R$ 6,NEUTRAL
+134,"Titulo: Ações da Cogna (COGN3) caem 13% em fevereiro; veja quais foram as maiores quedas do Ibovespa no mês | Resumo: Por outro lado, o Ibovespa, ainda que aos trancos e barrancos, acumulou uma alta de 0,99% no último mês",NEUTRAL
+135,"Titulo: Após ata do Copom, juros futuros têm viés de alta e dólar recua",NEUTRAL
+136,Titulo: Ibovespa Futuro opera perto da estabilidade entre alternativas para PEC da Transição e preocupação com a China,NEUTRAL
+137,"Titulo: Dólar hoje fecha a R$ 5,30 após oscilar abaixo dos R$5,28 com corte de juros nos EUA | Resumo: Investidores aguardam agora por decisão de juros no Brasil",NEUTRAL
+138,"Titulo: À espera da ""super quarta"", Ibovespa reduz ritmo e varia pouco | Resumo: Ibovespa terminou o pregão em queda de 0,10%, aos 106.528,09 pontos",NEUTRAL
+139,Titulo: Lira diz que Petrobras parou de investir para distribuir dividendos a acionistas e fala em privatização,NEUTRAL
+140,Titulo: B3 aumenta o investimento em esportes e entra no SP Open,NEUTRAL
+141,Titulo: CEOs do Elite InfoMoney respondem por 83% da receita das empresas listadas na B3,NEUTRAL
+142,Titulo: Venda de títulos por meio do Tesouro Direto será suspensa na terça por conta de greve de servidores,NEGATIVE
+143,Titulo: Elea capta R$ 790 milhões com debêntures verdes,NEUTRAL
+144,Titulo: Ibovespa Futuro sinaliza leve correção após melhor fechamento desde 2012; dólar e DIs caem,NEUTRAL
+145,Titulo: Dólar e Ibovespa têm leve alta à espera de dados dos EUA,NEUTRAL
+146,"Titulo: Demissões na Disney, IPCA , balanço do Bradesco, reação ao BB Seguridade e o que move o mercado | Resumo: Bolsas avançam no exterior na esteira de últimos resultados do quarto trimestre; lucro e receita da Disney superaram as estimativas do mercado",NEUTRAL
+147,"Titulo: Spread bancário resiste a cair, apesar da queda dos juros básicos | Resumo: Divulgado todos os meses pelo Banco Central, indicador acumulou alta de 0,6 ponto percentual no último trimestre de 2016, mesmo com a Selic em queda",NEUTRAL
+148,"Titulo: Cenário para inflação segue tranquilo, apesar da alta",NEUTRAL
+149,Titulo: Juro na mínima sustenta crédito imobiliário mesmo com pandemia,NEUTRAL
+150,"Titulo: Bolsonaro quer dólar abaixo de R$4, mas diz que problema não é só interno | Resumo: ""O mundo está todo conectado. Qualquer problema lá fora tem reflexo no mundo todo, não é só aqui, não"", disse",NEUTRAL
+151,Titulo: Vale é a empresa mais valiosa da América Latina e deixa Mercado Livre para trás | Resumo: Valor de mercado da mineradora brasileira está atualmente em US$ 102 bilhões,NEUTRAL
+152,"Titulo: Dólar fecha com estabilidade, a R$ 5,80, com tarifas dos EUA e inflação",NEUTRAL
+153,"Titulo: Inflação oficial fica em 0,11% em agosto, diz IBGE | Resumo: Segundo dados divulgados hoje (6) pelo Instituto Brasileiro de Geografia e Estatística (IBGE), o IPCA acumula taxas de inflação de 2,54% no ano e de 3,43% em 12 meses.",NEUTRAL
+154,"Titulo: Vendas do Tesouro Direto somam R$ 1,4 bilhão em maio",NEUTRAL
+155,Titulo: Fim do Drex? Entenda decisão do Banco Central,NEUTRAL
+156,Titulo: Veja quais as queixas mais comuns de investidores em órgão da bolsa,NEUTRAL
+157,"Titulo: Câmbio aproximou inflação da meta do Banco Central | Resumo: Se o câmbio não tivesse variado desde 31 de dezembro de 2024, permanecendo em R$ 6,18 por dólar em 2025, a inflação dos itens livres no IPCA seria 0,44 ponto percentual superior, diz André Cordeiro, do Inter",NEUTRAL
+158,Titulo: PIPELINE: Raízen vale R$ 74 bi no maior IPO do ano e o primeiro de ‘E2G’,NEUTRAL
+159,Titulo: Petrobras deixa ranking das 20 maiores pagadoras de dividendos no mundo,NEUTRAL
+160,Titulo: PETR4: ministro de Lula nega intervenção sobre dividendos da Petrobras e elogia CEO | Resumo: Rui Costa referendou trabalho de Jean Paul Prates e indicou que Lula não pretende fazer qualquer troca neste momento,NEUTRAL
+161,Titulo: BNDES lança plataforma para conectar investidores e projetos de desestatização | Resumo: O “Hub de Projetos” vai facilitar a conexão entre os investidores de capital de longo prazo nacionais e internacionais e dar acesso direto a informações sobre os projetos conduzidos pelo banco,NEUTRAL
+162,Titulo: De alta 10% à queda de 6%: 13 empresas reagem a balanços; só 3 das 59 ações do Ibovespa caem,NEUTRAL
+163,Titulo: Bovespa ronda a estabilidade pressionada por Petrobras,NEUTRAL
+164,"Titulo: Payroll, reação ao Copom e queda da Apple: 3 assuntos que movem o mercado nesta sexta | Resumo: Bolsas internacionais caminham sem uma direção definida, com investidores à espera de dados do mercado de trabalho dos EUA",NEUTRAL
+165,"Titulo: Não estava confortável em largar guidance, diz Galípolo sobre última reunião do Copom | Resumo: Para Galípolo, reduzir a magnitude do corte na taxa básica implicaria justificar que tinha acontecido uma mudança substancial no cenário",NEUTRAL
+166,"Titulo: Bolsonaro pode nomear militar para a Petrobras; balanço da Vale anima, Ambev decepciona e mais notícias",NEUTRAL
+167,"Titulo: Haddad diz que conversará com Campos Neto sobre fala em relação a ritmo de corte de juros | Resumo: Em reunião na quarta-feira, Campos Neto teria dito que a probabilidade de desacelerar o ritmo de corte da Selic de 50 para 25 pontos-base é maior do que aumentá-la",NEUTRAL
+168,"Titulo: Petrobras e mais 3 oportunidades de compra na Bolsa, com potencial de ganhos de até 36%",NEUTRAL
+169,"Titulo: Dólar salta para R$ 3,95 com maior chance de PT no 2º turno; Ibovespa fecha em alta | Resumo: Moeda teve forte valorização com tensão política, enquanto o Ibovespa ficou instável em dia de vencimento de opções sobre ações",NEUTRAL
+170,"Titulo: Juros futuros avançam com atividade local resiliente, mas perdem força com Powell",NEUTRAL
+171,"Titulo: Ibovespa avança, mas mercado mantém cautela com pré-candidatura de Flávio Bolsonaro",NEUTRAL
+172,"Titulo: Vale (VALE3) garante alta da Bolsa, Braskem (BRKM5) dispara com desdobramentos em Maceió e Magalu (MGLU3) cai | Resumo: Acompanhe o que movimenta a bolsa, ações, dólar, juros e commodities nos negócios do pregão desta quinta-feira (21).",NEUTRAL
+173,"Titulo: Governo eleva estimativas para crescimento e inflação em 2021 | Resumo: O boletim anterior, de março, previa uma alta de 3,20% do PIB e de 4,42% do IPCA para 2021.",NEUTRAL
+174,"Titulo: Lula diz que taxa de juros de 10,5% é irreal para inflação de 4%: 'mas não sou presidente do BC' | Resumo: Presidente afirmou ainda que 'isso vai melhorar quando puder indicar' o novo chefe da instituição, que substituirá Roberto Campos Neto",NEUTRAL
+175,"Titulo: Selic não vai reagir a dados de alta frequência, diz Campos Neto | Resumo: Em participação no MacroDay 2021, do BTG Pactual, Campos Neto afirmou que o BC está acompanhando os componentes do processo inflacionário, mas que nem sempre ocorrerão ""alterações no plano de voo""",NEUTRAL
+176,"Titulo: Selic: BC tranquiliza mercado sobre perspectivas de longo prazo, mas inflação e fiscal preocupam | Resumo: Em live do InfoMoney, economistas dizem que tom do comunicado do BC foi mais dovish, e destacam que Selic só deve subir na segunda metade de 2021",NEUTRAL
+177,"Titulo: Aplicar em FIIs até 12 meses antes de queda da Selic eleva retorno em até 8,8% ao ano, diz estudo da XP | Resumo: Investidores que se anteciparam acumularam retornos médios entre CDI mais 6% e 8,8% ao ano nos 12 meses seguintes ao primeiro corte",NEUTRAL
+178,Titulo: As ações do Ibovespa que mais subiram e as que mais caíram em abril,NEUTRAL
+179,"Titulo: B3 (B3SA3) distribuirá R$ 597,7 mi em dividendos e JCP, CVM aprova OPA da BR Properties (BRPR3) e Wiz (WIZC3) convoca AGE para reduzir payout",NEUTRAL
+180,"Titulo: De olhos nas fintechs, B3 se torna mantenedora da Associação Brasileira de Crédito Digital",NEUTRAL
+181,"Titulo: Follow-on da BRF, Copom, resultados nos EUA e o que move o mercado | Resumo: BRF pretende levantar mais de R$ 7 bilhões com oferta; dia terá divulgação de resultados no Brasil, com a Romi, e nos EUA, com Alphabet, GM e Exxon",NEUTRAL
+182,"Titulo: Mercadante evita falar de Petrobras (PETR4) em evento no BNDES | Resumo: O presidente do BNDES foi especulado como CEO da Petrobras, no lugar de Prates",NEUTRAL
+183,"Titulo: Campos: Home equity pode quase dobrar carteira de crédito imobiliário | Resumo: Abertura recente dos spreads no crédito não sugere risco sistêmico, indica Absolute",NEUTRAL
+184,"Titulo: Copom mantém Selic em 13,75% pela quinta reunião consecutiva | Resumo: SELIC HOJE: Banco Central manteve taxa de juros em 13,75%. Selic está nesse patamar desde agosto de 2022",NEUTRAL
+185,"Titulo: Após um ano, teto de juros do cartão tem pouco impacto sobre taxas",NEUTRAL
+186,Titulo: BNDES anuncia crédito de R$ 500 mi a fornecedores de materiais e equipamentos para SUS | Resumo: O programa estará vigente até junho de 2028 e tem como objetivo fomentar a indústria nacional que produz materiais de saúde,NEUTRAL
+187,"Titulo: Dólar se aproxima de R$ 4,80",NEUTRAL
+188,Titulo: Mercado ajusta inflação para cima e Selic para baixo em 2016,NEUTRAL
+189,"Titulo: Depois de levantar R$ 22 bi com Petrobras, BNDES prepara venda de JBS",NEUTRAL
+190,"Titulo: Inflação dependerá do andamento das reformas, aponta Copom | Resumo: Banco Central também antecipou que a inflação acumulada em 12 meses deve atingir um pico em torno de abril ou maio",NEUTRAL
+191,Titulo: CVM autoriza gestora brasileira a lançar primeiro ETF de Ethereum do país | Resumo: QETH11 será o primeiro ETF brasileiro a investir 100% do seu patrimôniona segunda maior criptomoeda do mundo; listagem na B3 ainda não tem data definida,NEUTRAL
+192,Titulo: Petrobras pagou mais dividendos do que a bolsa inteira: veja lista | Resumo: Itaú e Vale também estão no topo da lista das empresas que mais desembolsaram dividendos neste ano,NEUTRAL
+193,"Titulo: Itaú, B3, Banco do Brasil e mais 46 empresas divulgam resultados na próxima semana; confira | Resumo: Semana ainda traz os resultados de BRF, Telefônica, TIM e Azul para os investidores monitorarem de perto",NEUTRAL
+194,"Titulo: Selic a 6,25%: confira 20 ações que pagam dividendos acima da taxa básica de juros | Resumo: Levantamento da XP mostra empresas do setor elétrico, financeiro e de commodities entre as preferidas para pagarem proventos acima da Selic",NEUTRAL
+195,"Titulo: Petrobras (PETR4) encerra programa com recompra de 244,3 mil debêntures da 5ª, 6ª e 7ª emissão | Resumo: Estatal encerrou, no dia 15 de julho de 2023, seu 1º Plano de Recompra de Debêntures",NEUTRAL
+196,Titulo: Crédito para micro e pequena empresa,NEUTRAL
+197,"Titulo: B3 informa início de oferta de R$ 2,55 bilhões em debêntures",NEUTRAL
+198,Titulo: Analistas esperam Selic estável,NEUTRAL
+199,Titulo: Siderúrgicas sobem 6% e Vale vira para alta; Santander e mais 5 ações reagem a balanços,POSITIVE
+200,Titulo: Ibovespa ignora pessimismo nos EUA e vira para alta guiado por Vale e siderúrgicas | Resumo: Ações da mineradora sobem com nova política de dividendos e alta do minério de ferro,POSITIVE
+201,Titulo: Cenário eleitoral e fraqueza do dólar no exterior dão apoio ao real | Resumo: Real teve terceira melhor performance do dia entre as 33 principais divisas e Ibovespa emendou seu quarto pregão de altas,POSITIVE
+202,"Titulo: Ibovespa vira para alta com Petrobras e bancos; DIs despencam 12 pontos-base após ata do Copom | Resumo: De acordo com o diretor de operações da Mirae Asset, Pablo Spyer, o mercado está precificando 25% de chance de corte de 125 pontos-base na Selic na próxima reunião do Copom, marcada para 31 de maio",POSITIVE
+203,"Titulo: Ibovespa engata rali no final e fecha na máxima do dia com melhora nos EUA; dólar cai para R$ 3,78 | Resumo: Índice teve dia volátil, mas ganhou força na reta final com a Petrobras avançando em dia de recuperação do petróleo",POSITIVE
+204,"Titulo: Após bater R$ 5, dólar muda de rumo e firma queda com melhora externa | Resumo: Mudança ocorre em linha com a melhora do clima no exterior e, segundo analistas, foi impulsionada também por um forte fluxo de capital",POSITIVE
+205,"Titulo: Reação aos balanços da Vale e Petrobras, PIB na Europa, inflação nos EUA e o que mais move o mercado | Resumo: ADRs da Petrobras disparam no pré-mercado dos Estados Unidos, após resultado do segundo trimestre superar estimativas do mercado",POSITIVE
+206,"Titulo: Bolsa tem leve alta e dólar ronda R$ 3,70; IPCA merece atenção",NEUTRAL
+207,Titulo: Ibovespa futuro sobe e dólar cai após emprego nos EUA decepcionar,POSITIVE
+208,"Titulo: Juros fecham em queda com maior otimismo sobre inflação | Resumo: O movimento teve como pano de fundo a melhora das expectativas sobre à inflação de curto prazo, após a Petrobras anunciar a redução nos preços da gasolina",POSITIVE
+209,Titulo: Queda da Selic incrementou fundos mistos e de ações,POSITIVE
+210,Titulo: Ibovespa dispara e dólar despenca: ativos domésticos têm melhora generalizada,POSITIVE
+211,Titulo: Ibovespa sobe e dólar opera em baixa com influência de cena externa,POSITIVE
+212,"Titulo: Ibovespa Futuro zera perdas e dólar e DIs viram para queda após inflação nos EUA ficar abaixo do esperado | Resumo: Índice futuro ganha força com dados americanos, apesar de Wall Street seguir com leves perdas",POSITIVE
+213,"Titulo: Ibovespa fecha na máxima do dia e volta a ficar acima de 72 mil pontos; dólar cai para R$ 3,13 | Resumo: Índice abriu em queda, mas ganhou força durante a tarde e conseguiu voltar a ficar acima de 72 mil pontos em dia de volume fraco",POSITIVE
+214,Titulo: Ibovespa Futuro sobe e juros recuam após IPCA ficar abaixo do esperado,POSITIVE
+215,"Titulo: Com Previdência no foco, Bolsa avança; dólar opera abaixo de R$ 3,65",POSITIVE
+216,Titulo: Ibovespa deixa pressão do câmbio de lado e sobe com commodities,POSITIVE
+217,Titulo: Ibovespa sobe 2% e dólar afunda com primeiro voto a favor da condenação de Lula,POSITIVE
+218,Titulo: Ibovespa renova topo e dólar perde força antes da Super Quarta; veja próximos pontos | Resumo: Expectativa por cortes de juros pressiona o dólar e fortalece o Ibovespa,POSITIVE
+219,"Titulo: Ibovespa Futuro ignora exterior e commodities, e abre em alta; DIs e dólar caem",POSITIVE
+220,Titulo: Ibovespa encerra em leve alta com apoio de NY e recuo dos juros futuros | Resumo: Declarações mais “dovish” de dirigentes do Federal Reserve (Fed) elevaram as apostas de cortes de juros nos Estados Unidos em dezembro,POSITIVE
+221,"Titulo: Bolsa reduz perdas da primeira semana do ano após governo ajustar discurso | Resumo: Ibovespa sobe em três pregões consecutivos após cair 5% nos dois primeiros da semana; dólar cai a R$ 5,23",POSITIVE
+222,Titulo: Ibovespa retoma os 110 mil pontos com prévia da inflação abaixo da esperada | Resumo: Dados do IPCA-15 vieram abaixo do projetado por economistas; índices dos EUA também avançam,POSITIVE
+223,"Titulo: Dólar à vista encerra estável, mas acumula 4 semanas seguidas de desvalorização",NEGATIVE
+224,"Titulo: Giro diminui em véspera de feriado, mas Ibovespa tem novo recorde",POSITIVE
+225,"Titulo: Há uma oportunidade de ouro na Bolsa: a última vez que isso ocorreu o Ibovespa subiu 290%, diz analista | Resumo: Para o analista Fernando Góes, se os gráficos semanal e mensal estiverem certos, o índice pode facilmente caminhar rumo aos 120.000 pontos, mas não tenha pressa, uma realização pode surgir no curto prazo",POSITIVE
+226,Titulo: Vale e siderúrgicas saltam até 5% seguindo ADRs e Petrobras avança 2%; Triunfo dispara após plano homologado,POSITIVE
+227,"Titulo: Com rali do petróleo e ""trégua"" na Lava Jato, Ibovespa atinge máxima do dia; dólar recua",POSITIVE
+228,"Titulo: Dólar fecha em queda com fluxo externo e Copom | Resumo: O tom do comunicado do Copom, confirmando uma nova alta de 1 ponto percentual em maio, favoreceu os fluxos de capital vindos do exterior, que também teve um dia positivo com a alta de commodities",POSITIVE
+229,"Titulo: Bradespar dispara 5% com distribuição de R$ 5,3 bi em ações da Vale | Resumo: Holding convocou assembleia para reduzir seu capital com a entrega das ações da mineradora a acionistas",POSITIVE
+230,"Titulo: Cyrela, MRV, IRB: as 10 maiores altas e baixas do Ibovespa em setembro | Resumo: Índice fecha setembro no positivo com impulso no último pregão antes de eleições",POSITIVE
+231,"Titulo: ADRs brasileiros operam em alta após corte de 0,75 ponto da Selic",POSITIVE
+232,"Titulo: Ação do Banco do Brasil sobe mais de 2% após resultado da oferta, Eletrobras avança 5% com fala de ministro sobre privatização",POSITIVE
+233,"Titulo: Brasil melhora em ranking de inflação e sai do 4° para o 8° lugar | Resumo: Confirmação de segunda deflação seguida do IPCA motivou recuperação; Turquia lidera ranking, seguida por Argentina e Rússia",POSITIVE
+234,Titulo: Ativos locais reduzem perdas com ajustes técnicos; Petrobras impulsiona bolsa,POSITIVE
+235,Titulo: Juros futuros fecham último pregão de 2018 no menor patamar do ano,POSITIVE
+236,"Titulo: Petrobras poderá experimentar nova alta, diz gestor de investimentos",POSITIVE
+237,"Titulo: Após nova alta da Selic, Lula diz que Brasil vai crescer mais de 3% em 2025",POSITIVE
+238,Titulo: Juros futuros firmam queda após leilão e com mercado de olho no Copom | Resumo: Dinâmica após leilão pode indicar que havia alguma pressão de alta sobre as taxas em antecipação à oferta,POSITIVE
+239,"Titulo: BC prevê que inflação em 2017 será a terceira menor do Plano Real | Resumo: O BC informou que a expectativa para o Índice de Preços ao Consumidor Amplo (IPCA) para 2017 no cenário de referência caiu de 4,4% para 4%",POSITIVE
+240,"Titulo: Volume de emissões em setembro foi elevado, com qualidade muito boa, diz Tesouro | Resumo: Como exemplo dessa qualidade “muito boa”, o coordenador-geral de Operações da Dívida Pública do Tesouro Nacional, Luís Felipe Vital, destacou o fato de que 44% das emissões foram de títulos pré-fixados",POSITIVE
+241,"Titulo: Copom se reúne nesta quarta e deve cortar os juros para 11,75% ao ano | Resumo: Diretores do Banco Central devem reduzir a taxa básica de juros em 0,5 ponto percentual, segundo estimativas dos economistas",POSITIVE
+242,"Titulo: Ambiente que se desenha é bom para ativos de risco, tanto na renda fixa quanto na variável, diz Itaú",POSITIVE
+243,Titulo: Banco Central conduz Selic a um novo recorde de baixa,POSITIVE
+244,"Titulo: IPCA avança 6,29% em 2016 e fica abaixo do teto da meta de inflação",POSITIVE
+245,"Titulo: Com liquidez limitada, juros futuros fecham em ligeira queda",POSITIVE
+246,"Titulo: IPCA-15 fica em 0,09% em outubro, menor taxa para o mês desde 1998",POSITIVE
+247,"Titulo: BC deve reduzir Selic em 0,5 ponto porcentual na quarta-feira, diz Barclays | Resumo: O banco britânico espera redução da taxa Selic a 11,75% no fim de 2023 e a 9,5% no término do ciclo de cortes, que deve ocorrer em meados de 2024",POSITIVE
+248,Titulo: Juros futuros fecham em queda com Copom e cenário externo no foco | Resumo: Cenário de preocupação com a saúde dos bancos regionais nos Estados Unidos contribuiu adicionalmente para o movimento de queda nesta quinta (4),POSITIVE
+249,"Titulo: IPCA-15: prévia da inflação cai 0,14% em agosto, primeira deflação em dois anos",POSITIVE
+250,Titulo: Juros futuros caem após IPCA-15 mais baixo do do esperado,POSITIVE
+251,"Titulo: Dólar cai a R$ 4,85, menor patamar desde início de agosto",POSITIVE
+252,Titulo: Juros têm forte baixa em dia de alívio local,POSITIVE
+253,"Titulo: Focus tem 1ª alta de Selic de 2024 desde outubro, para 9,13%, mas IPCA cai para 3,71% | Resumo: Mediana das projeções para o crescimento da economia brasileira em 2024 subiu pela 9ª semana consecutiva, agora indo de 1,90% para 1,95%",POSITIVE
+254,"Titulo: Dólar fecha a R$ 4,10 e Bolsa avança com força pelo 2º dia",POSITIVE
+255,Titulo: Dólar fecha no menor patamar desde o dia 18 de junho,POSITIVE
+256,Titulo: Estímulo ao crédito privado no setor de infraestrutura,POSITIVE
+257,Titulo: Ibovespa Futuro sobe antes de dado de emprego dos EUA; juros avançam com IPCA,POSITIVE
+258,"Titulo: Ibovespa inicia semana em alta com otimismo externo | Resumo: Alta só não é maior por conta de incertezas em relação à política monetária local, às vésperas da decisão de juros do Copom",POSITIVE
+259,Titulo: Ibovespa sobe e volta ao nível pré-crise política; dólar varia pouco,POSITIVE
+260,Titulo: Ibovespa Futuro sobe com indicadores e recuperação de perdas recentes; dólar avança | Resumo: Ambiente internacional não favorece uma correção das perdas registradas pelas ações brasileiras no início da semana,POSITIVE
+261,"Titulo: Ibovespa fecha na máxima do dia com exterior e adiamento no TSE; dólar fica abaixo de R$ 3,10 | Resumo: Índice seguiu a melhora de humor no exterior após discurso de Trump e com disparada da Vale, enquanto petróleo sobe com rumores sobre estoques nos EUA",POSITIVE
+262,"Titulo: Ibovespa Futuro segue commodities e abre em alta; dólar cai a R$ 3,10 com swaps do BC",POSITIVE
+263,"Titulo: Trade hoje: Ibovespa segue em tendência de alta no curto prazo, mas esbarra na região dos 120,5 mil pontos, pela análise técnica | Resumo: Trade hoje: Ibovespa segue em tendência de alta no curto prazo, mas esbarra na região dos 120,5 mil pontos, segundo análise técnica",POSITIVE
+264,"Titulo: Ibovespa Futuro sobe após Copom elevar a Selic a 2,75%; dólar cai a R$ 5,48",POSITIVE
+265,Titulo: Ibovespa tem valorização; dólar cai ante real com cena externa,POSITIVE
+266,"Titulo: Ibovespa avança 1,16% e vai a 113 mil pontos, com ações de bancos e mercado interno; dólar cai 1,10%, a R$ 5,14 | Resumo: Banco se recuperam de quedas causadas por caso Americanas e companhias ligadas ao mercado interno se beneficiam de IPCA-15",POSITIVE
+267,Titulo: Ibovespa sobe em último pregão do ano com ajuda do exterior; Dólar cai 2%,POSITIVE
+268,"Titulo: Ibovespa dispara 2,8% e supera os 98 mil pontos com exterior e reforma da Previdência; dólar cai | Resumo: Índice passou o dia no positivo e ganhou forças junto com Wall Street enquanto investidores aguardam andamento da reforma no Congresso",POSITIVE
+269,"Titulo: Ibovespa volta a encostar nos 107 mil pontos com confirmação de novo secretário; dólar cai e é negociado abaixo dos R$ 5,70",POSITIVE
+270,"Titulo: Rali Bolsonaro: Ibovespa dispara 3,5% e fecha na máxima histórica otimista com novo governo | Resumo: Índice chegou a abrir em queda, mas disparou com euforia dos investidores sobre as falas e novidades do primeiro dia do governo de Jair Bolsonaro",POSITIVE
+271,Titulo: Ibovespa fecha em alta com ajuda de Vale e de olho em corte de juros nos EUA; dólar cai | Resumo: As apostas para uma redução mais agressiva dos juros americanos saltaram de 15% para 45%,POSITIVE
+272,Titulo: Ibovespa sobe puxado por Petrobras e bancos; dólar cai por onda de otimismo com Bolsonaro,POSITIVE
+273,"Titulo: Ibovespa acelera alta com exterior e falas de Lira e Pacheco sobre precatórios; dólar cai a R$ 5,28",POSITIVE
+274,"Titulo: Ibovespa passa a subir com apoio de bancos, apesar de queda de ações ligadas a commodities",POSITIVE
+275,Titulo: Ibovespa futuro volta a acompanhar exterior e sobe mais de 1%; juros avançam após IPCA-15,POSITIVE
+276,"Titulo: Ibovespa sobe 0,78% puxado por ações de commodities | Resumo: Alta de commodities, queda do dólar e expectativa de corte de juros no Brasil estiveram entre os argumentos dos investidores para as compras",POSITIVE
+277,Titulo: Ibovespa dispara e bate recorde com perspectiva de fim do ciclo de alta da Selic,POSITIVE
+278,"Titulo: Ibovespa futuro sobe em linha com exterior, à espera do Fomc; dólar e juros recuam",POSITIVE
+279,"Titulo: Mercado comemora eleições ""sem surpresas"" na França, e Ibovespa opera em alta; dólar e DIs caem",POSITIVE
+280,Titulo: Ibovespa hoje: bolsa salta quase 2% com fim do ciclo de alta de juros,POSITIVE
+281,Titulo: Ibovespa sobe e dólar cai com alívio nas relações entre EUA e China; juros estendem quedas depois de deflação no Brasil,POSITIVE
+282,Titulo: Ibovespa sobe seguindo Wall Street sem perder de vista o fiscal; dólar cai 2% com Fed,POSITIVE
+283,"Titulo: Ibovespa sobe 0,6% e encosta nos 87 mil pontos com mercado cravando corte da Selic | Resumo: Índice se descolou do mercado externo após relatório Focus aumentar as apostas de corte da Selic na próxima semana",POSITIVE
+284,Titulo: Ibovespa Futuro tem leve alta antes de falas de membros do Fed; dólar e DIs caem,POSITIVE
+285,Titulo: Ibovespa sobe e dólar apaga alta após declarações de Haddad e Campos Neto em Washington,POSITIVE
+286,Titulo: Ibovespa vai às máximas com recuo mais intenso dos juros futuros e impulso de Petrobras,POSITIVE
+287,Titulo: Ibovespa Futuro sobe em meio a aproximação entre Bolsonaro e Maia; dólar cai,POSITIVE
+288,"Titulo: Ibovespa fecha em alta e dólar cai com expectativas sobre Previdência | Resumo: Ibovespa subiu 1,14%, a 95.947,62 pontos, e dólar à vista caiu 0,27%, a R$ 4,0242 na venda",POSITIVE
+289,Titulo: Ibovespa fecha em leve alta e dólar cai,POSITIVE
+290,"Titulo: Exportação de minério sustenta alta da Vale na Bolsa | Resumo: Alta no preço do minério de ferro tem ajudado a sustentar as ações da empresa, apesar de uma queda nos volumes previstos pela mineradora",POSITIVE
+291,Titulo: Petrobras e Vale empurram Ibovespa acima de 100 mil pontos; dólar cai,POSITIVE
+292,"Titulo: Ibovespa opera de lado no último pregão de 2023, mas deve terminar o ano com alta firme",POSITIVE
+293,Titulo: Ibovespa sobe com influência do cenário externo; dólar recua,POSITIVE
+294,"Titulo: Ibovespa fecha em alta com inflação nos EUA e Orçamento Federal de 2024 | Resumo: Na última sessão antes do Natal, investidores repercutiram dados dos EUA e orçamento do Brasil para 2024",POSITIVE
+295,"Titulo: Ibovespa fecha em alta de mais de 3% com suspensão da tarifas recíprocas; dólar despenca | Resumo: Agentes do mercado reagem a alívio na guerra tarifária; dólar, que havia superado os 6%, vai a menos de R$ 5,90",POSITIVE
+296,"Titulo: Ibovespa volta subir, apesar da queda das ações da Petrobras",POSITIVE
+297,Titulo: Ibovespa Futuro sobe com expectativa por sinalização de tolerância à inflação do Fomc; dólar cai,POSITIVE
+298,"Titulo: Ibovespa Futuro (INDFUT) acompanha exterior e opera em alta, à espera de dados de inflação da China, Brasil e EUA | Resumo: IPCA de agosto no Brasil, juros na Europa e inflação nos EUA são destaque na semana",POSITIVE
+299,Titulo: Petrobras e bancos saltam até 3%; Eletrobras dispara 8% com mercado animado com privatização; small cap sobe 50% em 3 pregões,POSITIVE
+300,"Titulo: Ibovespa vira para alta em pregão extremamente volátil enquanto EUA amenizam queda; dólar sobe a R$ 5,30 | Resumo: Virada incrível da Bolsa nas últimas horas de pregão promete levar índice a fechar semana com tom mais positivo",POSITIVE
+301,Titulo: Ibovespa sobe com inflação nos EUA gerando alívio no mercado; dólar sobe mesmo com atuação do BC | Resumo: Inflação ao consumidor norte-americano ficou em linha com esperado e gera alívio sobre o ritmo de preços um dia antes da reunião do Fed,POSITIVE
+302,"Titulo: Com bolsas em NY em alta e dólar estável, Ibovespa tenta consolidar valorização | Resumo: Ibovespa em alta, dólar pressionado e Nasdaq renova máximas: veja análise",POSITIVE
+303,"Titulo: Ibovespa sobe com alívio na inflação, mas cautela com comércio global permanece",POSITIVE
+304,"Titulo: Rali longe do fim: Ibovespa sobe 2,5% na semana e dólar tem 9ª queda semanal seguida | Resumo: Mercado tem novo dia de realização, mas consegue praticamente zerar as perdas no fim do pregão, registrando a sétima semana de ganhos nas últimas oito",POSITIVE
+305,"Titulo: Ibovespa salta 2,6%, dólar cai 1%: como as falas de Powell animaram mercado nesta 6ª? | Resumo: Powell trouxe indicações de que uma queda de juros pelo Fed está mais próxima e anima investidores",POSITIVE
+306,"Titulo: Ibovespa sobe mais de 1% e dólar cai para R$ 3,70 com balanços e recuperação em Wall Street | Resumo: Índice perdeu força na reta final do pregão após chegar a subir mais de 2%, mas conseguiu fechar acima dos 84 mil pontos",POSITIVE
+307,"Titulo: Ibovespa nas máximas além de 142 mil, dólar a R$ 5,41: como payroll animou mercado | Resumo: Dia foi de forte ânimo após dados fracos do mercado de trabalho nos EUA",POSITIVE
+308,"Titulo: Bolsa sobe com exterior, mas dólar segue sob pressão | Resumo: Ibovespa fecha nos 93.531 pontos; dólar atinge R$ 5,2365",POSITIVE
+309,"Titulo: Ibovespa sobe 1% e tem quarta alta consecutiva em dia ""sem"" EUA; dólar cai abaixo de R$ 3,90 | Resumo: Índice chegou a subir mais de 2%, mas perdeu força após o fechamento de Wall Street, que encerrou os negócios mais cedo por conta do feriado desta quarta",POSITIVE
+310,"Titulo: Ibovespa sobe 1,89% e dólar cai 0,73% após arcabouço fiscal: anúncio é o gatilho que o mercado esperava? | Resumo: De uma forma geral, analistas avaliaram o anúncio como positivo, mostrando preocupação do governo com fiscal, mas ainda há pontos a serem esclarecidos",POSITIVE
+311,"Titulo: Juros futuros operam nas mínimas após dados dos EUA e com otimismo para ativos locais | Resumo: Segundo participantes do mercado, a dinâmica é justificada pela queda do dólar frente ao real e pela demanda estrangeira por ativos locais",POSITIVE
+312,"Titulo: Apesar de tensão política, Ibovespa futuro sobe e dólar cai seguindo alívio no exterior",POSITIVE
+313,"Titulo: Ações da Petrobras (PETR4, PETR3) têm alta forte em dia favorável a ativos de risco e com revisão de preço-alvo | Resumo: Queda mais forte do dólar globalmente e dados mais fracos da economia americana ajudam a impulsionar a demanda por ativos de países emergentes",POSITIVE
+314,"Titulo: Ibovespa reduz ganhos com fraqueza de bancos, mas segue em alta graças a Wall Street; dólar cai a R$ 5,29 | Resumo: Mercado registra ganhos com as atenções voltadas ao noticiário internacional",POSITIVE
+315,Titulo: Ibovespa Futuro segue em alta com foco em taxa de juros e inflação nos EUA | Resumo: Alívio na taxa de juros do Tesouro americano e a alta do preço do petróleo Brent são alguns dos temas de maior destaque no último pregão de setembro,POSITIVE
+316,Titulo: Ativos locais registram alta em dia de IPCA-15,POSITIVE
+317,"Titulo: Juros futuros fecham em alta com riscos fiscais e atividade econômica no foco | Resumo: Durante a tarde desta quinta, os juros longos foram às máximas do dia, num movimento atrelado ao avanço firme dos rendimentos dos títulos do Tesouro americano",NEGATIVE
+318,"Titulo: IPCA-15 sobe em 0,35% em agosto, ante queda de 0,18% em julho, revela IBGE | Resumo: A inflação de 0,35% registrada em agosto foi o resultado mais elevado para o índice desde fevereiro, quando a taxa foi de 0,54%, informou o IBGE. No mesmo mês do ano passado, a alta do IPCA-15 havia ficado em 0,45%.",NEGATIVE
+319,"Titulo: Após 3 quedas seguidas, dólar fecha em alta | Resumo: Moeda americana terminou a segunda-feira cotada em R$3,73 - alta de 0,53% ante o real",NEGATIVE
+320,"Titulo: Dólar vai às mínimas em quase 7 meses e fecha a R$ 5,107",POSITIVE
+321,"Titulo: Leite sobe 22% em julho, maior influência na alta do IPCA-15, e acumula inflação de 57% no ano | Resumo: Produto representou 0,25 ponto percentual do resultado do índice prévia da inflação, que subiu 0,13% no mês",NEGATIVE
+322,"Titulo: Dólar atinge maior nível em uma semana, mas respeita nível de R$ 3,72",NEGATIVE
+323,Titulo: Juros futuros fecham em leve alta puxados pelo avanço do dólar,NEGATIVE
+324,Titulo: Juros futuros avançam com alta do dólar e cautela na cena política,NEGATIVE
+325,"Titulo: Juros futuros avançam com Treasuries e cautela antes do IPCA-15 | Resumo: A proximidade de divulgação do IPCA-15 imprime um viés de cautela aos negócios e contribui para o avanço das taxas locais, que também respondem à dinâmica externa",NEGATIVE
+326,"Titulo: Projeções para inflação em 2022 e 2023 têm altas fortes, mostra Focus | Resumo: O levantamento semanal apontou que as expectativas para a alta do IPCA subiram para 5,38% em 2022 e 3,50% em 2023, respectivamente de 5,15% e 3,40% na semana anterior",NEGATIVE
+327,"Titulo: IPCA fecha 2019 com alta de 4,31%, acima do centro da meta de inflação | Resumo: Apenas em dezembro, índice de preços avançou 1,15%, a taxa mais alta para o mês desde 2002",NEGATIVE
+328,Titulo: Dólar fecha estável apesar de exterior favorável a emergentes,NEUTRAL
+329,"Titulo: Dólar renova máximas e vai a R$ 5,37 em dia de exterior negativo",NEGATIVE
+330,"Titulo: Dólar fecha perto de R$ 4,24, mesmo após intervenções do BC | Resumo: A atuação da autoridade monetária até conteve um salto maior do dólar contra o real, mas o efeito foi bastante limitado",NEGATIVE
+331,"Titulo: Dólar tem leve alta em dia de dado de inflação nos EUA mais fraco | Resumo: Pela cautela dos investidores, divisa americana segue ligeiramente mais forte ante o real, em uma dinâmica distinta da observada em mercados pares",NEGATIVE
+332,Titulo: Dólar renova mínimas em quase um ano e juros de curto prazo disparam,NEUTRAL
+333,"Titulo: Dólar em breve baterá R$6, dizem analistas após moeda cravar novo recorde | Resumo: Fechando em R$ 5,87, a moeda subiu mais de 13 centavos entre uma sessão e outra. Na máxima do pregão, o câmbio atingiu novo pico intradiário",NEGATIVE
+334,Titulo: Juros futuros fecham em alta com exterior e estimativa sobre inflação,NEGATIVE
+335,"Titulo: Juros futuros têm novo dia de alta com dólar a R$ 4,40",NEGATIVE
+336,"Titulo: Juros futuros fecham em alta, mas abaixo do patamar pré-atentado",NEGATIVE
+337,"Titulo: Dólar sobe e testa os R$ 3,30 com risco político no horizonte",NEGATIVE
+338,"Titulo: Dólar dos R$ 4,60 aos R$ 5: o que explica a forte alta da divisa americana nas últimas sessões | Resumo: A alta do dólar acumulada entre sexta e segunda foi de 5,59%, a mais forte na mesma base de comparação desde 18 de maio de 2017",NEGATIVE
+339,Titulo: Juros futuros têm leve alta com dólar e exterior,NEGATIVE
+340,Titulo: Dólar e euro têm mínimas em mais de um ano frente ao real,POSITIVE
+341,"Titulo: Juros futuros fecham em alta firme, guiados por exterior e riscos fiscais",NEGATIVE
+342,"Titulo: Dólar sobe com BC, mas ainda abaixo de R$3,65 | Resumo: O dólar fechou em alta frente ao real, mas ainda abaixo de 3,65 reais, sustentado pela atuação do Banco Central",NEGATIVE
+343,Titulo: Juros futuros fecham em alta com IPCA-15 acima do consenso e discurso de Powell,NEGATIVE
+344,"Titulo: Dólar sobe a R$ 3,78, mas operadores veem algum alívio no mercado",NEUTRAL
+345,Titulo: Juros futuros avançam com aumento do prêmio de risco e movimentos técnicos,NEGATIVE
+346,Titulo: Juros futuros fecham em alta firme com expectativas de inflação e Treasuries no foco,NEGATIVE
+347,"Titulo: IPCA sobe 0,38% em abril, acima do esperado pelo mercado, mas a menor taxa para o mês desde 2021",NEUTRAL
+348,"Titulo: Bitcoin atinge alta histórica no Brasil impulsionado por alta do dólar | Resumo: Com moeda norte-americana negociada a R$ 5,60, bitcoin ultrapassa barreira dos R$ 70 mil em exchanges brasileiras pela primeira vez na história",POSITIVE
+349,"Titulo: Dólar avança frente ao real, mas se distancia de máxima do dia",NEUTRAL
+350,"Titulo: Juros futuros têm leve alta, após irem às máximas com fala de Powell",NEGATIVE
+351,Titulo: Juros futuros fecham em alta com foco em riscos políticos e fiscais,NEGATIVE
+352,"Titulo: IPCA avança 0,44% na inflação em agosto, em linha com o esperado | Resumo: Para o acumulado em 12 meses, a expectativa da mediana dos analistas era de em torno de 8,66% de inflação",NEUTRAL
+353,"Titulo: IPCA-15 sobe 0,34% em dezembro e fecha 2024 acumulado em 4,71% | Resumo: Alimentação e bebidas foi a principal influência para a alta do IPCA-15 em dezembro",NEGATIVE
+354,"Titulo: Dólar sobe 0,78% com investidores de olho em arcabouço, mas fecha abaixo de R$ 5 pela quinta sessão seguida | Resumo: Com a divulgação do documento, no meio da tarde, o dólar chegou a bater o valor máximo do dia, chegando a subir mais de 1%, mas desacelerou",NEUTRAL
+355,"Titulo: Juros futuros fecham semana em leve alta, apesar de recuo no dia",NEGATIVE
+356,"Titulo: IPCA sobe 0,18% em novembro com alta de passagens aéreas, mas fica abaixo do esperado | Resumo: Analistas consultados pela Reuters tinham projeção média de alta de 0,20% na comparação mensal e avanço de 4,49% na visão ano a ano",POSITIVE
+357,"Titulo: Ibovespa retoma os 100 mil pontos | Resumo: Ibovespa retoma 100 mil pontos com alta de bancos, mas dólar sobe devido à cautela com exterior",POSITIVE
+358,"Titulo: Ibovespa futuro acompanha exterior e inicia semana em alta; dólar recua novamente | Resumo: Apesar do movimento positivo, os investidores seguem cautelosos com a alta da inflação pelo menos e expectativa de alta de juros",POSITIVE
+359,"Titulo: Ibovespa perde força no fim, mas fecha em alta com Vale e Petrobras; dólar sobe | Resumo: Mercado teve dia de alta impulsionado pela alta das commodities após aceno positivo da China. Apesar disso, índice encerrou o dia com ganhos de menos de 1%",POSITIVE
+360,"Titulo: Rentabilidade sobe, mas inflação corrói ganhos em 2021 | Resumo: Nove das 11 categorias de fundos avaliadas no ranking apresentaram retornos positivos até outubro, mas nenhuma bateu a inflação",NEGATIVE
+361,"Titulo: Dia de quedas; dólar sobe 1,61% | Resumo: Dia de quedas Afetada fortemente pelo cenário internacional, a bolsa teve um dia vermelho. Entre as ações do Ibovespa somente sete tiveram alta nesta terça-feira véspera de feriado. A maior alta do dia é a da fabricante de aviões Embraer, impulsionada pelo balanço do terceiro trimestre e pela alta do dólar. A moeda americana subiu […]",NEGATIVE
+362,"Titulo: Ibovespa Futuro abre em alta de olho nos EUA e no G20; dólar cai e DIs avançam | Resumo: O Ibovespa Futuro é um bom termômetro de como será o pregão, mas nem sempre prevê adequadamente movimentos na Bolsa a partir do sino de abertura.",POSITIVE
+363,"Titulo: Ibovespa segue exterior de olho no Brexit e segura euforia após duas fortes altas; dólar cai | Resumo: Índice opera entre perdas e ganhos atento ao cenário externo, enquanto a moeda norte-americana recua após dado de inflação nos EUA",POSITIVE
+364,"Titulo: Ibovespa oscila sem rumo firme, mas caminha para ganhos no mês",POSITIVE
+365,"Titulo: Dólar e juros saem das máximas, mas seguem em alta",NEGATIVE
+366,"Titulo: ""Valuation de R$ 55 bi"" faz Braskem saltar quase 7%; Suzano cai 5% com dólar em queda e mais destaques | Resumo: Confira os destaques da B3 na sessão desta quarta-feira (10)",NEUTRAL
+367,"Titulo: Busca por risco faz bolsa testar máxima do ano; dólar cai para R$ 3,27",POSITIVE
+368,"Titulo: Dólar à vista tem 5ª sessão seguida de queda e fecha cotado a R$ 5,48 | Resumo: A direção oposta a ser seguida pelo Banco Central e pelo Federal Reserve (Fed), ampliando o diferencial de juros entre Brasil e Estados Unidos, tem sido a explicação para a valorização consistente do real nas últimas sessões",POSITIVE
+369,"Titulo: Ibovespa futuro acompanha exterior e avanço de commodities e registra alta; dólar cai | Resumo: Wall Street Journal destacou que o Fed está a caminho de elevar as taxas de juros em 75 pontos-base em sua reunião, sem aceleração no ritmo de alta",POSITIVE
+370,"Titulo: Euforia na bolsa: Usiminas salta 9%, Eletrobras avança 7%, BB sobe 3% e Petrobras avança apesar de negativa sobre privatização",POSITIVE
+371,"Titulo: Com deflação, IPCA tem alívio pontual, mas seca já pressiona",NEUTRAL
+372,Titulo: Boom de máximas históricas: 20 ações do Ibovespa que bateram recordes em junho de 2025,POSITIVE
+373,"Titulo: Economistas Top 5 projetam alta de 2,59% para IPCA em 2020, mostra Focus",NEGATIVE
+374,"Titulo: Mercado melhora projeções de 2017, mas eleva previsão de IPCA em 2016",NEUTRAL
+375,"Titulo: Ibovespa emenda quarto pregão de alta, mas Vale limita ganhos do índice",NEUTRAL
+376,"Titulo: Ibovespa recupera 120 mil pontos, juros aprofundam baixa e dólar recua após falas de presidente da Febraban sobre reunião com Haddad | Resumo: Isaac Sidney disse que os participantes reafirmaram apoio institucional ao ministro e que saíram convencidos de que Haddad “está determinado em buscar reequilíbrio das contas públicas”",POSITIVE
+377,"Titulo: Ibovespa Futuro acompanha NY e opera com leve baixa, em dia de dados do mercado de trabalho nos EUA e Brasil | Resumo: Geração de empregos formais no Brasil e PIB dos EUA são alguns dos temas de maior destaque nesta quarta-feira",NEGATIVE
+378,Titulo: Mercado vê Selic estável até o fim do ano mesmo com incertezas,NEUTRAL
+379,"Titulo: Bancos garantem melhora do crédito, mas queda menor da Selic pode frear crescimento",NEUTRAL
+380,"Titulo: Bolsa amplia ganhos, na máxima em 5 anos; dólar vai a R$ 3,05 com repatriação e swap | Resumo: Investidores ""desafiam"" correção na Bovespa após índice atingir máxima em cinco anos",POSITIVE
+381,"Titulo: Ibovespa Futuro segue cautela externa, com investidores atentos a Trump e Yellen; dólar e DIs caem | Resumo: Após sessões de tensão em meio às dúvidas quanto à capacidade do governo Donald Trump aprovar reformas no Congresso, a sessão é de maior ânimo para os principais mercados mundiais",POSITIVE
+382,"Titulo: Ibovespa sobe, mas risco político mantém cautela dos investidores",POSITIVE
+383,"Titulo: Bolsa sobe com Petrobras e dólar supera R$ 3,34 antes de meta fiscal",POSITIVE
+384,Titulo: Juros futuros se ajustam em alta ao IBC-Br e dólar reage em queda,NEUTRAL
+385,"Titulo: Petrobras: BBI vê alta de 57% em dólar para PETR4 com mudança de governo | Resumo: Em cenário de mudança política, BBI ainda prevê um dividend yield de 12% por pelo menos cinco anos",POSITIVE
+386,"Titulo: Via (VIIA3) e Magazine Luiza (MGLU3): Apesar da queda dos juros, por que as varejistas não animam os investidores? | Resumo: Dificuldades operacionais, questões tributárias e até mesmo incertezas quanto ao nível de queda da Selic travam valor das varejistas",NEGATIVE
+387,"Titulo: Boletim Focus: mercado vê inflação maior em 2023, 2024 e 2025 e Selic mais alta neste ano | Resumo: Instituições financeiras consultadas semanalmente pelo BC também passaram a estimar PIB levemente superior neste ano, mas inferior em 2025",NEGATIVE
+388,Titulo: A ação que chama atenção por sua resiliência mesmo com a derrocada do mercado | Resumo: QGEP Participações segue em tendência de alta no curto prazo mesmo com a queda do Ibovespa,NEUTRAL
+389,"Titulo: 'Estamos bastante cautelosos com a melhora da inflação', diz presidente do BC | Resumo: Roberto Campos Neto ressaltou, porém, que embora o último dado de inflação tenha vindo acima do esperado, as partes de núcleos e de serviços melhoraram",NEUTRAL
+390,"Titulo: Juros futuros se ajustam em alta, com agentes à espera do IPCA",NEGATIVE
+391,"Titulo: Eletrobras é destaque positivo, mas Ibovespa cai; dólar sobe",NEGATIVE
+392,"Titulo: Ibovespa tem alívio no fim, mas não evita queda de 2,5% na semana; dólar salta 3,8% e vai a R$ 3,74 | Resumo: Apesar de dia de alívio dos Treasuries, o dólar seguiu sua trajetória de alta e mercado já fica de olho para aumento de intervenção do Banco Central",NEGATIVE
+393,"Titulo: Ibovespa sobe 0,61% na sessão, mas cai 1,6% na 1ª semana de 2024 com atenção aos juros nos EUA | Resumo: Semana foi marcada pela divulgação de dados do mercado de trabalho nos EUA e ata do Fomc",NEGATIVE
+394,Titulo: Ibovespa fecha nas mínimas com maior aversão a risco local e forte subida dos juros futuros,NEGATIVE
+395,"Titulo: Ibovespa cai de olho em Previdência, mas sustenta 72 mil pontos",NEGATIVE
+396,"Titulo: Ibovespa tem semana positiva, mas recua na sessão acompanhando NY",NEGATIVE
+397,"Titulo: Ibovespa sobe, mas não evita queda de 0,6% na semana pressionado por Petrobras e Bradesco | Resumo: Correção nas ações de instituições financeiras após a forte queda de ontem salvou o desempenho da Bolsa nesta sexta",NEGATIVE
+398,"Titulo: Ibovespa ensaia recuperação após notícias de Fed e 5G, mas fecha em queda de 0,45%; dólar sobe a R$ 5,14",NEGATIVE
+399,"Titulo: Ibovespa fecha em alta de 0,26% após renovar máxima no dia; ganho na semana foi de 2,5% | Resumo: Dólar fecha estável, a R$ 5,32, mas cai 0,62% na semana",NEGATIVE
+400,"Titulo: Ibovespa sobe mais de 1% com disparada da Petrobras, mas não evita queda de 2% na semana | Resumo: Commodity faz perto de 12% de alta em meio a notícias cada vez mais fortes de acordo para corte de produção pela Opep",NEGATIVE
+401,"Titulo: Ibovespa tem 5ª alta seguida e acumula ganhos de 2,6%; governo fará corte de orçamento amanhã | Resumo: Índice se firmou no positivo durante a tarde, mas seguiu pressionado com o cenário político e anúncio do governo marcado para esta quarta-feira",POSITIVE
+402,"Titulo: De olho na política, Ibovespa fica estável e JBS dispara 22% | Resumo: Após a forte queda na semana passada, quando o Ibovespa perdeu mais de 8%, o ajuste vinha sendo guiado pela perspectiva otimista de avanço das reformas",NEUTRAL
+403,"Titulo: Bovespa sobe com disparada de Petrobras, mas cai na semana",NEGATIVE
+404,"Titulo: Ibovespa volta a subir, mas não sustenta os 76 mil pontos",NEUTRAL
+405,"Titulo: Ibovespa sobe, mas não recupera os 104 mil pontos de olho na temporada de resultados",NEUTRAL
+406,Titulo: Ibovespa fecha no maior patamar em 6 anos: quais são as próximas resistências até o topo histórico?,POSITIVE
+407,"Titulo: Dólar sobe, puxa juro real, mas inflação de 2019 segue ancorada",NEGATIVE
+408,Titulo: Dólar e juros futuros ganham força e vão às máximas com alta nas expectativas de inflação dos EUA,NEGATIVE
+409,"Titulo: Dólar inicia semana em alta, mas respeita limite de R$ 3,30",NEUTRAL
+410,"Titulo: Juros futuros avançam impulsionados pelos Treasuries, mas se afastam das máximas",NEUTRAL
+411,"Titulo: Após disparada, dólar se acomoda em R$ 3,85 em clima de cautela",NEUTRAL
+412,"Titulo: Selic estável, mas recorde de baixa,marca 2ºciclo mais forte de alívio",POSITIVE
+413,Titulo: Juros futuros fecham setembro perto das mínimas do ano,POSITIVE
+414,"Titulo: Petrobras: o alerta acionado sobre investimentos, apesar da visão positiva para PETR4 | Resumo: A Petrobras surpreendeu o mercado no final do mês passado ao reportar investimentos de US$ 16,6 bilhões em 2024, cerca de US$ 2,1 bilhões acima da previsão da empresa para o ano",NEUTRAL
+415,"Titulo: Em forte alta, dólar ronda R$ 3,50 na abertura do mercado | Resumo: Moeda sobe mesmo com o feriado desta sexta-feira nos EUA e previsão de venda de US$ 6,490 bi pelo Banco Central no mercado futuro",NEGATIVE
+416,"Titulo: Mesmo com queda da Selic, bancos conseguem aumentar rentabilidade | Resumo: Os bancos tiveram o dobro de rentabilidade da obtida por empresas não financeiras, aponta pesquisa para MELHORES E MAIORES",POSITIVE
+417,"Titulo: B3 promete payout elevado em 2026, mas guidance de custos acende alerta; ação sobe | Resumo: Companhia prevê desembolsos totai de R$ 3,17 bilhões a R$ 3,61 bilhões em 2026",POSITIVE
+418,Titulo: Analistas preveem rali de alta para Ibovespa e queda do dólar,POSITIVE
+419,"Titulo: Dólar a R$ 3,00? É possível, mas ""parece muito bom para ser verdade"", diz analista | Resumo: Analista da Wagner Investimentos alerta para cenário de queda do dólar: ""mercado parece muito otimista. Há riscos externos e internos""",NEUTRAL
+420,Titulo: Juros futuros de curto prazo fecham nas mínimas históricas,POSITIVE
+421,"Titulo: Seguindo exterior e operação da PF, Ibovespa Futuro abre semana em queda, enquanto dólar sobe | Resumo: O Ibovespa Futuro é um bom termômetro de como será o pregão, mas nem sempre prevê adequadamente movimentos na Bolsa a partir do sino de abertura.",NEGATIVE
+422,"Titulo: Bolsa sobe e dólar passa de R$ 3,77; alta de commodities dá fôlego",POSITIVE
+423,"Titulo: XP mantém visão positiva para Bolsa mesmo após queda de 8,8% em dólares em agosto: ""pausa, mas não muda tendência"" | Resumo: Início de ciclo de flexibilização monetária, expectativa de fluxo de volta e valuation descontado são pilares para manter visão para Ibovespa",POSITIVE
+424,"Titulo: Dólar hoje sobe a R$ 6,06 com cautela antes da posse de Trump, mas cai 0,6% na semana | Resumo: Trump toma posse como presidente dos EUA na próxima segunda-feira",NEGATIVE
+425,Titulo: Juros renovam mínimas com apelo por maior afrouxamento monetário global,POSITIVE
+426,"Titulo: Banco Mundial eleva projeção de crescimento do PIB do Brasil para 2,8%, mas chama atenção para trajetória da dívida | Resumo: Estimativa é menor, contudo, do que as projeções mais recentes do mercado pelo Boletim Focus, do Banco Central (BC) e do Ministério da Fazenda",POSITIVE
+427,"Titulo: Boletim Focus: expectativa de inflação volta a cair para 2022, mas sobe para 2023 e 2025 | Resumo: Projeção para o PIB subiu em 2023, mas caiu em 2024 devido a alta de juros; mercado também passou a estimar uma Selic mais alta no fim de 2024",NEUTRAL
+428,"Titulo: Dólar tem dia de alívio após estresse, mas se mantém acima de R$ 5,20",NEGATIVE
+429,"Titulo: Bovespa tem leve alta e dólar é cotado abaixo de R$ 3,60",POSITIVE
+430,"Titulo: Dólar à vista fecha sessão em leve queda, mas avança quase 2,7% na semana",NEGATIVE
+431,"Titulo: Mercado eleva projeção para inflação este ano pela 7ª vez | Resumo: Na semana passada, o BC reconheceu um descolamento grande entre a inflação ao produtor (IPA), mais alta, e ao consumidor (IPCA)",NEGATIVE
+432,"Titulo: Trump muda de tom e anima o mercado, mas não salva Ibovespa da segunda queda seguida",NEGATIVE
+433,"Titulo: Ibovespa opera perto da estabilidade e dólar está abaixo de R$ 3,22 | Resumo: Eleição está na mão de Flávio Bolsonaro, mas ele pode jogar fora, diz Ciro Nogueira",NEUTRAL
+434,Titulo: Juros futuros fecham próximos da estabilidade em dia de liquidez baixa,NEUTRAL
+435,"Titulo: Estoque de crédito sobe 0,3% em maio, para R$ 5,387 trilhões, mostra BC",POSITIVE
+436,"Titulo: Pix atinge mais um recorde de transações diárias, segundo Banco Central | Resumo: IPCA-15: Habitação sobe mais em abril com reajustes de concessionárias de serviços",POSITIVE
+437,"Titulo: Dólar comercial ronda patamar de R$ 3,17",NEUTRAL
+438,Titulo: Ibovespa se descola de exterior e zera ganhos apesar de alta das commodities; dólar cai | Resumo: Mercado opera com forte volatilidade apesar da alta do petróleo puxar as bolsas internacionais,NEUTRAL
+439,"Titulo: Ibovespa sobe 0,73% após 3 quedas, mas fecha longe das máximas com fiscal e exterior; dólar vai a R$ 5,38 | Resumo: Índice perdeu força após chegar a subir 1,56% na máxima do dia, mas conseguiu encerrar uma sequência de três quedas",NEUTRAL
+440,"Titulo: Ibovespa Futuro abre em alta, mas perde força após dados de inflação nos EUA | Resumo: Dados do CPI vieram ligeiramente acima do projetado por analistas",NEUTRAL
+441,"Titulo: Ibovespa sobe e chega a 78 mil pontos, mas tem dificuldade de ir além",NEUTRAL
+442,"Titulo: Ibovespa se recupera após tombo, mas não elimina incertezas",NEUTRAL
+443,"Titulo: De Cogna a Raízen: as maiores altas e baixas do Ibovespa em 2025 | Resumo: Bolsa fecha em alta o ano com algumas ações se destacando entre os maiores ganhos, enquanto outras encerraram entre as principais quedas",NEUTRAL
+444,"Titulo: Ibovespa futuro opera estável após forte queda da véspera, com atenção para dados de inflação dos EUA; dólar cai | Resumo: Dólar também opera estável com atenção para os números de inflação ao produtor nos EUA; por aqui, varejo decepcionou",NEUTRAL
+445,Titulo: Ibovespa opera em leve alta na volta do feriado e dólar reduz ganhos após intervenção do BC | Resumo: Mercado passa a operar sem direção apesar dos fortes ganhos dos ADRs no dia anterior,NEUTRAL
+446,"Titulo: Ibovespa opera estável com ‘tarifaço’ de Trump, apesar de forte queda de Vale e Petrobras | Resumo: Ações ligadas à economia doméstica sobem, impulsionadas pela queda dos juros futuros devido à tarifa mínima de 10% aplicada ao Brasil, mais suave que as taxas impostas a outros países",NEUTRAL
+447,"Titulo: Ibovespa tem dia de recuperação, mas risco externo ainda ronda mercado",NEUTRAL
+448,"Titulo: Ibovespa volta a 120 mil pontos, mas ameniza; Petrobras e CSN sobem, Sabesp cai",NEUTRAL
+449,"Titulo: Ibovespa hoje termina em alta, mas última semana cheia do ano fica negativa",NEUTRAL
+450,Titulo: Ibovespa sobe apesar de realização de ganhos em ações ligadas a commodities; dólar zera perdas | Resumo: Mercado registra ganhos ainda na esteira do rali das commodities,NEUTRAL
+451,Titulo: Ibovespa tem leve alta puxado por Petrobras; dólar recua seguindo o cenário internacional | Resumo: Índice caminha para segundo dia de alta puxado novamente por ganhos das estatais e com avanço das bolsas no exterior,POSITIVE
+452,"Titulo: Ibovespa fecha em leve alta, mas fica longe da máxima do dia com cautela no fim do pregão; dólar sobe a R$ 5,07",NEUTRAL
+453,Titulo: Juros futuros fecham perto da estabilidade sob efeito de temas locais,NEUTRAL
+454,"Titulo: Dólar opera estável ante real, apesar de fortalecimento global da moeda americana",NEUTRAL
+455,"Titulo: IPCA desacelera alta para 0,43% em abril, mas é o maior para o mês desde 2023 | Resumo: Nos 12 meses até abril, o indicador registrou elevação de 5,53%",NEUTRAL
+456,Titulo: Ações de Natura sobem mais de 5% impulsionadas pelo dólar,POSITIVE
+457,"Titulo: IPCA-15: Alta de preços de alimentos suaviza em abril | Resumo: Ainda assim, o grupo foi o que teve o maior peso na alta de 0,21% do IPCA-15 no mês",NEUTRAL
+458,"Titulo: Dólar fecha em alta, mas longe da máxima do dia, a R$ 5,54",NEGATIVE
+459,"Titulo: Ibovespa Futuro busca recuperação, mas ameniza alta após PIB dos EUA; dólar chega a superar os R$ 4 | Resumo: Apesar da alta do índice futuro nesta sessão, isso não significa que o Ibovespa à vista registre uma alta em igual intensidade",NEUTRAL
+460,"Titulo: Alta da inflação eleva expectativa por Copom, mas economistas não projetam grandes mudanças na mensagem do BC | Resumo: Após maior alta do IPCA-15 desde 1995, economistas revisaram projeção de inflação para cima, mas apontam que comunicação do BC não deve mudar",NEUTRAL
+461,"Titulo: Juros futuros acompanham alta do dólar, após reação a IPCA-15 | Resumo: O IPCA-15 trouxe reação pontual de baixa logo no início da sessão, mas depois o exterior passou a ditar o rumo dos negócios",NEUTRAL
+462,"Titulo: BC vê melhora na inflação, mas deixa Selic em 15%",NEUTRAL
+463,"Titulo: IBGE reconhece que ""inflação está num patamar alto"", mas evita classificar como ""fora de controle"" | Resumo: Gerente do índice destaca que o IPCA supera a meta estipulada pelo Banco Central, de 3,75% em 2021, e lembra que apenas em ""2016 a gente teve inflação em dois dígitos""",NEUTRAL
+464,Titulo: Queda dos juros permite economia de R$ 80 bi,NEUTRAL
+465,Titulo: Queda de juros eleva demanda por fundos de crédito privado,NEUTRAL
+466,"Titulo: Petrobras tem dia agitado, mas ações fecham estáveis, enquanto PetroRio sobe 4%; Lavvi salta 8% com anúncio de dividendos",NEUTRAL
+467,"Titulo: Casas Bahia: gestão prevê vendas fortes em 2025, mas alerta para impacto da Selic",POSITIVE
+468,Titulo: Queda nos juros favorece papéis de construtoras,POSITIVE
+469,"Titulo: Alta do IGP-10 é o menor em três meses, mas inflação baixa não deve durar, diz FGV",NEUTRAL
+470,"Titulo: Apostando que Brasil seguirá com reformas, banco eleva projeção do Ibovespa para 78.000 pontos este ano | Resumo: Revisando para cima sua projeção para bolsa, Bradesco BBI vê chance de 80% de que o Brasil siga com a agenda fiscal após a eleição de 2018",POSITIVE
+471,Titulo: Ibovespa tem leve alta e dólar cai com mercado à espera de Trump e digerindo fala de Meirelles | Resumo: Mercado segue na expectativa por Trump e reformas no Brasil,NEUTRAL
+472,Titulo: Copom surpreendeu ao sugerir nova alta de juros e alongar horizonte para inflação,NEUTRAL
+473,"Titulo: Rumores de fala de Campos Neto sobre ritmo de corte da Selic impulsionam juros futuros, apesar de IPCA | Resumo: Campos Neto teria dito a investidores que a chance de desacelerar o ritmo de queda da Selic para 25 pontos-base é maior do que a de acelerar para 75 bps",NEUTRAL
+474,Titulo: Ibovespa futuro tem leve alta e dólar cai de olho em desdobramentos de acordo EUA-China e cessão onerosa,POSITIVE
+475,"Titulo: Mercado imobiliário vai bem, mas classe média perde espaço e juros preocupam | Resumo: No Brasil, a proporção de lançamentos voltados para a classe média caiu de 65% para 45% do total de unidades lançadas entre o segundo trimestre de 2023 e o mesmo período deste ano",NEUTRAL
+476,"Titulo: IPCA de setembro tem alta de 0,26%; inflação acumulada de 12 meses avança para 5,19% | Resumo: O mercado esperava alta mensal de 0,34%. Com resultado, inflação nos nove primeiros meses do ano tem alta de 3,50%",NEUTRAL
+477,"Titulo: Alckmin: queda da Selic deve elevar crescimento da economia, após PIB fraco no 3º tri | Resumo: O baixo crescimento do PIB foi causado pela alta dos juros, mas o governo prevê um cenário melhor em 2026, apontou Alckmin",POSITIVE
+478,"Titulo: Ibovespa além de 126 mil pontos: mercado celebra dado de inflação no Brasil e nos EUA | Resumo: Ações mais sensíveis ao ciclo econômico são destaque de alta, dados os sinais de arrefecimento da inflação brasileira e de algum alívio na dos EUA",POSITIVE
+479,Titulo: Juros futuros avançam com Treasury e à espera de dados de inflação no Brasil e nos EUA,NEGATIVE
+480,"Titulo: Bolsas de NY avançam, mas dólar recua globalmente após ligação entre Trump e Xi",NEUTRAL
+481,Titulo: Dólar dispara de olho em Bolsonaro e Petrobras apesar da atuação do BC,NEGATIVE
+482,"Titulo: BB Seguridade (BBSE3): tendência de alta em risco? Confira até onde ação pode ir | Resumo: Em outubro, a ação recua 4,11%, mas no ano tem valorização de 9,05%",NEUTRAL
+483,"Titulo: Leilões de rodovias sofrem revisão com alta de juros e câmbio | Resumo: Em 2025, estão previstos leilões com potencial de investimento de R$ 72 bi; cenário é desafiador, mas analistas veem avanço de projetos",NEUTRAL
+484,"Titulo: Ibovespa resiste à pressão do exterior e fecha em leve alta; juros DI voltam a subir com temor de inflação | Resumo: Bolsa voltou a descolar de Nova York, onde os índices fecharam em forte baixa com expectativa de alta de juros",NEUTRAL
+485,"Titulo: BC eleva taxa Selic para 11,75% e sinaliza nova alta | Resumo: O ritmo no aumento da taxa foi mais brando do que o adotado nas últimas três reuniões, quando a autoridade monetária promoveu elevações de 1,5 ponto percentual nos juros",NEGATIVE
+486,"Titulo: IPCA reflui, mas fecha julho acima do previsto",NEUTRAL
+487,"Titulo: Ibovespa reduz perdas com parcelamento de precatórios, mas segue em baixa de mais de 3%; juros DI desaceleram alta | Resumo: Bolsonaro também afirmou que 750 mil caminhoneiros receberão ajuda para compensar alta do diesel",NEGATIVE
+488,"Titulo: Por que o Itaú cortou projeção para o PIB e inflação, mas também para o dólar em 2019 | Resumo: Para os analistas, economista brasileira deve crescer 2% este ano, contra uma projeção anterior de 2,5%",NEGATIVE
+489,"Titulo: ‘Temos visto melhora consistente da inflação’, diz Campos Neto | Resumo: Para Campos Neto, 2023 foi um ano ‘que teve algumas surpresas positivas’",POSITIVE
+490,"Titulo: Número de investidores ativos na bolsa tem alta anual de 95% em outubro | Resumo: Volume médio diário negociado no segmento de ações, porém, caiu 2,3% em relação a outubro do ano passado",POSITIVE
+491,Titulo: Dólar hoje 14/08: moeda fecha em alta após divulgação do IPCA | Resumo: A moeda americana fecha em alta após divulgação dos dados do IPCA e IBC-Br,NEGATIVE
+492,"Titulo: Juros futuros se ajustam em alta ao IPCA-15 e dólar opera na casa de R$ 4,16",NEGATIVE
+493,Titulo: Juros futuros vão às máximas do dia após Caged superar expectativas,NEGATIVE
+494,"Titulo: Haddad não é mais um ""vilão"" para o mercado? Os motivos para a alta da bolsa e queda do dólar | Resumo: Mercado entrou em uma onda de euforia, levando o Ibovespa para os 80 mil pontos e o dólar para abaixo dos R$ 4,00",POSITIVE
+495,"Titulo: Boletim Focus: mercado eleva perspectiva de inflação para 2022 e 2023 | Resumo: O levantamento semanal apontou que a estimativa para a alta do IPCA subiu a 5,09% em 2022 e 3,40% em 2023",NEGATIVE
+496,Titulo: Juros futuros avançam com IPCA acima do consenso e temores de recessão global | Resumo: Petróleo e juros futuros avançam com guerra no Irã no foco; dólar apaga alta ante o real,NEGATIVE
+497,"Titulo: Dólar fecha acima de R$ 5 e Ibovespa sobe mais de 1% com IPCA-15 abaixo do esperado; juros futuros caem | Resumo: O alívio na inflação reforça as expectativas de que um corte na Selic, atualmente em 13,75% ao ano, pode estar mais próximo; investidores repercutem entrevista de Campos Neto",POSITIVE
+498,"Titulo: Ibovespa futuro acompanha Wall Street e cai mais de 1%, com preocupações sobre inflação; dólar sobe | Resumo: Os juros futuros operam com alta expressiva; vencimentos mais longos sobem mais de 20 pontos-base",NEGATIVE
+499,"Titulo: Alta de juros e medo de recessão derrubam Ibovespa, que cai 2,86%; dólar sobe 4%, maior alta desde março de 2020",NEGATIVE
+500,"Titulo: Ibovespa futuro opera em queda de quase 1%, com pressão de juros americanos; Dólar sobe 0,64% | Resumo: Pressão altista no juros americano derruba ativos de risco mundo afora e aumenta perspectiva de recessão mundial",NEGATIVE
+501,"Titulo: Dólar volta aos R$ 5,40, juros futuros ampliam alta e Ibovespa vai às mínimas após coletiva de Powell",NEGATIVE
+502,"Titulo: As falas do BC sobre inflação que impulsionaram dólar e juros, enquanto varejistas e construtoras tiveram forte baixa na Bolsa | Resumo: Mercado brasileiro reage ás declarações de Campos Neto e Bruno Serra sobre alta adicional da Selic no próximo Copom e inflação persistente no país",NEGATIVE
+503,"Titulo: Ibovespa fecha em alta de mais de 2% às vésperas de Copom e Fed; dólar e juros tiveram forte queda | Resumo: Expectativa de inflação mais baixa foi reforçada por queda no preço do diesel, favorecendo ativos de risco",POSITIVE
+504,"Titulo: Dólar e juros futuros têm forte queda e Ibovespa avança com China e ajuste nos prêmios de risco | Resumo: Nos juros, o mercado corrige parte do forte salto das últimas sessões enquanto avalia as sinalizações da ata da última reunião do Copom, que veio em linha com o tom mais duro apresentado no comunicado da semana passada",POSITIVE
+505,"Titulo: Dólar sobe com fala de Guedes e atinge novo recorde intradiário; Ibovespa Futuro tem leve queda | Resumo: ""Quando você tem um fiscal mais forte e um juro mais baixo, o câmbio de equilíbrio também é mais alto"", afirmou Guedes",NEGATIVE
+506,Titulo: Dólar e juros têm alívio em meio a incertezas,POSITIVE
+507,"Titulo: Ibovespa futuro abre em alta, inverte sinal e passa a cair; juros futuros recuam com IPCA abaixo do esperado | Resumo: Futuros em Nova York operam entre perdas e ganhos à espera de dados de inflação",POSITIVE
+508,"Titulo: Ibovespa Futuro acelera alta com inflação nos EUA; IPCA fica abaixo do esperado em abril | Resumo: Inflação oficial fica em 0,22%, enquanto mercado esperava 0,28%; investidores aguardam também dados nos EUA",POSITIVE
+509,"Titulo: Ibovespa fecha em alta de mais de 2% com apostas de fim de alta de juros após Copom; Dólar cai 1,10% | Resumo: Sinalização de fim de ciclo de alta fez investidores ficarem mais otimistas com ações de companhias ligadas ao mercado interno",POSITIVE
+510,"Titulo: Dólar à vista fecha em queda com maior apetite por risco antes do Copom | Resumo: Os juros elevados no Brasil continuaram sendo a razão pela qual o real se beneficia frente ao dólar em momentos de maior apetite por risco, conforme explicam gestores",POSITIVE
+511,"Titulo: Campos: Solução para juros do crédito rotativo passa por critérios técnicos e políticos | Resumo: O presidente do BC destacou que atualmente, 40% do consumo é por meio do cartão de crédito",NEUTRAL
+512,"Titulo: Na revisão do Novo Mercado, B3 quer incluir metas ESG",NEUTRAL
+513,Titulo: CVM propõe novas regras para mercado de negociação de ativos,NEUTRAL
+514,Titulo: BC e CVM abrem discussão sobre investimento estrangeiro nos mercados financeiro e de capitais,NEUTRAL
+515,"Titulo: Boletim Focus passa a ter projeções para componentes do IPCA, diz BC",NEUTRAL
+516,Titulo: CVM abre consulta pública sobre influenciadores digitais que atuam no mercado de capitais,NEUTRAL
+517,Titulo: Analistas avaliam uso de diretrizes futuras para Selic,NEUTRAL
+518,"Titulo: Retomada da discussão sobre juros do cartão depende da boa vontade do governo e do BC, diz CEO do Santander | Resumo: Mario Leão diz esperar que a agenda mais ampla sobre cartão de crédito avance",NEUTRAL
+519,"Titulo: Já seria possível iniciar a recalibragem da taxa de juros, diz Haddad",NEUTRAL
+520,"Titulo: CVM inicia consulta pública para revisar distinção entre fato relevante e comunicado ao mercado | Resumo: A consulta, que se estende até o dia 27 de junho, faz parte da agenda regulatória da autarquia",NEUTRAL
+521,"Titulo: Juros futuros têm leve alta em dia de espera pelas decisões do Fed e do Copom | Resumo: Enquanto isso, nova rodada de piora nas projeções de inflação no Focus não impede mercado de antecipar corte da Selic",NEUTRAL
+522,"Titulo: Copom inicia reunião em Brasília com novo presidente do BC | Resumo: Na quarta-feira, comitê tem mais uma rodada de discussões antes de decidir o novo patamar da taxa básica de juros",NEUTRAL
+523,"Titulo: Volume de dividendos vai depender do mercado de minério de ferro, diz presidente da Vale",NEUTRAL
+524,"Titulo: Ibovespa fecha em queda de mais de 1% após o resultado positivo do PIB; dólar subiu 0,93% | Resumo: Na quinta-feira, 29, o índice fechou com queda 0,26%, após ter aberto o dia em alta",NEGATIVE
+525,"Titulo: Mercado de capitais, TLP e o papel do BNDES | Resumo: O BNDES não precisa voltar a desembolsar 3% do PIB, mas pode e precisa fazer mais do que vem ocorrendo",NEUTRAL
+526,"Titulo: Agenda do Banco Central: Em semana agitada, ata do Copom e coletiva com Campos Neto são destaques | Resumo: Na segunda-feira (27), às 9h30, a autoridade monetária divulgará o resultado do setor externo de agosto",NEUTRAL
+527,"Titulo: BC não fará mudança que influencie capacidade de compra, diz Campos ao falar sobre parcelado sem juros",NEUTRAL
+528,"Titulo: CVM trabalha em regras para levar pequenas e médias empresas ao mercado de capitais | Resumo: Segundo João Pedro Nascimento, presidente da autarquia, o tripé é composto pelo acesso, eficiência e proteção",NEUTRAL
+529,Titulo: Corrida por dividendos: vale entrar na bolsa só pelos proventos?,NEUTRAL
+530,Titulo: Presidente da CVM defende regulação cripto e sugere soluções de mercado com blockchain,NEUTRAL
+531,"Titulo: EWZ cai mais de 1% em Nova York; ADRs da Vale e Petrobras também recuam | Resumo: Os recibos de ações (ADRs) da Vale operavam em baixa acima de 3%, enquanto os da Petrobras operavam em queda de mais de 1%",NEGATIVE
+532,"Titulo: Juros futuros aceleram alta e puxam piora do Ibovespa após leilão de dólares | Resumo: Taxas renovaram suas máximas intradiárias, movimento que puxou uma piora do Ibovespa após o leilão de dólares do Banco Central",NEGATIVE
+533,"Titulo: Mercado revisa PIB de 2016 de -3,01% para -3,21% e piora expectativa de inflação | Resumo: Relatório Focus do Banco Central divulgado nesta quarta mostrou revisão negativa tanto para o crescimento econômico como para a inflação",NEGATIVE
+534,"Titulo: Petrobras perde R$ 54 bilhões em valor de mercado em semana de vitória de Lula | Resumo: Ações da estatal caíram mais de 10% na semana, com incertezas sobre a nova política de dividendos e precificação de combustíveis",NEGATIVE
+535,"Titulo: Juros futuros sobem após Haddad evitar resposta sobre meta fiscal de 2024 | Resumo: As declarações de Lula na sexta-feira, nas quais questionou a necessidade de cumprir a meta fiscal, ainda pesavam para os mercados",NEGATIVE
+536,"Titulo: Ibovespa cai 1,63%, perde os 60 mil pontos e dólar fica estável com Yellen e ""decepção mexicana"" | Resumo: Discurso mais 'hawkish' de chairwoman do Federal Reserve, Janet Yellen, e a frustração com o resultado das eleições mexicanas pesaram sobre os mercados",NEGATIVE
+537,"Titulo: Ibovespa cai 1,2% e fecha abaixo de 61.000 pontos, puxado por queda de 4% da Vale | Resumo: Apesar da alta lá fora, o sentimento negativo aumentou após abertura da safra de resultados com desempenho ruim",NEGATIVE
+538,Titulo: Vale (VALE3) representa 85% da queda do Ibovespa | Resumo: Decepção com crescimento chinês e desafios da empresa levam papéis da mineradora a acumular queda de mais de 4% no dia,NEGATIVE
+539,"Titulo: Ibovespa fecha em queda de 1,78% e dólar vai para R$ 4,17 após soltura de Lula | Resumo: Na semana, o índice acumulou baixa de 0,72%, interrompendo uma sequência de três semanas no positivo",NEGATIVE
+540,"Titulo: Ibovespa cai 2% e perde os 100 mil pontos após Bolsonaro afirmar que proposta para Renda Brasil está suspensa; dólar sobe a R$ 5,62 | Resumo: Bolsa ameaçou ensaiar uma recuperação de manhã, mas à tarde desabou com as declarações do presidente",NEGATIVE
+541,Titulo: Minério de ferro despenca e ADRs da Vale perdem 3% na bolsa dos EUA | Resumo: Os contratos futuros do minério de ferro caíram quase 5% no mercado chinês nesta segunda-feira,NEGATIVE
+542,"Titulo: Ibovespa cai mais de 1% diante de incertezas sobre coronavírus | Resumo: Na mesma direção das principais bolsas do mundo, o Ibovespa fechou em baixa de 1,15%, em dia marcado pelo nervosismo provocado pelo surto de coronavírus",NEGATIVE
+543,"Titulo: Ibovespa cai 0,32%, com investidores de olho no rebaixamento da nota de crédito americana e no Copom | Resumo: Rebaixamento de nota de crédito dos EUA e reunião do Copom fazem mercado ficar mais cauteloso antes do dia mais aguardado da semana",NEGATIVE
+544,"Titulo: Bovespa cai com indisposição dos investidores para risco | Resumo: A queda nas cotações é generalizada na Bovespa nesta quinta-feira. De Nova York, a inflação ao produtor de outubro veio acima do esperado",NEGATIVE
+545,"Titulo: Ibovespa cai 0,74% no pregão e tem baixa de 2,25% na semana, sem trégua sobre incertezas no exterior | Resumo: Discurso de Jerome Powell, pressão dos Treasuries americanos e incertezas sobre o conflito no Oriente Médio pesaram sobre o mercado",NEGATIVE
+546,"Titulo: Ibovespa (IBOV) avança 25% no ano e supera 150 mil pontos; o rali continua? | Resumo: O Ibovespa (IBOV) segue em trajetória fortemente positiva, refletindo a alta das commodities, a queda do dólar e o apetite por ativos de risco",POSITIVE
+547,"Titulo: Ibovespa sobe 2%, acima dos 130 mil pontos, em sessão com ganhos robustos de bancos",POSITIVE
+548,"Titulo: Ibovespa avança 15,03% em 2018, com varejistas em destaque",POSITIVE
+549,"Titulo: Ibovespa sobe pelo 3º pregão seguido e fecha semana no azul; dólar volta aos R$ 5,05 | Resumo: O Ibovespa fechou a sessão desta sexta-feira (13) em alta, acumulando ganhos pelo terceiro pregão seguido",POSITIVE
+550,Titulo: Ibovespa fecha em alta com exterior após acordo de Biden e dados dos EUA; dólar cai para mínima em mais de um ano | Resumo: Mercado registrou desempenho positivo com acordo de teto de dívida nos EUA e sinais de desaceleração da inflação americana,POSITIVE
+551,"Titulo: Ibovespa salta 17,9% em dois dias, maior ganho desde outubro de 2008; dólar cai a R$ 5,03",POSITIVE
+552,"Titulo: Ibovespa salta 2% com exterior e fecha acima de 75 mil pontos; dólar vai a R$ 3,88",POSITIVE
+553,"Titulo: Em nível recorde, Ibovespa avança 27,3% em dólar e lidera ganhos no ano",POSITIVE
+554,"Titulo: Ibovespa sobe mais de 1% e fecha em alta pelo 4º dia seguido; dólar cai abaixo de R$ 4,90 | Resumo: Bolsa também foi impulsionada pelo desempenho positivo das companhias ligadas ao ciclo econômico doméstico",POSITIVE
+555,"Titulo: Ibovespa sobe ao maior nível em oito meses | Resumo: No acumulado da semana, os ganhos foram de 2,09%, levando o Ibovespa à terceira semana consecutiva de alta",POSITIVE
+556,"Titulo: Ibovespa sobe 3,5% em setembro, ajudado por exterior e commodities",POSITIVE
+557,"Titulo: Ibovespa sobe 5% em janeiro, no melhor mês desde agosto",POSITIVE
+558,"Titulo: Ibovespa sobe no último pregão do ano; tem ganho de 26,8% em 2017 | Resumo: De acordo com dados preliminares, o Ibovespa fechou com ganho de 0,41 por cento no último pregão de 2017, ao nível de 76.402 pontos",POSITIVE
+559,"Titulo: Ibovespa avança 1,14%, com exterior e empresas de commodities; dólar cai abaixo de R$ 5,20",POSITIVE
+560,"Titulo: Itaúsa (ITSA4) sobe 6% no lucro e acelera na B3; ainda tem espaço para mais? | Resumo: A Itaúsa (ITSA4) registrou lucro líquido recorrente de R$ 4,12 bilhões no 4T23, alta de 8,9% ante igual período de 2022",POSITIVE
+561,"Titulo: Ibovespa sobe 2,6% na semana e fecha acima de 96 mil pontos; dólar tem máxima em 15 dias",POSITIVE
+562,"Titulo: Ibovespa sobe na semana, com ambiente favorável a ativos de risco",POSITIVE
+563,"Titulo: Com ganhos moderados, Ibovespa renova maior pontuação de fechamento em 7 meses; dólar sobe 0,62%",POSITIVE
+564,"Titulo: Ibovespa sobe em linha com movimento no exterior | Resumo: Às 11h43, o Ibovespa subia 1,42% a 72.787 pontos. O giro financeiro era de 2,4 bilhões de reais",POSITIVE
+565,"Titulo: Ibovespa sobe 3,3% na semana e renova máxima em mais de 10 meses; dólar vai a R$ 3,25",POSITIVE
+566,"Titulo: Dólar fecha em alta, a R$ 5,59, com mercado avaliando corte de juros pelo Fed Resumo: Dados mistos do mercado de trabalho americano fizeram o dólar ganhar força no exterior e no Brasil. Na semana, porém, moeda acumula 0,8% de desvalorização",NEUTRAL
+567,"Titulo: Mercado volta a elevar projeção da inflação em 2024, diz Boletim Focus Resumo: A mediana das previsões dos analistas financeiros para o crescimento da economia brasileira em 2023 e 2024 permaneceu estável",NEUTRAL
+568,Titulo: Bovespa opera perto da estabilidade; Vale sobe e Santander tem queda,NEUTRAL
+569,"Titulo: Crédito deve ficar estável em abril, diz Febraban",NEUTRAL
+570,Titulo: Mercado e economistas ajustam expectativa para Selic abaixo de 7%,NEUTRAL
+571,Titulo: Ibovespa Futuro desafia correção e tem leve alta com continuidade do otimismo por vacina Resumo: Pré-market registra leves ganhos ainda repercutindo boas notícias sobre vacina da véspera,POSITIVE
+572,Titulo: Ibovespa Futuro fica estável com acordo por cessão onerosa ofuscando indefinição no exterior,NEUTRAL
+573,Titulo: Taxas dos DIs fecham quase estáveis com mercado posicionado antes de Copom e tarifas,NEUTRAL
+574,Titulo: Ibovespa Futuro acelera ganhos após dados de inflação nos EUA abaixo do esperado Resumo: Bolsas operam em alta à espera da inflação ao consumidor nos Estados Unidos,POSITIVE
+575,"Titulo: Ibovespa fecha em alta de 0,6%, apesar de derrocada de Petrobras Resumo: O Ibovespa subiu 0,63 por cento, a 77.239 pontos, após subir 1,84 na máxima da sessão e cair 1,6 por cento na mínima",NEUTRAL
+576,"Titulo: Vale e Bradespar corrigem e seguram Ibovespa, que tem leve alta",NEUTRAL
+577,Titulo: Ação da Cielo salta 5%; Bradespar sobe 3% com vitória na Justiça e Petrobras avança 2% à espera da Opep,POSITIVE
+578,Titulo: Dólar e juros futuros operam perto da estabilidade de olho na greve,NEUTRAL
+579,Titulo: Juros futuros ficam perto da estabilidade em dia de anúncio do Copom,NEUTRAL
+580,"Titulo: Dólar comercial ronda o nível de R$ 3,26",NEUTRAL
+581,"Titulo: Ibovespa fecha perto da estabilidade em sessão negativa para Vale e positiva para bancos Resumo: Papéis da Vale exerceram pressão negativa, enquanto os de bancos ajudaram o índice a se segurar no positivo; Petrobras também esteve no foco",NEUTRAL
+582,"Titulo: Haddad: Primário zero depende da evolução da economia e da trajetória da Selic Resumo: Ministro da Fazenda citou projeção da equipe econômica de alta de 2,2% do PIB, disse que dados preliminares do Caged confirmam trajetória de aumento do emprego e massa salarial e se mostrou otimista em relação à política monetária",POSITIVE
+583,"Titulo: Ibovespa sobe com ajuste, mas cautela com política permanece",NEUTRAL
+584,Titulo: Juros futuros fecham estáveis de olho no exterior e aguardando IPCA,NEUTRAL
+585,"Titulo: Mercado reduz projeção do IPCA de 2025, para 4,40%, e de 2026, para 4,16%, aponta Focus Resumo: Para o crescimento do PIB em 2025, a mediana das estimativas dos economistas foi ajustada de 2,16% para 2,25%, e em 2026, de 1,78% para 1,80%",POSITIVE
+586,Titulo: Dólar sobe ante o real à espera de dados de emprego nos EUA,NEUTRAL
+587,"Titulo: Ibovespa acelera ritmo e passa a subir 2%, rondando o patamar de 110 mil pontos Resumo: O dia hoje é de vencimento das opções sobre o índice, o que pode causar uma acelerada nas últimas horas do pregão para influenciar no cálculo do preço de referência do Ibovespa",POSITIVE
+588,"Titulo: Powell, Vale, China, meta fiscal e mais assuntos que vão movimentar o mercado hoje Resumo: PIB da China cresceu 5,3% no 1T24, bem acima dos 4,6% previstos por economistas",NEUTRAL
+589,"Titulo: Juros futuros têm leve alta, acompanhando dólar e exterior",NEUTRAL
+590,Titulo: Ibovespa fecha estável com cautela antes de votação da Previdência na Comissão Especial,NEUTRAL
+591,"Titulo: Copom eleva projeções de inflação e vê IPCA em 3% em 2024 em cenário de Selic estável Resumo: O Copom também voltou a dar ênfase ao horizonte de seis trimestres à frente, referente ao terceiro trimestre de 2024, onde a projeção de inflação acumulada em 12 meses ficou em 3,8% no cenário de referência",NEGATIVE
+592,"Titulo: B3: Cenário externo traz alívio, e juros fecham entre estabilidade e queda",NEUTRAL
+593,"Titulo: Ibovespa tem alta firme antes de decisões de juros do Fed e do Copom Resumo: Além das exportadoras de commodities, empresas sensíveis ao cenário doméstico avançam com expectativa de corte da Selic e manutenção das taxas de juros nos EUA",POSITIVE
+594,Titulo: Ibovespa Futuro oscila entre perdas e ganhos com ânimo sobre anúncio da Pfizer limitado com preocupação sobre coronavírus,NEUTRAL
+595,"Titulo: Dólar fecha estável a R$ 6,09 após disparar até R$ 6,20: o que explica movimento? Resumo: Divisa passou grande parte da tarde no negativo após atingir maior patamar histórico e Banco Central realizar dois leilões durante a sessão",NEUTRAL
+596,"Titulo: Trade hoje: Ibovespa segue próximo à suporte e com baixo volume, aponta análise técnica Resumo: Ibovespa começa ano com baixo volume e opera próximo de região de suporte dos 130,7 mil pontos, aponta análise técnica",NEUTRAL
+597,Titulo: O corte de juros esfriou? O novo cenário para Selic resumido em 6 análises Resumo: Veja o que diversos economistas e analistas falaram sobre a possibilidade de corte de juros e o discurso do novo presidente do BC hoje,NEUTRAL
+598,"Titulo: Ibovespa ronda a estabilidade após dados do ‘payroll’ acima do esperado Resumo: Dados fortes de emprego nos EUA afastam temores de recessão, o que beneficia ativos de risco",POSITIVE
+599,"Titulo: Com mercado à espera de nova alta da Selic, Copom inicia nesta terça-feira reunião para definir juros básicos Resumo: Expectativa é de que taxa Selic suba de 5,25% para 6,25% ao ano",NEGATIVE
+600,"Titulo: Ibovespa Futuro tem nova alta, apesar de preocupações renovadas sobre economia global",NEUTRAL
+601,Titulo: Juros futuros despencam pelo segundo dia após Lula defender equilíbrio fiscal,POSITIVE
+602,"Titulo: Ibovespa afunda 3% com choque de commodities e PIB dos EUA; Petrobras e Vale caem mais de 5% Resumo: Petrobras desaba com preços do petróleo, em meio às incertezas sobre a reunião da Opep, marcada para amanhã; economia norte-americana cresce mais que o esperado e amplia pressão sobre juros pelo Fed",NEGATIVE
+603,Titulo: 2 ações desabam 8% após balanços; Vale e siderúrgicas afundam 6% Resumo: Confira os destaques de ações da Bovespa desta quarta-feira (24),NEGATIVE
+604,"Titulo: Dólar cai a R$3,70 com vantagem de Bolsonaro e busca por risco no exterior Resumo: Às 10:14, o dólar recuava 0,97 por cento, a 3,6981 reais na venda, depois de ter alcançado na mínima 3,6947 reais",POSITIVE
+605,"Titulo: Ibovespa se afasta de mínimas, mas fecha com baixa de 3%",NEGATIVE
+606,"Titulo: Após oito altas, Petrobras despenca 6%; bancos caem até 5% e só 3 ações sobem no Ibovespa",NEGATIVE
+607,Titulo: Ibovespa desaba mais de 2% com operação da PF criando clima de aversão no mercado,NEGATIVE
+608,"Titulo: Ação da JBS despenca e Bovespa opera em baixa; dólar supera R$ 3,12",NEGATIVE
+609,Titulo: Caos tarifário dispara modo pânico; S&P 500 tem pior semana desde a covid e Ibovespa recua 3%,NEGATIVE
+610,"Titulo: Ações da Coinbase batem mínima histórica e exchange já vale menos que a Dogecoin Resumo: A exchange caiu mais 17% nos últimos 30 dias, elevando sua queda no acumulado do ano para mais de 85%",NEGATIVE
+611,"Titulo: Dólar cai em direção a R$3,10 com exterior e impeachment Resumo: Às 11:26, o dólar recuava 0,25 por cento, a 3,1334 reais na venda. A moeda norte-americana chegou a 3,1132 reais na mínima da sessão",POSITIVE
+612,"Titulo: Petrobras (PETR4), PRIO (PRIO3) e mais: petróleo desaba 5,6% e derruba ações do setor na Bolsa Resumo: Preço da commodity cai em meio a temores renovados de queda da demanda e após dados de estoques de petróleo nos EUA",NEGATIVE
+613,"Titulo: Descolado do exterior, Ibovespa fecha em alta de 0,81%; dólar e juros também sobem",POSITIVE
+614,"Titulo: Ibovespa sobe 3,7% impulsionado por EUA e China",POSITIVE
+615,"Titulo: Ibovespa fecha em alta de 1,19%, mas variação no mês ainda é negativa",POSITIVE
+616,"Titulo: Com estrangeiro, Ibovespa renova recorde",POSITIVE
+617,Titulo: Ibovespa renova recorde com avanço da Previdência,POSITIVE
+618,Titulo: Ibovespa engata alta e se aproxima da máxima histórica acima dos 105 mil pontos,POSITIVE
+619,"Titulo: Ibovespa tem quinta alta seguida e avança 6,65% na semana",POSITIVE
+620,Titulo: Ibovespa bate recorde pelo terceiro pregão consecutivo impulsionado por ações da Vale,POSITIVE
+621,"Titulo: Bovespa fecha em alta de 1,45% e Vale é destaque positivo Resumo: O cenário externo mais favorável à tomada de risco, em meio à alta de algumas commodities, ajudou o Ibovespa a manter o tom positivo da véspera",POSITIVE
+622,"Titulo: PETR4: Ações da Petrobras operam em tendência de alta e renovam máxima histórica Resumo: As ações da Petrobras (PETR4) seguem tendência de alta em janeiro, segundo análise técnica, buscando máxima histórica",POSITIVE
+623,"Titulo: Ibovespa sobe 1,5% e renova recorde acima dos 96 mil pontos Resumo: Bolsa paulista encerrou a 96.558,42 pontos após discurso do ministro da Economia em relação à reforma da Previdência",POSITIVE
+624,"Titulo: Ibovespa oscila perto da estabilidade, mas sustenta os 150 mil pontos após renovar recorde",NEUTRAL

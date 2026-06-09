@@ -3,7 +3,6 @@
 Handles:
 - Loading and validating labeled datasets
 - Creating stratified train/test splits
-- Creating calibration splits
 - Temporary file management
 """
 
@@ -14,12 +13,10 @@ from sklearn.model_selection import train_test_split
 
 from classification_workflow.config.labels import LABEL2ID
 from classification_workflow.config.paths import (
-    CALIBRATION_SPLIT_PATH,
     TEST_SPLIT_PATH,
     TRAIN_MODEL_SPLIT_PATH,
     TRAIN_SPLIT_PATH,
 )
-from classification_workflow.data.csv_utils import write_normalized_csv
 
 
 # =========================================================================
@@ -29,11 +26,6 @@ from classification_workflow.data.csv_utils import write_normalized_csv
 # Holdout (evaluation) split parameters
 HOLDOUT_TEST_SIZE = 0.2
 HOLDOUT_SEED = 2026
-
-# Calibration split parameters (exclusive calibration set)
-CALIBRATION_SIZE = 0.2
-CALIBRATION_SEED = 2027
-
 
 # =========================================================================
 # Data Loading & Preparation
@@ -119,7 +111,6 @@ def create_fixed_holdout_split(
         - holdout_df: 20% for final evaluation
         
     Side Effects:
-        Writes splits to TRAIN_SPLIT_PATH and TEST_SPLIT_PATH
     """
     model_selection_df, holdout_df = train_test_split(
         full_dataframe,
@@ -130,71 +121,27 @@ def create_fixed_holdout_split(
     )
     model_selection_df = model_selection_df.reset_index(drop=True)
     holdout_df = holdout_df.reset_index(drop=True)
-    write_normalized_csv(model_selection_df, TRAIN_SPLIT_PATH, index=False, encoding="utf-8")
-    write_normalized_csv(holdout_df, TEST_SPLIT_PATH, index=False, encoding="utf-8")
-
     print(
         f"\nFixed split: model_selection={len(model_selection_df)} rows | "
         f"holdout_test={len(holdout_df)} rows"
     )
     _summarise_split(model_selection_df, "Model-selection label distribution:")
     _summarise_split(holdout_df, "Holdout test label distribution:")
-    print(f"Saved model-selection split to: {TRAIN_SPLIT_PATH}")
-    print(f"Saved holdout test split to: {TEST_SPLIT_PATH}")
     return model_selection_df, holdout_df
 
 
-def create_calibration_split(
-    model_selection_df: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Create exclusive calibration split from model-selection data.
-    
-    Splits model-selection data into:
-    - model_train: For training ensemble
-    - calibration: Exclusive split for learning calibration transform
-    
-    Uses fixed seed (CALIBRATION_SEED=2027) for reproducibility.
-    Ensures calibration set is completely separate from training.
-    
-    Args:
-        model_selection_df: Data from create_fixed_holdout_split()
-        
-    Returns:
-        (model_train_df, calibration_df) tuple
-        - model_train_df: 80% for ensemble training
-        - calibration_df: 20% exclusive for calibration (not seen during training)
-        
-    Side Effects:
-        Creates but does NOT write splits (handled by cleanup_temporary_split_files)
-    """
-    model_train_df, calibration_df = train_test_split(
-        model_selection_df,
-        test_size=CALIBRATION_SIZE,
-        random_state=CALIBRATION_SEED,
-        shuffle=True,
-        stratify=model_selection_df["human_label"],
-    )
-    model_train_df = model_train_df.reset_index(drop=True)
-    calibration_df = calibration_df.reset_index(drop=True)
-
-    print(
-        f"\nExclusive calibration split: model_train={len(model_train_df)} rows | "
-        f"calibration={len(calibration_df)} rows"
-    )
-    _summarise_split(model_train_df, "Model-training label distribution:")
-    _summarise_split(calibration_df, "Calibration label distribution:")
-    return model_train_df, calibration_df
-
-
 def cleanup_temporary_split_files() -> None:
-    """Remove temporary split files created during training.
-    
+    """Remove temporary split files created by earlier training workflows.
+
     Removes:
+    - TRAIN_SPLIT_PATH
+    - TEST_SPLIT_PATH
     - TRAIN_MODEL_SPLIT_PATH (temporary training split)
-    - CALIBRATION_SPLIT_PATH (temporary calibration split)
-    
-    Note: TRAIN_SPLIT_PATH and TEST_SPLIT_PATH are kept for reference.
     """
-    for path in (TRAIN_MODEL_SPLIT_PATH, CALIBRATION_SPLIT_PATH):
+    for path in (
+        TRAIN_SPLIT_PATH,
+        TEST_SPLIT_PATH,
+        TRAIN_MODEL_SPLIT_PATH,
+    ):
         if path.exists():
             path.unlink()

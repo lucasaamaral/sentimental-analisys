@@ -1,15 +1,15 @@
-"""Training infrastructure: config, dataset, focal-loss trainer, model factory."""
+"""Training infrastructure for the selected fine-tuned ensemble."""
 
 from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import NamedTuple
 
 import numpy as np
 import pandas as pd
 import torch
 import torch.nn.functional as F
-from dataclasses import dataclass
-from pathlib import Path
-from typing import NamedTuple
-
 from sklearn.utils.class_weight import compute_class_weight
 from torch.utils.data import Dataset
 from transformers import (
@@ -25,6 +25,7 @@ from classification_workflow.config.paths import BASE_MODEL_NAME as MODEL_NAME
 
 MAX_LEN = 256
 BATCH_SIZE = 8
+ENSEMBLE_SEEDS = (789, 123, 456)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -37,36 +38,27 @@ class TrainingConfig:
     epochs: int
     learning_rate: float
     weight_decay: float
-    class_weight_mode: str
-    focal_gamma: float
     training_seed: int
-    loss_type: str = "focal"        # "focal" | "smooth_ce"
-    label_smoothing: float = 0.0    # only used when loss_type == "smooth_ce"
+    label_smoothing: float
     warmup_ratio: float = 0.1
     max_grad_norm: float = 0.5
 
 
 WINNING_CONFIG = TrainingConfig(
-    name="smooth_ce_s01_s789",
+    name="smooth_ce_s010_lr1e5_3seed",
     description=(
-        "smooth_ce (label_smoothing=0.10, primary_seed=789, secondary_seed=123): "
-        "probe_multiseed winner on 515-row dataset (412 train / 103 holdout). "
-        "2-seed ensemble macro_f1=0.605, P.f1=0.650, N.f1=0.712, U.f1=0.453. "
-        "Improvement over focal_g10_s123: +0.017 macro_f1, +0.023 NEUTRAL F1."
+        "Selected strategy after the 624-row review: label-smoothed cross-entropy "
+        "(label_smoothing=0.10), lr=1e-5, weight_decay=0.03, 4 epochs, "
+        "sqrt-balanced class weights, and a 3-seed logits ensemble "
+        "(789, 123, 456). Fixed-holdout macro_f1=0.732."
     ),
     freeze_layers=0,
     epochs=4,
-    learning_rate=7e-6,
+    learning_rate=1e-5,
     weight_decay=0.03,
-    class_weight_mode="sqrt_balanced",
-    focal_gamma=1.0,
     training_seed=789,
-    loss_type="smooth_ce",
     label_smoothing=0.10,
 )
-
-# Second seed trained alongside primary for logit blending at inference time.
-ENSEMBLE_SECONDARY_SEED = 123
 
 
 class NewsDataset(Dataset):
@@ -90,21 +82,17 @@ class NewsDataset(Dataset):
 
 
 class ChampionTrainer(Trainer):
-    """Unified trainer supporting focal loss and label-smoothed cross-entropy."""
+    """Trainer using the selected label-smoothed cross-entropy loss."""
 
     def __init__(
         self,
         class_weights: torch.Tensor,
-        focal_gamma: float,
-        loss_type: str = "focal",
-        label_smoothing: float = 0.0,
+        label_smoothing: float,
         *args,
         **kwargs,
     ) -> None:
         super().__init__(*args, **kwargs)
         self.class_weights = class_weights
-        self.focal_gamma = focal_gamma
-        self.loss_type = loss_type
         self.label_smoothing = label_smoothing
 
     def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
@@ -112,22 +100,13 @@ class ChampionTrainer(Trainer):
         outputs = model(**inputs)
         logits = outputs.logits
         weights = self.class_weights.to(logits.device)
-
-        if self.loss_type == "smooth_ce":
-            loss = F.cross_entropy(
-                logits, labels, weight=weights, label_smoothing=self.label_smoothing
-            )
-        else:
-            log_prob = F.log_softmax(logits, dim=-1)
-            nll = F.nll_loss(log_prob, labels, weight=weights, reduction="none")
-            pt = torch.exp(-nll)
-            loss = ((1 - pt) ** self.focal_gamma * nll).mean()
-
+        loss = F.cross_entropy(
+            logits,
+            labels,
+            weight=weights,
+            label_smoothing=self.label_smoothing,
+        )
         return (loss, outputs) if return_outputs else loss
-
-
-# Backward-compatible alias
-FocalTrainer = ChampionTrainer
 
 
 def freeze_bert_layers(model: BertForSequenceClassification, num_layers: int) -> None:
@@ -147,24 +126,17 @@ def freeze_bert_layers(model: BertForSequenceClassification, num_layers: int) ->
     )
 
 
-def compute_class_weights_for_ids(label_ids: np.ndarray, mode: str) -> np.ndarray:
-    if mode == "none":
-        return np.ones(len(LABEL2ID), dtype=np.float32)
-
+def compute_class_weights_for_ids(label_ids: np.ndarray) -> np.ndarray:
     raw_weights = compute_class_weight(
         class_weight="balanced",
         classes=np.arange(len(LABEL2ID)),
         y=label_ids,
     )
-    if mode == "sqrt_balanced":
-        raw_weights = np.sqrt(raw_weights)
-    elif mode != "balanced":
-        raise ValueError(f"Unsupported class_weight_mode: {mode}")
+    raw_weights = np.sqrt(raw_weights)
     return raw_weights / raw_weights.min()
 
 
-def build_training_args(output_dir: Path, logging_dir: Path, seed: int | None = None) -> TrainingArguments:
-    effective_seed = seed if seed is not None else WINNING_CONFIG.training_seed
+def build_training_args(output_dir: Path, logging_dir: Path, seed: int) -> TrainingArguments:
     return TrainingArguments(
         output_dir=str(output_dir),
         num_train_epochs=WINNING_CONFIG.epochs,
@@ -176,8 +148,8 @@ def build_training_args(output_dir: Path, logging_dir: Path, seed: int | None = 
         max_grad_norm=WINNING_CONFIG.max_grad_norm,
         logging_dir=str(logging_dir),
         logging_steps=10,
-        seed=effective_seed,
-        data_seed=effective_seed,
+        seed=seed,
+        data_seed=seed,
         fp16=torch.cuda.is_available(),
         group_by_length=True,
         dataloader_pin_memory=torch.cuda.is_available(),
@@ -201,19 +173,11 @@ def create_model() -> BertForSequenceClassification:
     return model
 
 
-# =========================================================================
-# Ensemble Training Helpers
-# =========================================================================
-
-
 class TrainingPredictions(NamedTuple):
-    """Logits from a trained model on calibration and holdout splits."""
+    """Logits from a trained model on reference and holdout splits."""
 
-    calibration: np.ndarray
+    reference: np.ndarray
     holdout: np.ndarray
-
-
-ENSEMBLE_BLEND_WEIGHT = 0.5  # Equal contribution from primary + secondary seeds
 
 
 def _get_trainer_predictions(
@@ -221,16 +185,14 @@ def _get_trainer_predictions(
     dataframe: pd.DataFrame,
     tokenizer,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Run trainer.predict and return (logits, label_ids)."""
     dataset = NewsDataset(dataframe, tokenizer, MAX_LEN)
     result = trainer.predict(dataset)
     logits = result.predictions
-    labels = np.array([LABEL2ID[lbl] for lbl in dataframe["human_label"].tolist()])
+    labels = np.array([LABEL2ID[label] for label in dataframe["human_label"].tolist()])
     return logits, labels
 
 
 def _cleanup_model_resources(trainer: ChampionTrainer, model: BertForSequenceClassification) -> None:
-    """Delete trainer/model objects and empty the GPU cache."""
     del trainer, model
     if device.type == "cuda":
         torch.cuda.empty_cache()
@@ -240,18 +202,17 @@ def _setup_training_prerequisites(
     model_train_df: pd.DataFrame,
     tokenizer,
 ) -> tuple[NewsDataset, DataCollatorWithPadding, torch.Tensor]:
-    """Build training dataset, data collator, and class-weight tensor."""
     train_dataset = NewsDataset(model_train_df, tokenizer, MAX_LEN)
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, pad_to_multiple_of=8)
 
     train_label_ids = np.array([LABEL2ID[label] for label in model_train_df["human_label"]])
-    raw_weights = compute_class_weights_for_ids(train_label_ids, WINNING_CONFIG.class_weight_mode)
+    raw_weights = compute_class_weights_for_ids(train_label_ids)
     class_weights = torch.tensor(raw_weights, dtype=torch.float)
 
     print(
         "Class weights: "
         + ", ".join(
-            f"{ID2LABEL[i]}={raw_weights[i]:.3f}" for i in range(len(LABEL2ID))
+            f"{ID2LABEL[index]}={raw_weights[index]:.3f}" for index in range(len(LABEL2ID))
         )
     )
     return train_dataset, data_collator, class_weights
@@ -263,35 +224,17 @@ def train_single_seed(
     train_dataset: NewsDataset,
     data_collator: DataCollatorWithPadding,
     class_weights: torch.Tensor,
-    calibration_df: pd.DataFrame,
+    reference_df: pd.DataFrame,
     holdout_df: pd.DataFrame,
     tokenizer,
     seed_label: str,
 ) -> TrainingPredictions:
-    """Train one model seed and return logits for calibration and holdout splits.
-
-    Args:
-        model_dir: Output directory for saved model.
-        seed: Random seed for reproducibility.
-        train_dataset: NewsDataset used for training.
-        data_collator: Collator for dynamic padding.
-        class_weights: Per-class loss weights tensor.
-        calibration_df: DataFrame used for calibration predictions.
-        holdout_df: DataFrame used for holdout predictions.
-        tokenizer: HuggingFace tokenizer (saved alongside the model).
-        seed_label: Human-readable label, e.g. "primary (seed=789)".
-
-    Returns:
-        TrainingPredictions with .calibration and .holdout logit arrays.
-    """
     model_dir.mkdir(parents=True, exist_ok=True)
     model = create_model()
     training_args = build_training_args(model_dir, model_dir / "training_logs", seed=seed)
 
     trainer = ChampionTrainer(
         class_weights=class_weights,
-        focal_gamma=WINNING_CONFIG.focal_gamma,
-        loss_type=WINNING_CONFIG.loss_type,
         label_smoothing=WINNING_CONFIG.label_smoothing,
         model=model,
         args=training_args,
@@ -302,31 +245,19 @@ def train_single_seed(
     print(f"\n--- Training {seed_label} model ({WINNING_CONFIG.name}) ---")
     trainer.train()
 
-    cal_logits, _ = _get_trainer_predictions(trainer, calibration_df, tokenizer)
+    reference_logits, _ = _get_trainer_predictions(trainer, reference_df, tokenizer)
     holdout_logits, _ = _get_trainer_predictions(trainer, holdout_df, tokenizer)
 
     trainer.save_model(str(model_dir))
     tokenizer.save_pretrained(str(model_dir))
     _cleanup_model_resources(trainer, model)
 
-    return TrainingPredictions(calibration=cal_logits, holdout=holdout_logits)
+    return TrainingPredictions(reference=reference_logits, holdout=holdout_logits)
 
 
-def blend_ensemble_predictions(
-    primary_preds: TrainingPredictions,
-    secondary_preds: TrainingPredictions,
-    weight: float = ENSEMBLE_BLEND_WEIGHT,
-) -> tuple[np.ndarray, np.ndarray]:
-    """Blend logits from primary and secondary seeds.
-
-    Args:
-        primary_preds: Predictions from primary seed.
-        secondary_preds: Predictions from secondary seed.
-        weight: Weight assigned to primary (default 0.5 → equal blend).
-
-    Returns:
-        (blended_cal_logits, blended_holdout_logits) tuple.
-    """
-    blended_cal = weight * primary_preds.calibration + (1 - weight) * secondary_preds.calibration
-    blended_holdout = weight * primary_preds.holdout + (1 - weight) * secondary_preds.holdout
-    return blended_cal, blended_holdout
+def average_seed_predictions(predictions: list[TrainingPredictions]) -> tuple[np.ndarray, np.ndarray]:
+    if not predictions:
+        raise ValueError("At least one seed prediction is required.")
+    reference_logits = np.mean([item.reference for item in predictions], axis=0)
+    holdout_logits = np.mean([item.holdout for item in predictions], axis=0)
+    return reference_logits, holdout_logits

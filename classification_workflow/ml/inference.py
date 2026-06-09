@@ -11,7 +11,6 @@ from transformers import AutoTokenizer, BertForSequenceClassification
 
 from classification_workflow.config.labels import (
     BASE_MODEL_LABEL_MAP,
-    LABELS,
     normalise_label,
 )
 from classification_workflow.config.paths import TRAINING_METADATA_PATH
@@ -23,13 +22,6 @@ class InferenceOutput:
     probabilities: np.ndarray
     score_dicts: list[dict[str, float]]
     predicted_labels: list[str]
-
-
-@dataclass(frozen=True)
-class CalibrationParameters:
-    scales: np.ndarray
-    biases: np.ndarray
-    method: str | None = None
 
 
 def describe_device(device: torch.device) -> str:
@@ -54,59 +46,6 @@ def load_training_metadata(
     return None
 
 
-def extract_calibration_parameters(
-    metadata: dict | None,
-    labels: tuple[str, ...] = LABELS,
-) -> CalibrationParameters | None:
-    if metadata is None:
-        return None
-
-    calibration = metadata.get("calibration")
-    if not isinstance(calibration, dict) or not calibration.get("enabled"):
-        return None
-
-    selected_biases = calibration.get("selected_biases")
-    if not isinstance(selected_biases, dict):
-        return None
-
-    selected_scales = calibration.get("selected_scales")
-    if isinstance(selected_scales, dict):
-        scales = np.array(
-            [float(selected_scales.get(label, 1.0)) for label in labels],
-            dtype=np.float32,
-        )
-    else:
-        scales = np.ones(len(labels), dtype=np.float32)
-
-    biases = np.array(
-        [float(selected_biases.get(label, 0.0)) for label in labels],
-        dtype=np.float32,
-    )
-
-    return CalibrationParameters(
-        scales=scales,
-        biases=biases,
-        method=calibration.get("selected_method"),
-    )
-
-
-def format_calibration_parameters(
-    calibration: CalibrationParameters,
-    labels: tuple[str, ...] = LABELS,
-) -> str:
-    scale_text = ", ".join(
-        f"{label}={calibration.scales[index]:.2f}" for index, label in enumerate(labels)
-    )
-    bias_text = ", ".join(
-        f"{label}={calibration.biases[index]:+.2f}"
-        for index, label in enumerate(labels)
-    )
-    return (
-        f"method={calibration.method or 'bias_only'} | "
-        f"scales=[{scale_text}] | biases=[{bias_text}]"
-    )
-
-
 def load_sequence_classifier(
     model_name_or_path: str | Path,
 ) -> tuple[AutoTokenizer, BertForSequenceClassification, torch.device]:
@@ -120,23 +59,6 @@ def load_sequence_classifier(
 
 def softmax_numpy(logits: np.ndarray) -> np.ndarray:
     return torch.softmax(torch.tensor(logits), dim=-1).cpu().numpy()
-
-
-def apply_calibration(
-    logits: np.ndarray,
-    scales: np.ndarray | None = None,
-    biases: np.ndarray | None = None,
-) -> np.ndarray:
-    calibrated_logits = logits
-    if scales is not None:
-        calibrated_logits = calibrated_logits * scales.reshape(1, -1)
-    if biases is not None:
-        calibrated_logits = calibrated_logits + biases.reshape(1, -1)
-    return calibrated_logits
-
-
-def apply_biases(logits: np.ndarray, biases: np.ndarray) -> np.ndarray:
-    return apply_calibration(logits, biases=biases)
 
 
 def resolve_model_labels(
@@ -163,7 +85,6 @@ def predict_scores(
     device: torch.device,
     *,
     label_aliases: dict[str, str] | None = None,
-    calibration_parameters: CalibrationParameters | None = None,
     batch_size: int = 32,
 ) -> InferenceOutput:
     model_labels = resolve_model_labels(model, label_aliases)
@@ -192,13 +113,6 @@ def predict_scores(
         all_logits.append(batch_logits)
 
     logits = np.concatenate(all_logits, axis=0)
-    if calibration_parameters is not None:
-        logits = apply_calibration(
-            logits,
-            scales=calibration_parameters.scales,
-            biases=calibration_parameters.biases,
-        )
-
     probabilities = softmax_numpy(logits)
     score_dicts: list[dict[str, float]] = []
     predicted_labels: list[str] = []
@@ -224,10 +138,9 @@ def predict_scores_blended(
     models: list[tuple],
     *,
     label_aliases: dict[str, str] | None = None,
-    calibration_parameters: CalibrationParameters | None = None,
     batch_size: int = 32,
 ) -> InferenceOutput:
-    """Ensemble inference: average raw logits from each model, then calibrate.
+    """Ensemble inference: average raw logits from each model.
 
     ``models`` is a list of ``(tokenizer, model, device)`` tuples.
     """
@@ -239,19 +152,11 @@ def predict_scores_blended(
             model_i,
             device_i,
             label_aliases=label_aliases,
-            calibration_parameters=None,
             batch_size=batch_size,
         )
         raw_logits_list.append(result.logits)
 
     blended = np.mean(raw_logits_list, axis=0)
-
-    if calibration_parameters is not None:
-        blended = apply_calibration(
-            blended,
-            scales=calibration_parameters.scales,
-            biases=calibration_parameters.biases,
-        )
 
     if not texts:
         return InferenceOutput(

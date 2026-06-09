@@ -1,1 +1,1 @@
-"""Model training, inference and calibration helpers."""
+"""Model training, inference and evaluation helpers."""

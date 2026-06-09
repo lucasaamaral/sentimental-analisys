@@ -9,6 +9,7 @@ from classification_workflow.config.paths import BASE_CLASSIFIED_NEWS_PATH, BASE
 from classification_workflow.data.dataset_source import load_financial_news_records
 from classification_workflow.data.records import (
     finalize_records_file,
+    load_records,
     load_seen_values,
     open_checkpoint_handle,
     write_jsonl_record,
@@ -25,7 +26,16 @@ def main() -> None:
     print(f"Device: {describe_device(device)}")
 
     print(f"\nReading dataset from Hugging Face: {DATASET_REPO}")
-    records = load_financial_news_records()
+    try:
+        records = load_financial_news_records()
+    except Exception as exc:
+        if not BASE_CLASSIFIED_NEWS_PATH.exists():
+            raise
+        print(
+            "Could not load the Hugging Face dataset; using the existing local "
+            f"classified JSONL as the source records instead. Reason: {exc}"
+        )
+        records = load_records(BASE_CLASSIFIED_NEWS_PATH)
     print(f"Total records: {len(records):,}")
 
     already_done = load_seen_values(BASE_CLASSIFIED_NEWS_PATH, "url")
