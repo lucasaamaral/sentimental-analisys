@@ -2,7 +2,7 @@
 
 Handles:
 - Loading and validating labeled datasets
-- Creating stratified train/test splits
+- Creating stratified train/validation/test splits
 - Temporary file management
 """
 
@@ -23,9 +23,14 @@ from classification_workflow.config.paths import (
 # Data Split Configuration
 # =========================================================================
 
-# Holdout (evaluation) split parameters
+# Holdout (final evaluation) split parameters
 HOLDOUT_TEST_SIZE = 0.2
 HOLDOUT_SEED = 2026
+
+# Validation split parameters. This is applied to the 80% model-selection split,
+# yielding approximate final proportions of 64% train, 16% validation and 20% test.
+VALIDATION_TEST_SIZE = 0.2
+VALIDATION_SEED = 2027
 
 # =========================================================================
 # Data Loading & Preparation
@@ -129,6 +134,42 @@ def create_fixed_holdout_split(
     _summarise_split(holdout_df, "Holdout test label distribution:")
     return model_selection_df, holdout_df
 
+
+def create_fixed_train_validation_test_split(
+    full_dataframe: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Create fixed stratified train/validation/test splits.
+
+    The final holdout test split is carved out first and should only be used for
+    final reporting. The validation split is then carved out of the remaining
+    model-selection data and can be used for early stopping and model selection.
+
+    Args:
+        full_dataframe: Full labeled dataset
+
+    Returns:
+        (train_df, validation_df, holdout_df) tuple
+        - train_df: 64% for parameter fitting
+        - validation_df: 16% for model selection/early stopping
+        - holdout_df: 20% for final evaluation
+    """
+    model_selection_df, holdout_df = create_fixed_holdout_split(full_dataframe)
+    train_df, validation_df = train_test_split(
+        model_selection_df,
+        test_size=VALIDATION_TEST_SIZE,
+        random_state=VALIDATION_SEED,
+        shuffle=True,
+        stratify=model_selection_df["human_label"],
+    )
+    train_df = train_df.reset_index(drop=True)
+    validation_df = validation_df.reset_index(drop=True)
+    print(
+        f"\nModel-selection split: train={len(train_df)} rows | "
+        f"validation={len(validation_df)} rows"
+    )
+    _summarise_split(train_df, "Training label distribution:")
+    _summarise_split(validation_df, "Validation label distribution:")
+    return train_df, validation_df, holdout_df
 
 def cleanup_temporary_split_files() -> None:
     """Remove temporary split files created by earlier training workflows.

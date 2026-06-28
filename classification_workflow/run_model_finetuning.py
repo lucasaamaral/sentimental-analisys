@@ -1,11 +1,12 @@
-"""Stage 2: fine-tune the selected FinBERT-PT-BR configuration.
+"""Stage 2: fine-tune FinBERT-PT-BR with validation-based model selection.
 
 Workflow:
     1. Read labeled_samples/labeled_samples.csv filtering rows where human_label is filled in
-    2. Create a fixed stratified holdout test split
-    3. Train the winning configuration on all model-selection rows
-    4. Persist the final identity prediction-decision parameters
-    5. Save holdout metrics and deployment metadata
+    2. Create fixed stratified train/validation/test splits
+    3. Search hyperparameters using validation metrics only
+    4. Train the selected configuration as a three-seed ensemble
+    5. Evaluate the selected ensemble once on the independent test split
+    6. Save independent test metrics and deployment metadata
 """
 
 from __future__ import annotations
@@ -24,35 +25,39 @@ from classification_workflow.config.paths import (
     ENSEMBLE_MODEL_DIRS,
     FINETUNED_MODEL_DIR as OUTPUT_MODEL,
     LABELED_SAMPLES_PATH as SAMPLE_PATH,
+    MODELS_DIR,
     TRAINING_METADATA_PATH,
 )
 from classification_workflow.data.data_splits import (
     HOLDOUT_SEED,
     HOLDOUT_TEST_SIZE,
+    VALIDATION_SEED,
+    VALIDATION_TEST_SIZE,
     cleanup_temporary_split_files,
-    create_fixed_holdout_split,
+    create_fixed_train_validation_test_split,
     load_labelled_dataframe,
 )
-from classification_workflow.ml.evaluation import (
-    evaluate_trainer_on_dataframe,
-    print_baselines,
-)
+from classification_workflow.ml.evaluation import evaluate_trainer_on_dataframe
 from classification_workflow.ml.inference import (
     attach_base_model_predictions,
     describe_device,
     load_sequence_classifier,
 )
 from classification_workflow.ml.trainer import (
+    CANDIDATE_CONFIGS,
     ENSEMBLE_SEEDS,
-    WINNING_CONFIG,
+    TrainingConfig,
     _setup_training_prerequisites,
     average_seed_predictions,
+    classification_metrics,
+    labels_from_dataframe,
+    predictions_to_labels,
     train_single_seed,
 )
 
 warnings.filterwarnings("ignore")
 
-WINNING_STRATEGY = "smooth_ce_s010_lr1e5_3seed"
+SEARCH_MODEL_DIR = MODELS_DIR / "hyperparameter-search"
 
 
 # =========================================================================
@@ -62,33 +67,35 @@ WINNING_STRATEGY = "smooth_ce_s010_lr1e5_3seed"
 
 def save_training_metadata(
     full_dataframe: pd.DataFrame,
-    model_selection_df: pd.DataFrame,
     model_train_df: pd.DataFrame,
+    validation_df: pd.DataFrame,
     holdout_df: pd.DataFrame,
-    baseline_summary: dict,
+    selected_config: TrainingConfig,
+    search_results: list[dict],
     holdout_summary: dict,
 ) -> None:
     training_metadata = {
-        "selected_strategy": {
-            **asdict(WINNING_CONFIG),
-            "winning_strategy": WINNING_STRATEGY,
-        },
-        "final_training_epochs": WINNING_CONFIG.epochs,
-        "selected_training_seed": WINNING_CONFIG.training_seed,
+        "selected_strategy": asdict(selected_config),
+        "selection_method": "validation_macro_f1_grid_search",
+        "search_results": search_results,
+        "final_training_epochs": selected_config.epochs,
+        "selected_training_seed": selected_config.training_seed,
         "ensemble_mode": True,
         "ensemble_seeds": list(ENSEMBLE_SEEDS),
         "ensemble_model_dirs": [str(path) for path in ENSEMBLE_MODEL_DIRS],
         "decision_method": "identity_argmax",
         "n_total_labelled_examples": int(len(full_dataframe)),
-        "n_model_selection_examples": int(len(model_selection_df)),
+        "n_model_selection_examples": int(len(model_train_df) + len(validation_df)),
         "n_model_training_examples": int(len(model_train_df)),
+        "n_validation_examples": int(len(validation_df)),
         "n_holdout_examples": int(len(holdout_df)),
         "sample_path": str(SAMPLE_PATH),
         "holdout_test_size": HOLDOUT_TEST_SIZE,
         "holdout_seed": HOLDOUT_SEED,
+        "validation_size_of_model_selection": VALIDATION_TEST_SIZE,
+        "validation_seed": VALIDATION_SEED,
         "temporary_split_files_removed": True,
-        "baseline_full_sample": baseline_summary["full_sample"],
-        "holdout_metrics": {
+        "independent_holdout_metrics": {
             "base_accuracy": holdout_summary["base_model"]["accuracy"],
             "base_macro_f1": holdout_summary["base_model"]["macro_f1"],
             "finetuned_accuracy": holdout_summary["finetuned_model"]["accuracy"],
@@ -105,8 +112,13 @@ def save_training_metadata(
 # =========================================================================
 
 
-def prepare_base_model_baselines() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
-    """Phase 1: load base model, score all samples, create holdout split, print baselines."""
+def prepare_scored_splits() -> tuple[
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+]:
+    """Score samples with the base model and create train/validation/test splits."""
     print(f"\nLoading base model for baseline metrics: {MODEL_NAME}")
     base_tokenizer, base_model, base_device = load_sequence_classifier(MODEL_NAME)
     print(f"Base model device: {describe_device(base_device)}")
@@ -119,39 +131,111 @@ def prepare_base_model_baselines() -> tuple[pd.DataFrame, pd.DataFrame, dict]:
         base_device,
     )
 
-    model_selection_df, holdout_df = create_fixed_holdout_split(full_dataframe)
-    holdout_df = attach_base_model_predictions(
-        holdout_df,
-        base_tokenizer,
-        base_model,
-        base_device,
+    model_train_df, validation_df, holdout_df = create_fixed_train_validation_test_split(
+        full_dataframe
     )
 
     del base_tokenizer, base_model
     if base_device.type == "cuda":
         torch.cuda.empty_cache()
 
-    baseline_summary = print_baselines(full_dataframe, holdout_df)
-    return full_dataframe, holdout_df, baseline_summary
+    return full_dataframe, model_train_df, validation_df, holdout_df
 
 
-def train_ensemble(
+def evaluate_validation_logits(
+    validation_df: pd.DataFrame,
+    validation_logits: np.ndarray,
+) -> dict[str, float]:
+    return classification_metrics(
+        labels_from_dataframe(validation_df),
+        predictions_to_labels(validation_logits),
+    )
+
+
+def select_hyperparameters(
     model_train_df: pd.DataFrame,
+    validation_df: pd.DataFrame,
+    tokenizer,
+) -> tuple[TrainingConfig, list[dict]]:
+    """Train candidate configurations and select the best by validation macro-F1."""
+    train_dataset, validation_dataset, data_collator, class_weights = (
+        _setup_training_prerequisites(model_train_df, validation_df, tokenizer)
+    )
+
+    search_results: list[dict] = []
+    for index, training_config in enumerate(CANDIDATE_CONFIGS, start=1):
+        print(
+            f"\n=== Hyperparameter search {index}/{len(CANDIDATE_CONFIGS)}: "
+            f"{training_config.name} ==="
+        )
+        predictions = train_single_seed(
+            model_dir=SEARCH_MODEL_DIR / training_config.name,
+            seed=training_config.training_seed,
+            training_config=training_config,
+            train_dataset=train_dataset,
+            validation_dataset=validation_dataset,
+            data_collator=data_collator,
+            class_weights=class_weights,
+            reference_df=model_train_df,
+            evaluation_df=validation_df,
+            tokenizer=tokenizer,
+            seed_label=f"validation-search seed={training_config.training_seed}",
+        )
+        metrics = evaluate_validation_logits(validation_df, predictions.evaluation)
+        result = {
+            "rank_input_order": index,
+            "config": asdict(training_config),
+            "validation_accuracy": metrics["accuracy"],
+            "validation_macro_f1": metrics["macro_f1"],
+        }
+        search_results.append(result)
+        print(
+            f"Validation result: accuracy={metrics['accuracy']:.1%} | "
+            f"macro_f1={metrics['macro_f1']:.3f}"
+        )
+
+    ranked_results = sorted(
+        search_results,
+        key=lambda item: (
+            item["validation_macro_f1"],
+            item["validation_accuracy"],
+            -item["rank_input_order"],
+        ),
+        reverse=True,
+    )
+    best_name = ranked_results[0]["config"]["name"]
+    selected_config = next(config for config in CANDIDATE_CONFIGS if config.name == best_name)
+
+    print("\nValidation hyperparameter ranking:")
+    for rank, result in enumerate(ranked_results, start=1):
+        print(
+            f"{rank}. {result['config']['name']} | "
+            f"accuracy={result['validation_accuracy']:.1%} | "
+            f"macro_f1={result['validation_macro_f1']:.3f}"
+        )
+    print(f"\nSelected by validation macro-F1: {selected_config.name}")
+    return selected_config, ranked_results
+
+
+def train_selected_ensemble(
+    selected_config: TrainingConfig,
+    model_train_df: pd.DataFrame,
+    validation_df: pd.DataFrame,
     holdout_df: pd.DataFrame,
     tokenizer,
 ) -> np.ndarray:
-    """Phase 2: train the selected ensemble and return holdout logits."""
-    print("\nSelected winning configuration:")
-    print(f"strategy={WINNING_STRATEGY}")
+    """Train the selected ensemble and return independent-test logits."""
+    print("\nSelected configuration for final ensemble:")
     print(
-        f"freeze={WINNING_CONFIG.freeze_layers}, epochs={WINNING_CONFIG.epochs}, "
-        f"lr={WINNING_CONFIG.learning_rate}, wd={WINNING_CONFIG.weight_decay}, "
-        f"label_smoothing={WINNING_CONFIG.label_smoothing}, "
+        f"name={selected_config.name}, freeze={selected_config.freeze_layers}, "
+        f"epochs={selected_config.epochs}, lr={selected_config.learning_rate}, "
+        f"wd={selected_config.weight_decay}, "
+        f"label_smoothing={selected_config.label_smoothing}, "
         f"seeds={list(ENSEMBLE_SEEDS)}"
     )
 
-    train_dataset, data_collator, class_weights = _setup_training_prerequisites(
-        model_train_df, tokenizer
+    train_dataset, validation_dataset, data_collator, class_weights = (
+        _setup_training_prerequisites(model_train_df, validation_df, tokenizer)
     )
 
     seed_predictions = []
@@ -160,61 +244,70 @@ def train_ensemble(
             train_single_seed(
                 model_dir=model_dir,
                 seed=seed,
+                training_config=selected_config,
                 train_dataset=train_dataset,
+                validation_dataset=validation_dataset,
                 data_collator=data_collator,
                 class_weights=class_weights,
                 reference_df=model_train_df,
-                holdout_df=holdout_df,
+                evaluation_df=holdout_df,
                 tokenizer=tokenizer,
-                seed_label=f"seed={seed}",
+                seed_label=f"final seed={seed}",
             )
         )
 
-    print("\n--- Averaging logits from ensemble seeds ---")
+    print("\n--- Averaging logits from selected ensemble seeds ---")
     _, blended_holdout = average_seed_predictions(seed_predictions)
-
     return blended_holdout
 
 
 def main() -> None:
     cleanup_temporary_split_files()
 
-    # Phase 1: Load base model, score samples, create holdout split
-    full_dataframe, holdout_df, baseline_summary = prepare_base_model_baselines()
+    # Phase 1: score samples and split data. No test metric is computed here.
+    full_dataframe, model_train_df, validation_df, holdout_df = prepare_scored_splits()
 
-    model_selection_df, _ = create_fixed_holdout_split(full_dataframe)
-    model_train_df = model_selection_df
-
-    # Phase 2: Train ensemble
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    blended_holdout_logits = train_ensemble(
-        model_train_df, holdout_df, tokenizer
+
+    # Phase 2: validation-only hyperparameter selection.
+    selected_config, search_results = select_hyperparameters(
+        model_train_df,
+        validation_df,
+        tokenizer,
     )
 
-    # Phase 3: Evaluate direct argmax on averaged logits
+    # Phase 3: train selected ensemble and evaluate the independent test once.
+    blended_holdout_logits = train_selected_ensemble(
+        selected_config,
+        model_train_df,
+        validation_df,
+        holdout_df,
+        tokenizer,
+    )
+
     holdout_summary = evaluate_trainer_on_dataframe(
         None,
         holdout_df,
         tokenizer,
-        split_name="fixed_holdout_test",
+        split_name="independent_holdout_test",
         precomputed_logits=blended_holdout_logits,
         sample_path=str(SAMPLE_PATH),
         model_path=str(OUTPUT_MODEL),
     )
 
-    print("\nDeployment metrics on fixed_holdout_test:")
+    print("\nDeployment metrics on independent_holdout_test:")
     print(
         f"accuracy={holdout_summary['finetuned_model']['accuracy']:.1%} | "
         f"macro_f1={holdout_summary['finetuned_model']['macro_f1']:.3f}"
     )
 
-    # Phase 4: Save metadata and cleanup
     save_training_metadata(
         full_dataframe,
-        model_selection_df,
         model_train_df,
+        validation_df,
         holdout_df,
-        baseline_summary,
+        selected_config,
+        search_results,
         holdout_summary,
     )
     cleanup_temporary_split_files()

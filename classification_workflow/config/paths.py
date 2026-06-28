@@ -20,6 +20,7 @@ TRAINING_METADATA_PATH = FINETUNED_MODEL_DIR / "training_strategy.json"
 
 BASE_CLASSIFIED_NEWS_PATH = OUTPUT_DIR / "base_model_classified.jsonl"
 FINETUNED_CLASSIFIED_NEWS_PATH = OUTPUT_DIR / "finetuned_model_classified.jsonl"
+WEEKLY_SENTIMENT_SCORES_PATH = OUTPUT_DIR / "weekly_sentiment_scores.csv"
 LABELED_SAMPLES_PATH = LABELED_SAMPLES_DIR / "labeled_samples.csv"
 
 TRAIN_SPLIT_PATH = OUTPUT_DIR / "samples_train.csv"

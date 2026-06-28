@@ -18,7 +18,7 @@ All models classify financial news as **POSITIVE**, **NEGATIVE**, or **NEUTRAL**
 
 ## Architecture
 
-The workflow executes **3 sequential stages**:
+The workflow executes **4 sequential stages**:
 
 ### Stage 1: Base Classification
 
@@ -26,21 +26,27 @@ Generates baseline predictions on the full dataset using the pre-trained `lucas-
 
 ### Stage 2: Fine-Tuning
 
-Trains the fine-tuned classifier on the reviewed labeled sample using label-smoothed cross-entropy, square-root balanced class weights and a fixed stratified holdout split.
+Trains the fine-tuned classifier on a stratified training split using square-root balanced class weights. A separate validation split controls the hyperparameter search and best-checkpoint selection. The independent holdout test split is evaluated only after the final strategy is selected.
 
-The selected strategy uses:
+The validation-selected strategy uses:
 
 - 4 epochs
-- learning rate `1e-5`
+- learning rate `2e-5`
 - weight decay `0.03`
 - label smoothing `0.10`
+- selected by validation macro-F1 from candidate learning-rate, weight-decay and label-smoothing settings
 - seeds `789`, `123` and `456`
+- validation-based best-checkpoint selection
 - simple average of ensemble logits
 - final decision by direct argmax
 
 ### Stage 3: Final Classification
 
 Re-classifies the complete dataset with the fine-tuned ensemble and writes the final predictions to `output/finetuned_model_classified.jsonl`.
+
+### Stage 4: Weekly Sentiment Scoring
+
+Aggregates fine-tuned article predictions by ISO week and writes centered weekly sentiment scores plus moving averages to `output/weekly_sentiment_scores.csv`.
 
 ## Project Structure
 
@@ -68,11 +74,11 @@ sentimental-analisys/
 |   |   `-- evaluation.py
 |   |-- classify_base_model.py 
 |   |-- run_model_finetuning.py
-|   `-- classify_finetuned_model.py
+|   |-- classify_finetuned_model.py
+|   `-- generate_sentiment_scores.py
 |-- notebooks/
 |   |-- base_model_analisys.ipynb
-|   |-- finetuned_model_comparison.ipynb
-|   `-- scoring_generator.ipynb
+|   `-- finetuned_model_comparison.ipynb
 ```
 
 ## Installation
@@ -96,6 +102,7 @@ Executes sequentially:
 1. `classify-base-model`
 2. `train-finetuned-model`
 3. `classify-finetuned-model`
+4. `generate-sentiment-scores`
 
 ### Run Individual Stages
 
@@ -103,6 +110,7 @@ Executes sequentially:
 python main.py classify-base-model
 python main.py train-finetuned-model
 python main.py classify-finetuned-model
+python main.py generate-sentiment-scores
 ```
 
 ## Output Format (JSONL)
@@ -143,27 +151,37 @@ Each line is a JSON object with predictions:
 
 ## Evaluation Results
 
-Fixed stratified holdout, seed `2026`:
+Fixed stratified train/validation/test split: 399 train, 100 validation and 125 independent test examples. The test split uses seed `2026`; the validation split uses seed `2027`.
+Validation search ranking by macro-F1:
+
+| Rank | Configuration | Validation Accuracy | Validation Macro F1 |
+|-----:|---------------|--------------------:|--------------------:|
+| 1 | `lr=2e-5`, `weight_decay=0.03`, `label_smoothing=0.10` | 0.670 | 0.671 |
+| 2 | `lr=1e-5`, `weight_decay=0.03`, `label_smoothing=0.10` | 0.650 | 0.647 |
+| 3 | `lr=1e-5`, `weight_decay=0.01`, `label_smoothing=0.05` | 0.640 | 0.641 |
+| 4 | `lr=1e-5`, `weight_decay=0.00`, `label_smoothing=0.00` | 0.640 | 0.640 |
+| 5 | `lr=5e-6`, `weight_decay=0.00`, `label_smoothing=0.00` | 0.610 | 0.605 |
 
 | Model | Accuracy | Macro F1 |
 |-------|---------:|---------:|
 | Base (`lucas-leme/FinBERT-PT-BR`) | 0.336 | 0.325 |
-| Fine-tuned ensemble | 0.736 | 0.732 |
+| Fine-tuned ensemble | 0.784 | 0.783 |
 
 The current labeled sample contains 624 reviewed examples in `labeled_samples/labeled_samples.csv`.
 
 ## Notebooks
 
-The `notebooks/` folder contains the analytical layer used for diagnostics and final scoring:
+The `notebooks/` folder contains the analytical layer used for diagnostics. Weekly sentiment score generation is part of the main pipeline:
 
 - `base_model_analisys.ipynb` - Baseline behavior, negative bias and base-model diagnostics
 - `finetuned_model_comparison.ipynb` - Fine-tuned model quality, F1 comparison and bias correction
-- `scoring_generator.ipynb` - Weekly sentiment score generation and export
+- Weekly sentiment score generation now runs through `python main.py generate-sentiment-scores`.
 
 Before running the notebooks, make sure the pipeline has generated:
 
 - `output/base_model_classified.jsonl`
 - `output/finetuned_model_classified.jsonl`
+- `output/weekly_sentiment_scores.csv`
 
 ## Main Dependencies
 
