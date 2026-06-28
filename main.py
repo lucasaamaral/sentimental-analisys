@@ -8,18 +8,17 @@ import sys
 
 
 TASK_MODULES = {
-    "classify-base-model": "sentiment_workflow.classify_base_model",
-    "train-finetuned-model": "sentiment_workflow.train_finetuned_model",
-    "classify-finetuned-model": "sentiment_workflow.classify_finetuned_model",
-    "probe-smooth-ce": "sentiment_workflow.probe_smooth_ce_neutral_weight",
-    "probe-multiseed": "sentiment_workflow.probe_multiseed_ensemble",
-    "benchmark-macro-f1": "sentiment_workflow.benchmark_macro_f1_strategies",
+    "classify-base-model": "classification_workflow.classify_base_model",
+    "train-finetuned-model": "classification_workflow.run_model_finetuning",
+    "classify-finetuned-model": "classification_workflow.classify_finetuned_model",
+    "generate-sentiment-scores": "classification_workflow.generate_sentiment_scores",
 }
 
 TASK_SEQUENCE = (
     "classify-base-model",
     "train-finetuned-model",
     "classify-finetuned-model",
+    "generate-sentiment-scores",
 )
 
 

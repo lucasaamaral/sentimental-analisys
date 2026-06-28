@@ -4,16 +4,17 @@ from __future__ import annotations
 
 from tqdm import tqdm
 
-from sentiment_workflow.config.labels import BASE_MODEL_LABEL_MAP
-from sentiment_workflow.config.paths import BASE_CLASSIFIED_NEWS_PATH, BASE_MODEL_NAME, DATASET_REPO
-from sentiment_workflow.data.dataset_source import load_financial_news_records
-from sentiment_workflow.data.records import (
+from classification_workflow.config.labels import BASE_MODEL_LABEL_MAP
+from classification_workflow.config.paths import BASE_CLASSIFIED_NEWS_PATH, BASE_MODEL_NAME, DATASET_REPO
+from classification_workflow.data.dataset_source import load_financial_news_records
+from classification_workflow.data.records import (
     finalize_records_file,
+    load_records,
     load_seen_values,
     open_checkpoint_handle,
     write_jsonl_record,
 )
-from sentiment_workflow.ml.inference import describe_device, load_sequence_classifier, predict_scores
+from classification_workflow.ml.inference import describe_device, load_sequence_classifier, predict_scores
 
 
 BATCH_SIZE = 32
@@ -25,7 +26,16 @@ def main() -> None:
     print(f"Device: {describe_device(device)}")
 
     print(f"\nReading dataset from Hugging Face: {DATASET_REPO}")
-    records = load_financial_news_records()
+    try:
+        records = load_financial_news_records()
+    except Exception as exc:
+        if not BASE_CLASSIFIED_NEWS_PATH.exists():
+            raise
+        print(
+            "Could not load the Hugging Face dataset; using the existing local "
+            f"classified JSONL as the source records instead. Reason: {exc}"
+        )
+        records = load_records(BASE_CLASSIFIED_NEWS_PATH)
     print(f"Total records: {len(records):,}")
 
     already_done = load_seen_values(BASE_CLASSIFIED_NEWS_PATH, "url")

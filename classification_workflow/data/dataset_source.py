@@ -1,6 +1,6 @@
 from datasets import Features, Sequence, Value, load_dataset
 
-from sentiment_workflow.config.paths import DATASET_REPO
+from classification_workflow.config.paths import DATASET_REPO
 
 
 DATASET_FEATURES = Features(

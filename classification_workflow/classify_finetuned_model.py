@@ -7,23 +7,20 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from sentiment_workflow.config.paths import (
+from classification_workflow.config.paths import (
     BASE_CLASSIFIED_NEWS_PATH,
+    ENSEMBLE_MODEL_DIRS,
     FINETUNED_CLASSIFIED_NEWS_PATH,
-    FINETUNED_MODEL_HF_REPO,
-    SECONDARY_MODEL_HF_REPO,
 )
-from sentiment_workflow.data.records import (
+from classification_workflow.data.records import (
     finalize_records_file,
     load_records,
     load_seen_values,
     open_checkpoint_handle,
     write_jsonl_record,
 )
-from sentiment_workflow.ml.inference import (
+from classification_workflow.ml.inference import (
     describe_device,
-    extract_calibration_parameters,
-    format_calibration_parameters,
     load_sequence_classifier,
     load_training_metadata,
     predict_scores,
@@ -49,34 +46,36 @@ def parse_args() -> argparse.Namespace:
         default=FINETUNED_CLASSIFIED_NEWS_PATH,
         help="Output JSONL for the fine-tuned predictions",
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite the output JSONL instead of resuming from the existing checkpoint",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
 
-    print(f"Loading fine-tuned model: {FINETUNED_MODEL_HF_REPO}")
-    tokenizer, model, device = load_sequence_classifier(FINETUNED_MODEL_HF_REPO)
-    print(f"Device: {describe_device(device)}")
-
-    training_metadata = load_training_metadata(hf_repo=FINETUNED_MODEL_HF_REPO)
-    calibration_parameters = extract_calibration_parameters(training_metadata)
-    if calibration_parameters is None:
-        raise ValueError(
-            "No saved calibration parameters were found. Run train-finetuned-model to persist the calibrated champion before classification."
+    training_metadata = load_training_metadata()
+    model_dirs = [
+        Path(path)
+        for path in (training_metadata or {}).get(
+            "ensemble_model_dirs",
+            [str(path) for path in ENSEMBLE_MODEL_DIRS],
         )
+    ]
 
-    print(
-        "Using saved calibration parameters: "
-        + format_calibration_parameters(calibration_parameters)
-    )
+    ensemble_models = []
+    for model_dir in model_dirs:
+        print(f"Loading fine-tuned model: {model_dir}")
+        tokenizer, model, device = load_sequence_classifier(model_dir)
+        ensemble_models.append((tokenizer, model, device))
+        print(f"Device: {describe_device(device)}")
 
-    ensemble_models = [(tokenizer, model, device)]
-    if training_metadata.get("ensemble_mode"):
-        print(f"Loading secondary model: {SECONDARY_MODEL_HF_REPO}")
-        tok_s, mdl_s, dev_s = load_sequence_classifier(SECONDARY_MODEL_HF_REPO)
-        ensemble_models.append((tok_s, mdl_s, dev_s))
-        print(f"Ensemble: {len(ensemble_models)} models will be blended.")
+    if not ensemble_models:
+        raise ValueError("No fine-tuned model directories were configured.")
+    print(f"Ensemble: {len(ensemble_models)} models will be averaged with identity argmax.")
 
     print(f"\nReading source records from: {args.source}")
     if not args.source.exists():
@@ -86,6 +85,10 @@ def main() -> None:
 
     records = load_records(args.source)
     print(f"Total records: {len(records):,}")
+
+    if args.force and args.output.exists():
+        args.output.unlink()
+        print(f"Force mode: removed previous output file: {args.output}")
 
     already_done = load_seen_values(args.output, "url")
     if already_done:
@@ -109,16 +112,15 @@ def main() -> None:
                 predictions = predict_scores_blended(
                     batch_texts,
                     ensemble_models,
-                    calibration_parameters=calibration_parameters,
                     batch_size=BATCH_SIZE,
                 )
             else:
+                tokenizer, model, device = ensemble_models[0]
                 predictions = predict_scores(
                     batch_texts,
                     tokenizer,
                     model,
                     device,
-                    calibration_parameters=calibration_parameters,
                     batch_size=BATCH_SIZE,
                 )
 

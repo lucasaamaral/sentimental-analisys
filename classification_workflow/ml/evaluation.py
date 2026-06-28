@@ -9,13 +9,10 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 
-from sentiment_workflow.config.labels import ID2LABEL, LABEL2ID
-from sentiment_workflow.data.csv_utils import write_normalized_csv
-from sentiment_workflow.ml.calibration import label_value_dict_to_array
-from sentiment_workflow.ml.inference import apply_calibration, softmax_numpy
-from sentiment_workflow.ml.trainer import (
-    MAX_LEN,
-    NewsDataset,
+from classification_workflow.config.labels import ID2LABEL, LABEL2ID
+from classification_workflow.data.csv_utils import write_normalized_csv
+from classification_workflow.ml.inference import softmax_numpy
+from classification_workflow.ml.trainer import (
     _get_trainer_predictions,
 )
 
@@ -90,12 +87,11 @@ def evaluate_trainer_on_dataframe(
     split_name: str,
     output_csv_path: Path | None = None,
     output_json_path: Path | None = None,
-    calibration_summary: dict,
     precomputed_logits: np.ndarray | None = None,
     sample_path: str | None = None,
     model_path: str | None = None,
 ) -> dict:
-    """Evaluate a fine-tuned model (optionally calibrated) against base-model predictions.
+    """Evaluate a fine-tuned model against base-model predictions.
 
     Args:
         trainer: HuggingFace Trainer instance, or None when precomputed_logits is provided.
@@ -104,13 +100,12 @@ def evaluate_trainer_on_dataframe(
         split_name: Label for display and JSON output (e.g. 'fixed_holdout_test').
         output_csv_path: Where to write the annotated evaluation CSV, or None to skip.
         output_json_path: Where to write the JSON summary, or None to skip.
-        calibration_summary: Dict with 'selected_scales' and 'selected_biases' keys.
         precomputed_logits: Pre-run logit array; skips running trainer.predict when set.
         sample_path: Metadata string for JSON summary.
         model_path: Metadata string for JSON summary.
 
     Returns:
-        Summary dict with base_model, finetuned_model, calibration, and delta keys.
+        Summary dict with base_model, finetuned_model, and delta keys.
     """
     if "base_predicted_label" not in dataframe.columns:
         raise ValueError("dataframe must have a base_predicted_label column.")
@@ -120,21 +115,12 @@ def evaluate_trainer_on_dataframe(
     else:
         raw_logits, _ = _get_trainer_predictions(trainer, dataframe, tokenizer)
 
-    scales = label_value_dict_to_array(
-        calibration_summary.get("selected_scales"),
-        default=1.0,
-    )
-    biases = label_value_dict_to_array(
-        calibration_summary.get("selected_biases"),
-        default=0.0,
-    )
-    calibrated_logits = apply_calibration(raw_logits, scales=scales, biases=biases)
-    calibrated_probabilities = softmax_numpy(calibrated_logits)
-    calibrated_pred_ids = np.argmax(calibrated_logits, axis=1)
+    probabilities = softmax_numpy(raw_logits)
+    pred_ids = np.argmax(raw_logits, axis=1)
 
     y_true = dataframe["human_label"].tolist()
     y_base = dataframe["base_predicted_label"].tolist()
-    y_final = [ID2LABEL[int(p)] for p in calibrated_pred_ids]
+    y_final = [ID2LABEL[int(p)] for p in pred_ids]
 
     base_accuracy = accuracy_score(y_true, y_base)
     base_macro_f1 = f1_score(
@@ -148,8 +134,8 @@ def evaluate_trainer_on_dataframe(
     print(f"\nBase model metrics on {split_name}:")
     print(f"accuracy={base_accuracy:.1%} | macro_f1={base_macro_f1:.3f}")
     print(
-        f"\nCalibrated fine-tuned model metrics on {split_name} "
-        f"(method={calibration_summary.get('selected_method', 'bias_only')}):"
+        f"\nFine-tuned model metrics on {split_name} "
+        "(decision=identity_argmax):"
     )
     print(
         f"accuracy={final_accuracy:.1%} | macro_f1={final_macro_f1:.3f} | "
@@ -180,13 +166,13 @@ def evaluate_trainer_on_dataframe(
     evaluation_df = dataframe.copy()
     evaluation_df["finetuned_predicted_label"] = y_final
     evaluation_df["ft_score_positive"] = np.round(
-        calibrated_probabilities[:, LABEL2ID["POSITIVE"]], 6
+        probabilities[:, LABEL2ID["POSITIVE"]], 6
     )
     evaluation_df["ft_score_negative"] = np.round(
-        calibrated_probabilities[:, LABEL2ID["NEGATIVE"]], 6
+        probabilities[:, LABEL2ID["NEGATIVE"]], 6
     )
     evaluation_df["ft_score_neutral"] = np.round(
-        calibrated_probabilities[:, LABEL2ID["NEUTRAL"]], 6
+        probabilities[:, LABEL2ID["NEUTRAL"]], 6
     )
     evaluation_df["base_correct"] = (
         evaluation_df["base_predicted_label"] == evaluation_df["human_label"]
@@ -228,13 +214,7 @@ def evaluate_trainer_on_dataframe(
             ),
             "confusion_matrix": confusion.tolist(),
         },
-        "calibration": {
-            "enabled": True,
-            "selected_method": calibration_summary.get("selected_method"),
-            "selected_scales": calibration_summary.get("selected_scales"),
-            "selected_biases": calibration_summary["selected_biases"],
-            "calibration_split": calibration_summary,
-        },
+        "decision_method": "identity_argmax",
         "delta": {
             "accuracy": float(final_accuracy - base_accuracy),
             "macro_f1": float(final_macro_f1 - base_macro_f1),
